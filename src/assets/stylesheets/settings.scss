@@ -1,0 +1,77 @@
+//=======================
+//Colors
+//=======================
+$title-: #000;
+$blue: #4E6471;
+$beig: #FFD2A0;
+$brown: #D68452;
+$red:#882E30;
+//=======================
+//Misc
+//=======================
+
+//=======================
+//Sizes
+//=======================
+
+// ----- Fluid sizing thresholds
+$threshold--mobile: 320px;
+$threshold--desktop: 1440px;
+
+
+// ----- Gutters (for vertical spacing)
+$gutter--xxs: 20px;
+$gutter--xs: 25px;
+$gutter--s: 40px;
+$gutter--m: 50px;
+$gutter--l: 60px;
+$gutter--xl: 100px;
+
+// ----- Spacings (for horizontal spacing)
+$spacing--xxxs: 16px;
+$spacing--xxs: 24px;
+$spacing--xs: 32px;
+$spacing--s: 40px;
+$spacing--m: 50px;
+$spacing--l: 60px;
+$spacing--xl: 100px;
+$spacing--xxl: 150px;
+
+
+// ----- Breakpoints
+$breakpoint--mobile--s: 320px;
+$breakpoint--mobile--m: 480px;
+$breakpoint--tablet--m: 768px;
+$breakpoint--tablet--l: 1024px;
+$breakpoint--desktop--s: 1080px;
+$breakpoint--desktop--m: 1280px;
+$breakpoint--desktop--l: 1440px;
+$breakpoint--desktop--xl: 1690px;
+
+
+//=======================
+//Typography
+//=======================
+
+// ----- Font families
+$font--Abril: 'Abril Fatface', cursive;
+$font--raleway: 'Raleway', sans-serif;
+
+
+// ---------- Font sizes
+
+$title--s: 18px;
+$title--s--mobile: 16px;
+
+$title--m: 24px;
+$title--m--mobile: 18px;
+
+$title--l: 32px;
+$title--l--mobile: 24px;
+
+$label: 14px;
+
+$text--body: 18px;
+$text--body--mobile: 14px;
+
+// ---------- line height 

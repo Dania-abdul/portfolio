@@ -1,0 +1,27 @@
+//-----------------------
+//Header
+//-----------------------
+
+// .header__inner {
+//     .col {
+//         @media only screen and (min-width: 768px) {
+//             padding-left: 50px;
+//             padding-right: 50px;
+//         }
+//     }
+// }
+
+.row { 
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.cv-table {
+    .card {
+        margin-top: 10px;
+    }
+}
+.cv-table__content .collapse.in {
+    display: block;
+}
+

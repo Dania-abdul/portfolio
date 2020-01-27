@@ -1,0 +1,55 @@
+
+.cv-section{
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.cv-section__title {
+    @include title--m;
+    color: grey;
+}
+
+.cv-table {
+    overflow-x: auto;
+    table-layout: fixed;
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    
+    .row {
+        border-bottom: 1px solid lightgrey;
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.cv-table__date {
+    padding-left: 0;
+}
+
+.end-date {
+    font-weight: 500;
+}
+
+.tot-period {
+    padding-top: 10px;
+    @include text--s;
+}
+
+.cell--title {
+    @include title--s;
+    font-weight: 500;
+}
+
+.cell--desc {
+    padding-top: 10px;
+}
+
+.cell--link {
+    padding-top: 10px;
+    color: blue;
+    @include text--s;
+}
