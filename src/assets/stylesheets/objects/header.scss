@@ -35,8 +35,16 @@
     padding-left: 24px;
 }
 
-// .nav__link {
-// }
+.nav-list__print {
+    svg {
+        transition: all 0.2s;
+    }
+    &:hover {
+        svg {
+            fill: $color-primary;
+        }
+    }
+}
 
 // //------ lang
 button[class^="language-switch__button--"] {

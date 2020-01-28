@@ -14,9 +14,9 @@ export const Header = (language: string, update_language:(new_language:string) =
                         <button className={`language-switch__button--en${language.toLowerCase() == "en" ? "--active" : ""}`} onClick={() => update_language('en')}>EN</button>
                     </li>
                     <li className="nav-list__item">
-                        <button className="language-switch__button" onClick={() => window.print()}>
-                            <svg className="" width="20px" height="20px">
-                                <use xlinkHref="#icon--print" />
+                        <button className="nav-list__print" onClick={() => window.print()}>
+                            <svg className="icon--save" width="20px" height="20px">
+                                <use xlinkHref="#icon--save" />
                             </svg>
                         </button>
                     </li>
