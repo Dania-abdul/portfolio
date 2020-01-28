@@ -35,6 +35,8 @@
     padding-left: 24px;
 }
 
+// .nav__link {
+// }
 
 // //------ lang
 button[class^="language-switch__button--"] {
@@ -49,33 +51,33 @@ button[class^="language-switch__button--"] {
 }
 
 .language-switch__button--nl {
-    box-shadow: inset 0 0 0 #eecea3;
+    box-shadow: inset 0 0 0 $color-primary;
    
     &:hover,
     &:focus,
     &:active {
-        box-shadow: inset -10em 0 0  #e19c41;
+        box-shadow: inset -10em 0 0  $color-primary;
     }
 }
 
 .language-switch__button--nl--active {
-    background: #e19c41;
+    background: $color-primary;
     color: white;
 }
 
 
 .language-switch__button--en {
-    box-shadow: inset 0 0 0 #a6bdcf;
+    box-shadow: inset 0 0 0 #696969;
    
     &:hover,
     &:focus,
     &:active {
-        box-shadow: inset 10em 0 0 #348ccf;
+        box-shadow: inset 10em 0 0 #696969;
 
     }
 }
 
 .language-switch__button--en--active {
-    background: #348ccf;
+    background: #696969;
     color: white;
 }

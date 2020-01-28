@@ -34,20 +34,26 @@
 .about__header {
     position: absolute;
     top: 100px;
-    color: grey;
-    text-transform: uppercase;
-    @include fluid-sizing(320px, 1440px, 24px, 32px, 'font-size');
+    color: $color-white;
+    font-family: "Abril Fatface", cursive;
+    
+    span {
+        background-color: $color-primary;
+        padding: 0 16px;
+    }
+
+    @include fluid-sizing(320px, 1440px, 32px, 46px, 'font-size');
     // @include fluid-sizing( $threshold--mobile, $threshold--desktop, $title--l--mobile, $title--l );
     // line-height: calculate-relative-lineheight( $title--l, $lineheight--title-header );
 
     @media only screen and (min-width: 768px) {
-        right: 0;
+        left: 150px;
     }
     @media only screen and (min-width: 992px) {
-        right: 100px;
+        left: 309px;
     }
     @media only screen and (min-width: 1200px) {
-        right: 250px;
+        left: 470px;;
     }
 
 }
@@ -56,7 +62,7 @@
     padding-top: 50px;
     flex: 50;
     @media only screen and (min-width: 992px) {
-        padding-top: 250px;
+        padding-top: 200px;
         margin-left: 50px;
     }
 }

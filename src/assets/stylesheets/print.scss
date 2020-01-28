@@ -1,0 +1,28 @@
+@media print{
+
+    .header {
+        position: relative;
+    }
+
+    .language-switch__button {
+        display: none;
+    }
+
+    .about__header {
+        color: $color-black;
+    }
+
+    .about__img {
+        width: 300px;
+    }
+    .footer {
+        display: none;
+    }
+
+    .cv-table__content{
+        .collapse:not(.show) {
+            display: block !important;
+        }
+    }
+
+}

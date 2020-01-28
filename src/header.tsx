@@ -20,9 +20,6 @@ export const Header = (language: string, update_language:(new_language:string) =
                             </svg>
                         </button>
                     </li>
-                    <li className="nav-list__item"> 
-                        <a href="/">website</a>
-                    </li>
                 </ul>
             </div>
         </div>
