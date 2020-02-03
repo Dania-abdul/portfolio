@@ -30,8 +30,20 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                         <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image} data-lazy-type="image"/>
                     </div>
                 </div>
-                <h1 className="about__header"><span>{i18next.t("_intro")}</span></h1>
-                <p className="about__text">{i18next.t("_about")}</p>
+                <div className="about__content">
+         	    <h1 className="about__header"><span>{i18next.t("_intro")}</span></h1>   
+                    <p className="about__text styled">{i18next.t("_aboutText1")}</p>
+                    <p className="about__text styled--city">{i18next.t("_aboutText2")}</p>
+                    <p className="about__text">{i18next.t("_aboutText3")}</p>
+                    <p className="about__text ">{i18next.t("_aboutText4")}</p>
+                    <p className="about__text styled">{i18next.t("_aboutText5")}</p>
+                    <p className="about__text styled--city">{i18next.t("_aboutText6")}</p>
+                    <p className="about__text styled--city">{i18next.t("_aboutText7")}</p>
+                    <p className="about__text ">{i18next.t("_aboutText8")}</p>
+                    <p className="about__text ">{i18next.t("_aboutText9")}</p>
+                    <p className="about__text ">{i18next.t("_aboutText10")}</p>
+                    <p className="about__text ">{i18next.t("_aboutText11")}</p>
+                </div>
             </section>
             <section className="cv">
                 <div id="education" className="cv-section">

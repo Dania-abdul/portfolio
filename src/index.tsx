@@ -22,9 +22,11 @@ let resources: Resource = {
             "_aboutText8": "Starting from working as a trainee in marketing teams in e-commerce companies, I learned the basic knowledge in SEO and analytics. After my experience as SEO I started to focus my career more toward design",
             "_aboutText9": "I started with my design journey in a digital agency startup for cloud solution and progressive Web/App development, with a main focus on e-learning and leaning management systems, building variant applications for private and governmental sectors, taking a project from its early phase of intensive end-user and client research to building a full functional solution to serve the right purpose was so inspiring for me",
             "_aboutText10": " for the nature demand of working in a start-up company is being involved in variety of tasks as working on CSS and HTML which gave me the opportunity to practice it more and improve my development skills",
+            "_aboutText12": " I ",
             "_aboutText11": " when I am not working, I love to try gastronomic restaurants with my friends, taking care of my plants, embroder, and foremost lose myself in the Internet",
             "_sec-title-1": "Education",
             "_sec-title-2": "Experience ",
+            "_test" : "test test test tessss",
         }
     } as ResourceLanguage,
     "nl": {

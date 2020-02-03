@@ -1,32 +1,32 @@
 //------
-.diary-page {
+.blog-page {
     
 }
 
-.diary-page__header {
+.blog-page__header {
 }
 
-.diary-page__text {
+.blog-page__text {
     display: block;
     padding: 52px 0;
     font-size:$text--body;
     font-family: $font--raleway;
 }
 
-.diary-contnt {
+.blog-contnt {
     display: flex;
     flex-direction: row;
 
 }
  
-.diary-contnt--left {
+.blog-contnt--left {
     flex: 1 auto;
     padding-right:40px;
     max-width: calc(100% - 124px);
 
 }
 
-.diary-contnt--right { 
+.blog-contnt--right { 
 
 }
 
