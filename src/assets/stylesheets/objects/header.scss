@@ -32,16 +32,21 @@
 }
 
 .nav-list__item {
-    padding-left: 24px;
+    padding-left: 23px;
 }
 
 .nav-list__print {
-    svg {
-        transition: all 0.2s;
-    }
-    &:hover {
+    display: none;
+    .cv & {
+        display: inline-block;
+        
         svg {
-            fill: $color-primary;
+            transition: all 0.2s;
+        }
+        &:hover {
+            svg {
+                fill: $color-primary;
+            }
         }
     }
 }

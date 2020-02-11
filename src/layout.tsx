@@ -2,11 +2,12 @@ import * as React from 'react';
 import { type } from 'os';
 import i18next from 'i18next';
 import { Route, Switch } from 'react-router-dom';
-import { HomeComponent } from './home';
-import { HomeFabricComponent } from './home_fabric';
+import { CvComponent } from './cv_page';
+import { HomeBlogComponent } from './home_blog';
 import { Footer } from './footer';
 import { Header } from './header'
 import { DemoPostComponent } from './blog_posts/demo_post';
+import { HomeComponent } from './home';
 
 export type LayoutState = {
     language : string
@@ -35,11 +36,11 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
             {Header(this.state.language, this.changeLanguage)}
             <main className="content container">
                 <Switch>
-                    <Route exact path='/' render={() => <h1>Coming soon!</h1>}/> 
-                    <Route path='/cv' component={HomeComponent}/> 
+                    <Route exact path='/' component={HomeComponent}/> 
+                    <Route path='/cv' component={CvComponent}/> 
                     <Route path='/test' render={(c) => <div>Hello dania</div>}/>
-                    <Route exact path='/fabric' component={HomeFabricComponent}/>
-                    <Route path='/fabric/blogpage' component={DemoPostComponent}/>
+                    <Route exact path='/blog' component={HomeBlogComponent}/>
+                    <Route path='/blog/blogpage' component={DemoPostComponent}/>
                     <Route component={() => <h1>Not found..</h1>}/>
                 </Switch>
             </main>

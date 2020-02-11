@@ -1,34 +1,54 @@
 //------
-.blog-page {
-    
+.blog {
+    &.page-layout {
+        background: #fff;
+    }
 }
 
-.blog-page__header {
+.blog-page {
+    @media only screen and (min: 768px) {
+        margin: 0 20px;
+    }
 }
 
 .blog-page__text {
     display: block;
     padding: 52px 0;
-    font-size:$text--body;
+    font-size:$text--s;
     font-family: $font--raleway;
 }
 
 .blog-contnt {
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+    
+    @media only screen and (min-width:768px){
+        flex-direction: row;
+    }
 }
  
 .blog-contnt--left {
-    flex: 1 auto;
-    padding-right:40px;
-    max-width: calc(100% - 124px);
+
+    @media only screen and (min-width:768px){
+        flex: 1 auto;
+        padding-right:40px;
+        max-width: calc(100% - 124px);
+    }
 
 }
 
 .blog-contnt--right { 
 
+    button.ms-Button {
+        padding-left: 10px;
+    }
 }
+
+.nav__header {
+    padding-bottom: 20px;
+}
+
 
 .ms-Nav-group {
     min-width: 124px;

@@ -9,6 +9,13 @@ $color-white: #ffffff;
 $color-gray--dark: #696969;
 $color-gray--light: rgba( $color-gray--dark, 0.2 );
 
+
+//----- code ceditor 
+$code-editor-theme: (
+    editor-background: #263238,
+
+);
+
 //=======================
 //Sizes
 //=======================
@@ -40,5 +47,10 @@ $title--l--mobile: 24px;
 
 $label: 14px;
 
-$text--body: 18px;
+$text--s: 18px;
 $text--body--mobile: 14px;
+
+$text--m: 22px;
+
+$text-code: 16px;
+$text-code-lineheight: 1.6;

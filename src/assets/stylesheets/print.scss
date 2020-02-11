@@ -19,7 +19,11 @@
     .footer {
         display: none;
     }
-
+    .cv-table{
+        .row {
+            flex-direction: row;
+        }
+    } 
     .cv-table__content{
         .collapse:not(.show) {
             display: block !important;

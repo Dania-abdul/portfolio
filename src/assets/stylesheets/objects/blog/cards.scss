@@ -1,0 +1,83 @@
+
+//----- BLOG | CARDS 
+
+
+
+//--- CARDS | Pinned | Horizontal
+.blog-content__pinned {
+    min-width: 270px;
+}
+
+.pinned__list {
+    width: 100%;
+}
+
+.card-horizontal {
+    min-width: 100%;
+    flex-direction: column;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.card-horizontal__visual {
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+        width: auto;
+    }
+}
+
+.card-horizontal__image {
+    img {
+        width: 100%;
+    }
+}
+
+.card-horizontal__content {
+    margin: 12px;
+    flex: 1;
+}
+
+.card-horizontal__tools {
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+
+//--- CARDS | All | VERTICAL
+
+.cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 768px) {
+        margin: 0 -10px;
+    }
+}
+
+.card-vertical {
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: none;
+
+    @media only screen and (max-width: 768px){
+        min-width: 100%;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        width: 33.33%;
+    }
+}
+
+.card-vertical__inner {
+
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+}

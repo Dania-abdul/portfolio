@@ -40,13 +40,16 @@
 @import './objects/about.scss';
 @import './objects/footer.scss';
 
+//------ OBJECTS | Blog
 @import'./objects/blog/modal.scss';
+@import'./objects/blog/cards.scss';
 
 // ==========================================================================
 // PAGES
 // ==========================================================================
 @import './pages/cv.scss';
 @import './pages/blog.scss';
+@import './pages/homepage.scss';
 
 
 // ==========================================================================

@@ -25,14 +25,27 @@
     border-spacing: 0;
     
     .row {
+        display: flex;
+        flex-direction: column;
         border-bottom: 1px solid $color-gray--light;
         margin-top: 24px;
         padding-bottom: 24px;
+        
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+        }
     }
+
 }
 
 .cv-table__date {
     padding-left: 0;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.cv-table__content {
+    max-width: 100%;
 }
 
 .end-date {
