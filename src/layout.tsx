@@ -6,7 +6,7 @@ import { CvComponent } from './cv_page';
 import { HomeBlogComponent } from './home_blog';
 import { Footer } from './footer';
 import { Header } from './header'
-import { DemoPostComponent } from './blog_posts/demo_post';
+import { post1Component } from './blog_posts/post_1';
 import { HomeComponent } from './home';
 
 export type LayoutState = {
@@ -40,7 +40,7 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
                     <Route path='/cv' component={CvComponent}/> 
                     <Route path='/test' render={(c) => <div>Hello dania</div>}/>
                     <Route exact path='/blog' component={HomeBlogComponent}/>
-                    <Route path='/blog/blogpage' component={DemoPostComponent}/>
+                    <Route path='/blog/blog_post_1' component={post1Component}/>
                     <Route component={() => <h1>Not found..</h1>}/>
                 </Switch>
             </main>

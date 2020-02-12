@@ -24,7 +24,7 @@ initializeIcons();
 
 
 const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/fabric" } },
+  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/blog" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
@@ -45,13 +45,13 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 }
 
 
-export class DemoPostComponent extends React.Component <DemoPostProps, DemoPostState> {
+export class post1Component extends React.Component <DemoPostProps, DemoPostState> {
   constructor(props : DemoPostProps) {
       super(props);
-      this.state = { overlay : "main_page" }
+      this.state = { overlay : "blog_home" } 
   }
 
-  blog_page = () => {
+  blog_post_1 = () => {
     return (
       <div>
         <div>
@@ -60,14 +60,15 @@ export class DemoPostComponent extends React.Component <DemoPostProps, DemoPostS
           <Breadcrumb
             items={itemsWithHeading}
             maxDisplayedItems={3}
-            ariaLabel="With custom rendered divider and overflow icon"
+            ariaLabel="bread crumb links "
             dividerAs={_getCustomDivider}
             overflowAriaLabel="More links"
           />
         </div>
+        <h3>hi hi hi hi</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt. Etiam eu sem turpis. Fusce tempor sagittis nunc, ut interdum ipsum vestibulum non. Proin dolor elit, aliquam eget tincidunt non, vestibulum ut turpis. In hac habitasse platea dictumst. In a odio eget enim porttitor maximus. Aliquam nulla nibh, ullamcorper aliquam placerat eu, viverra et dui. Phasellus ex lectus, maximus in mollis ac, luctus vel eros. Vivamus ultrices, turpis sed malesuada gravida, eros ipsum venenatis elit, et volutpat eros dui et ante. Quisque ultricies mi nec leo ultricies mollis. Vivamus egestas volutpat lacinia. Quisque pharetra eleifend efficitur</p>
         <div>
-          <button onClick={() => this.setState({...this.state, overlay : "main_page"})}>Back to main</button>
+          <button onClick={() => this.setState({...this.state, overlay : "blog_home"})}>Back to main</button>
         </div>
       </div>
     )
@@ -75,8 +76,8 @@ export class DemoPostComponent extends React.Component <DemoPostProps, DemoPostS
 
     render(){
         return <>
-            <div className="blog-page">
-                 { this.blog_page() }
+            <div className="blog-post">
+                 { this.blog_post_1() }
             </div>
         </>
     }

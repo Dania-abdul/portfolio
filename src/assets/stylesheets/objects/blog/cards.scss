@@ -2,10 +2,20 @@
 //----- BLOG | CARDS 
 
 
+.card__tools {
+    justify-content: space-between;
+    border: none;
+    margin: 12px;
+}
+
+.icon--more {
+    margin: 0;
+}
 
 //--- CARDS | Pinned | Horizontal
 .blog-content__pinned {
     min-width: 270px;
+    box-shadow: none;
 }
 
 .pinned__list {
@@ -13,8 +23,13 @@
 }
 
 .card-horizontal {
+    margin-bottom: 20px;
+}
+
+.card-horizontal__inner {
     min-width: 100%;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
     @media only screen and (min-width: 768px) {
         flex-direction: row;
     }
@@ -41,7 +56,6 @@
 .card-horizontal__tools {
     display: flex;
     flex-direction: row;
-
     @media only screen and (min-width: 768px) {
         flex-direction: column;
     }
@@ -66,7 +80,7 @@
     @media only screen and (max-width: 768px){
         min-width: 100%;
     }
-    
+
     @media only screen and (min-width: 768px) {
         width: 50%;
         padding: 0 10px;
@@ -78,6 +92,9 @@
 }
 
 .card-vertical__inner {
-
     box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+}
+
+.card-vertical__contant {
+    margin: 12px;
 }

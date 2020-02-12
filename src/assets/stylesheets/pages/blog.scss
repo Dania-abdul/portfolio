@@ -5,20 +5,16 @@
     }
 }
 
-.blog-page {
-    @media only screen and (min: 768px) {
-        margin: 0 20px;
-    }
-}
 
-.blog-page__text {
+
+.blog-home__text {
     display: block;
     padding: 52px 0;
     font-size:$text--s;
     font-family: $font--raleway;
 }
 
-.blog-contnt {
+.blog-home__content {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 40px;
