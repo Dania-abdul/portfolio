@@ -31,25 +31,25 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     </div>
                 </div> */}
                 <div className="about__content">
-         	    <h1 className="about__header"><span>{i18next.t("_intro")}</span></h1>   
-                    <p className="about__text styled">{i18next.t("_aboutText1")}</p>
-                    <p className="about__text styled--city">{i18next.t("_aboutText2")}</p>
-                    <p className="about__text">{i18next.t("_aboutText3")}</p>
-                    <p className="about__text ">{i18next.t("_aboutText4")}</p>
-                    <p className="about__text styled">{i18next.t("_aboutText5")}</p>
-                    <p className="about__text styled--city">{i18next.t("_aboutText6")}</p>
-                    <p className="about__text styled--city">{i18next.t("_aboutText7")}</p>
-                    <p className="about__text ">{i18next.t("_aboutText8")}</p>
-                    <p className="about__text ">{i18next.t("_aboutText9")}</p>
-                    <p className="about__text ">{i18next.t("_aboutText10")}</p>
-                    <p className="about__text ">{i18next.t("_aboutText11")}</p>
-                    <p className="about__text styled--bold">{i18next.t("_aboutText12")}</p>
+         	    <h1 className="about__header"><span>{i18next.t("_cvTitle")}</span></h1>   
+                    <p className="about__text styled">{i18next.t("_cvAboutText1")}</p>
+                    <p className="about__text styled--city">{i18next.t("_cvAboutText2")}</p>
+                    <p className="about__text">{i18next.t("_cvAboutText3")}</p>
+                    <p className="about__text ">{i18next.t("_cvAboutText4")}</p>
+                    <p className="about__text styled">{i18next.t("_cvAboutText5")}</p>
+                    <p className="about__text styled--city">{i18next.t("_cvAboutText6")}</p>
+                    <p className="about__text styled--city">{i18next.t("_cvAboutText7")}</p>
+                    <p className="about__text ">{i18next.t("_cvAboutText8")}</p>
+                    <p className="about__text ">{i18next.t("_cvAboutText9")}</p>
+                    <p className="about__text ">{i18next.t("_cvAboutText10")}</p>
+                    <p className="about__text ">{i18next.t("_cvAboutText11")}</p>
+                    <p className="about__text styled--bold">{i18next.t("_cvAboutText12")}</p>
 
                 </div>
             </section>
             <section className="cv">
                 <div id="education" className="cv-section">
-                    <h3 className="cv-section__title">{i18next.t("_sec-title-1")}</h3>    
+                    <h3 className="cv-section__title">{i18next.t("_cvSecTitle-1")}</h3>    
                     <div className="cv-section__inner">
                         <table className="cv-table" role="table" aria-label="CV Elements">
                             <tbody>
@@ -68,7 +68,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     </div>
                 </div>
                 <div id="education" className="cv-section">
-                    <h3 className="cv-section__title">{i18next.t("_sec-title-2")}</h3>    
+                    <h3 className="cv-section__title">{i18next.t("_cvSecTitle-2")}</h3>    
                     <div className="cv-sectiom__item">
                         <table className="cv-table">
                             <tbody>
@@ -114,7 +114,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                                     <li> Illustrating design ideas using storyboards, process ﬂows and sitemaps.</li> 
                                                     <li> Designing graphic user interface elements, like menus, tabs and widgets. </li>
                                                     <li> Identify and troubleshoot UX problems. </li> 
-                                                    <li> Conduct layout adjustments based on user feedbac.</li>
+                                                    <li> Conduct layout adjustments based on user feedback.</li>
                                                     <li> Communicate with clients to understand their business goals and objectives.</li>
                                                 </ul>
                                             </div>

@@ -9,6 +9,10 @@ import { Separator } from 'office-ui-fabric-react/lib/Separator';
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
+import Image1 from '../assets/images/img-1.png';
+import Image2 from '../assets/images/img-2.jpg';
+
+
 
 
 
@@ -53,8 +57,8 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
 
   blog_post_1 = () => {
     return (
-      <div>
-        <div>
+      <div className="blog-post__inner">
+        <div className="blog-post__breadcrumb">
           {/* <a href="/fabric">/Home</a>
            */}
           <Breadcrumb
@@ -65,10 +69,34 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
             overflowAriaLabel="More links"
           />
         </div>
-        <h3>hi hi hi hi</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt. Etiam eu sem turpis. Fusce tempor sagittis nunc, ut interdum ipsum vestibulum non. Proin dolor elit, aliquam eget tincidunt non, vestibulum ut turpis. In hac habitasse platea dictumst. In a odio eget enim porttitor maximus. Aliquam nulla nibh, ullamcorper aliquam placerat eu, viverra et dui. Phasellus ex lectus, maximus in mollis ac, luctus vel eros. Vivamus ultrices, turpis sed malesuada gravida, eros ipsum venenatis elit, et volutpat eros dui et ante. Quisque ultricies mi nec leo ultricies mollis. Vivamus egestas volutpat lacinia. Quisque pharetra eleifend efficitur</p>
-        <div>
-          <button onClick={() => this.setState({...this.state, overlay : "blog_home"})}>Back to main</button>
+        <div className="post">
+          <div className="post__content">
+            <div className="post-block block-1">
+              <div className="block-1__inner">
+                <div className="block__content block-1__content">
+                  <h2 className="block__title block-1__title">Hello World</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt. </p>
+                  <h3>Lorem ipsum dolor</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt.</p>
+                </div>
+                <div className="block-1__visual">
+                  <img className="block-1__img" src={Image1} alt=""/>
+                </div>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt. </p>
+            <div className="post__block-2">
+              <div className="block-2__inner">
+                  <div className="block-2__visual">
+                    <img src={Image2} alt="" className="block-2__img"/>
+                  </div>
+                  <div className="block-2__content">
+                    <p>lorem ipsum</p>
+
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

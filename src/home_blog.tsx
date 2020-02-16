@@ -150,7 +150,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
             </p>
           </div>
           <div className="modal__footer">
-            <DefaultButton className="modal__btn-more" text="Standard" onClick={() => window.location.href='/blog/blog_post_1'} allowDisabledFocus  />
+            <DefaultButton className="modal__btn-more" text="Read more" onClick={() => window.location.href='/blog/blog_post_1'} allowDisabledFocus  />
           </div> 
         </Modal>
     )

@@ -67,9 +67,8 @@
 
 .about__content {
     flex: 50;
-    padding-top: 50px;
+    padding-top: 10%;
     @media only screen and (min-width: 992px) {
-        padding-top: 200px;
         margin-left: 50px;
     }
 }
