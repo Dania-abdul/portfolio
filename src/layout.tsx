@@ -35,14 +35,15 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
         return <div className={`page-layout ${this.getPathToPage()}`} id="__layout">
             {Header(this.state.language, this.changeLanguage)}
             <main className="content container">
-                <Switch>
-                    <Route exact path='/' component={HomeComponent}/> 
-                    <Route path='/cv' component={CvComponent}/> 
-                    <Route path='/test' render={(c) => <div>Hello dania</div>}/>
-                    <Route exact path='/blog' component={HomeBlogComponent}/>
-                    <Route path='/blog/blog_post_1' component={post1Component}/>
-                    <Route component={() => <h1>Not found..</h1>}/>
-                </Switch>
+                <HashRouter basename='/'>
+                    <Switch>
+                        <Route exact path='/' component={HomeComponent}/> 
+                        <Route path='/cv' component={CvComponent}/> 
+                        <Route exact path='/blog' component={HomeBlogComponent}/>
+                        <Route path='/blog/blog_post_1' component={post1Component}/>
+                        <Route component={() => <h1>Not found..</h1>}/>
+                    </Switch>
+                </HashRouter>
             </main>
             {Footer()}
         </div>

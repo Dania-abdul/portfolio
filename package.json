@@ -1,6 +1,6 @@
 {
   "homepage": "http://dania-abdul.github.io/portfolio",
-  "name": "my-resume",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
