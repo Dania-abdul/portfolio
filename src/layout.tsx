@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { type } from 'os';
 import i18next from 'i18next';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import { CvComponent } from './cv_page';
 import { HomeBlogComponent } from './home_blog';
 import { Footer } from './footer';
