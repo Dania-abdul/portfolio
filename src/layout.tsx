@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { type } from 'os';
 import i18next from 'i18next';
-import { Route, Switch, HashRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { CvComponent } from './cv_page';
 import { HomeBlogComponent } from './home_blog';
 import { Footer } from './footer';
@@ -35,15 +35,13 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
         return <div className={`page-layout ${this.getPathToPage()}`} id="__layout">
             {Header(this.state.language, this.changeLanguage)}
             <main className="content container">
-                <HashRouter basename='/'>
-                    <Switch>
-                        <Route exact path='/' component={HomeComponent}/> 
-                        <Route path='/cv' component={CvComponent}/> 
-                        <Route exact path='/blog' component={HomeBlogComponent}/>
-                        <Route path='/blog/blog_post_1' component={post1Component}/>
-                        <Route component={() => <h1>Not found..</h1>}/>
-                    </Switch>
-                </HashRouter>
+                <Switch>
+                    <Route exact path='/' component={HomeComponent}/> 
+                    <Route path='/cv' component={CvComponent}/> 
+                    <Route exact path='/blog' component={HomeBlogComponent}/>
+                    <Route path='/blog/blog_post_1' component={post1Component}/>
+                    <Route component={() => <h1>Not found.</h1>}/>
+                </Switch>
             </main>
             {Footer()}
         </div>

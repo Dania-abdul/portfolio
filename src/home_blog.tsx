@@ -110,13 +110,13 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
           { category : "category", post_title : "post-title-1", 
             is_pinned : true, modal:"post_modal_1",
             post_description: "post_description_1",
-            url : "/cv",
+            url : "./blog/blog_post_1",
             image_url : Image1
           },
           { category : "contoso", post_title : "post-title-2", 
             is_pinned : true, modal:"post_modal_2",
             post_description: "post_description_2",
-            url : "/" ,
+            url : "./" ,
             image_url : Image2
           },
         ]
@@ -204,7 +204,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                         return <div className="blog-card card-horizontal">
                           <Card aria-label="Clickable horizontal card with image " horizontal 
                             className="card-horizontal__inner"
-                            onClick={() =>  console.log('card-clicked', this) } 
+                            onClick={() => window.location.href=c.url}
                             tokens={cardTokens}
                             style={{width:"100%"}}>
                             <Card.Item fill className="card-horizontal__visual">
@@ -217,7 +217,10 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                             </Card.Section>
                             <Card.Section className="card-horizontal__tools card__tools" styles={horizontalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                               <Icon className="tools__icon icon--view" iconName="RedEye"
-                                  onClick={() =>  console.log('eye-clicked', this) }
+                                  onClick={e => {
+                                    this.setState({...this.state, overlay:{kind:"show_modal_blog_home", selected_card:c}})
+                                    e.stopPropagation()
+                                  }}
                                 styles={iconStyles} />
                               <Icon className="tools__icon icon--more"  iconName="MoreVertical" styles={iconStyles} />
                             </Card.Section>
@@ -237,7 +240,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                     .filter(c => this.state.selected_category == "" ? true : this.state.selected_category == c.category)
                     .map(c => {
                       return <Card aria-label="Clickable vertical card with image " 
-                      onClick={() => window.location.href='/blog/blog_post_1'}
+                      onClick={() => window.location.href=c.url}
                       tokens={cardTokens} 
                       className="blog-card card-vertical"> 
                       <div className="card-vertical__inner">
@@ -248,7 +251,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                           <Text variant="small" styles={labelTextStyles}>
                             {c.category}
                           </Text>
-                          <Text styles={descriptionTextStyles}>{c.post_title}</Text>
+                          <Text styles={descriptionTextStyles}>{i18next.t(c.post_title)}</Text>
                           <Text variant="small" styles={helpfulTextStyles}>
                             {i18next.t(c.post_description)}
                           </Text>

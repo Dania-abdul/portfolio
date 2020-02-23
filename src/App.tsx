@@ -13,7 +13,7 @@ const App: React.FC = () => {
   
   return (
     <AppContainer>
-        <Router>          
+        <Router basename={process.env.PUBLIC_URL}>          
           <LayoutComponent/>
         </Router>
     </AppContainer>

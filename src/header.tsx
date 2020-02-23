@@ -5,7 +5,7 @@ export const Header = (language: string, update_language:(new_language:string) =
     <div className="header">
         <div className="header__inner row">
             <div className="col">
-                <a href="/" className="header__name header__link" >Dania Abdul.</a>
+                <a href="./" className="header__name header__link" >Dania Abdul.</a>
             </div>
             <div className="col">
                 <ul className="header__nav-list nav">
