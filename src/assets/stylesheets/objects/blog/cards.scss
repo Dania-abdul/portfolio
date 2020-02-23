@@ -125,4 +125,7 @@
 
 .card-vertical__contant {
     margin: 12px;
+     > :not(:first-child) {
+        margin-top: 12px;
+    }
 }

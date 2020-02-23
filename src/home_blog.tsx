@@ -247,7 +247,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                         <Card.Item fill className="card-vertical__visual">
                           <Image className="card-vertical__image" src={c.image_url} width="100%" alt="Placeholder image." />
                         </Card.Item>
-                        <Card.Section className="card-vertical__contant css-73">
+                        <Card.Section className="card-vertical__contant ">
                           <Text variant="small" styles={labelTextStyles}>
                             {c.category}
                           </Text>
