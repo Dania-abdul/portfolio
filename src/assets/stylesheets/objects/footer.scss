@@ -18,6 +18,7 @@
 .footer__list {
     max-width: 500px;
     display: flex;
+    flex-wrap: wrap;
     
     li:hover ~ li p {
         animation: wave-animation 0.3s infinite;

@@ -12,6 +12,14 @@
     margin: 0;
 }
 
+.icon--view {
+    transition: all 0.3s;
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+}
+
 //--- CARDS | Pinned | Horizontal
 .blog-content__pinned {
     min-width: 270px;
@@ -33,6 +41,11 @@
     @media only screen and (min-width: 768px) {
         flex-direction: row;
     }
+    
+    &:hover,
+    &:focus {
+        box-shadow: rgba(255, 127, 80, 0.13) 0px 3.2px 7.2px 0px, rgba(255, 127, 80, 0.11) 0px 0.6px 1.8px 0px;
+    }
 }
 
 .card-horizontal__visual {
@@ -43,8 +56,13 @@
 }
 
 .card-horizontal__image {
+    
     img {
         width: 100%;
+        height: auto;
+        @media only screen and (min-width: 768px) {
+            width: 180px;
+        }
     }
 }
 
@@ -77,6 +95,11 @@
     width: 100%;
     box-shadow: none;
 
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+
     @media only screen and (max-width: 768px){
         min-width: 100%;
     }
@@ -93,6 +116,11 @@
 
 .card-vertical__inner {
     box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+    transition: box-shadow 0.5s ease 0s;
+    &:hover,
+    &:focus {
+        box-shadow: rgba(255, 127, 80, 0.13) 0px 3.2px 7.2px 0px, rgba(255, 127, 80, 0.11) 0px 0.6px 1.8px 0px;
+    }
 }
 
 .card-vertical__contant {

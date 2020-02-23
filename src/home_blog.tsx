@@ -9,17 +9,23 @@ import { Separator } from 'office-ui-fabric-react/lib/Separator';
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
-import {List} from "immutable"
+import {List} from "immutable";
+import Image1 from './assets/images/img-1.png';
+import Image2 from './assets/images/img-2.jpg';
 
-type Data = {
+type cardData = {
   category : string
-  blog_title : string
+  post_title : string
   is_pinned : boolean
+  modal : string
+  post_description : string
+  url : string
+  image_url : string
 }
 
 export type HomeBlogState = {
-  overlay : "show_modal_blog_home" | "blog_home",
-  data : Data[],
+  overlay : {kind:"show_modal_blog_home", selected_card:cardData} | {kind:"blog_home"},
+  data : cardData[],
   selected_category : string
 }
 
@@ -94,20 +100,31 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 
 export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogState> {
+
   constructor(props : HomeBlogProps) {
       super(props);
       this.state = { 
-        overlay: 'blog_home',  
+        overlay: {kind:'blog_home'},  
         selected_category : "",
         data : [
-          { category : "Test", blog_title : "My first blog post", is_pinned : true },
-          { category : "contoso", blog_title : "some title 2", is_pinned : false },
+          { category : "category", post_title : "post-title-1", 
+            is_pinned : true, modal:"post_modal_1",
+            post_description: "post_description_1",
+            url : "/cv",
+            image_url : Image1
+          },
+          { category : "contoso", post_title : "post-title-2", 
+            is_pinned : true, modal:"post_modal_2",
+            post_description: "post_description_2",
+            url : "/" ,
+            image_url : Image2
+          },
         ]
       }
   }
 
   
-  blog_home_modal = () => {
+  blog_home_modal = (selected_card:cardData) => {
     const theme = getTheme();
     const iconButtonStyles = mergeStyleSets({
       root: {
@@ -127,30 +144,40 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
           subtitleAriaId={"Some subtitle (use i18 for multilangauge)"}
           isOpen={true}
           isBlocking={false}
-          onDismiss={() => {this.setState({...this.state, overlay : "blog_home"})}}
+          onDismiss={() => {this.setState({...this.state, overlay : {kind:"blog_home"}})}}
           containerClassName={"container modal__container"}>
           <div className={"modal__header"}>
-            <h4 className="modal__title">Lorem Ipsum</h4>
+            <h4 className="modal__title ">{i18next.t(selected_card.post_title)}</h4>
             <IconButton
               styles={iconButtonStyles}
               iconProps={{ iconName: 'Cancel' }}
               ariaLabel="Close popup modal"
-              onClick={() => {this.setState({...this.state, overlay : "blog_home"})}}
+              onClick={() => {this.setState({...this.state, overlay : {kind:"blog_home"}})}}
             />
           </div>
           <div className={"modal__content"}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in
-              leo. Maecenas vulputate congue sapien eu tincidunt. Etiam eu sem turpis. Fusce tempor sagittis nunc, ut interdum ipsum
-              vestibulum non. Proin dolor elit, aliquam eget tincidunt non, vestibulum ut turpis. In hac habitasse platea dictumst. In a
-              odio eget enim porttitor maximus. Aliquam nulla nibh, ullamcorper aliquam placerat eu, viverra et dui. Phasellus ex lectus,
-              maximus in mollis ac, luctus vel eros. Vivamus ultrices, turpis sed malesuada gravida, eros ipsum venenatis elit, et volutpat
-              eros dui et ante. Quisque ultricies mi nec leo ultricies mollis. Vivamus egestas volutpat lacinia. Quisque pharetra eleifend
-              efficitur.{' '}
-            </p>
+            <div className="post-header">
+              <div className="post-header__content">
+                <div className="post-header__top">
+                  <div className="post-header__label post-text--s"><span className="post-label">label</span></div>
+                  <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
+                </div>
+                <div className="post-header__title">
+                  <h1 className="post-title--l">{i18next.t(selected_card.post_title)}</h1>
+                </div>
+                <div className="post-header__text">
+                  <p className="post-text--m">
+                    {i18next.t(selected_card.modal)}
+                  </p>
+                </div>
+              </div>
+              <div className="post-header__visual">
+                <img src={selected_card.image_url} alt="" className="post-header__img"/>
+              </div>
+            </div>
           </div>
           <div className="modal__footer">
-            <DefaultButton className="modal__btn-more" text="Read more" onClick={() => window.location.href='/blog/blog_post_1'} allowDisabledFocus  />
+            <DefaultButton className="modal__btn-more" text="Read more" onClick={() => window.location.href=selected_card.url} allowDisabledFocus  />
           </div> 
         </Modal>
     )
@@ -159,13 +186,13 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
 		return (
 			<div > 
         <Stack horizontal>
-          <Text className="blog-home__text" > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam</Text>   
+          <Text className="blog-home__text" >{i18next.t("_blog-home__text")}</Text>   
         </Stack>
 
         <div className="blog-home__content">
           <div className="blog-contnt--left">
             <Stack  gap={20}>
-              {this.state.overlay == "show_modal_blog_home" ? this.blog_home_modal() : null}
+              {this.state.overlay.kind == "show_modal_blog_home" ? this.blog_home_modal(this.state.overlay.selected_card) : null}
               <Separator alignContent="start">Pinned</Separator>
               <Card horizontal className="blog-content__pinned">
                 <Stack.Item className="pinned__list">
@@ -177,23 +204,20 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                         return <div className="blog-card card-horizontal">
                           <Card aria-label="Clickable horizontal card with image " horizontal 
                             className="card-horizontal__inner"
-                            onClick={() => window.location.href='/blog/blog_post_1'} 
+                            onClick={() =>  console.log('card-clicked', this) } 
                             tokens={cardTokens}
                             style={{width:"100%"}}>
                             <Card.Item fill className="card-horizontal__visual">
-                              <Image className="card-horizontal__image" src="https://placehold.it/180x135" alt="Placeholder image." />
+                              <Image className="card-horizontal__image" src={c.image_url} alt="Placeholder image." />
                             </Card.Item>
                             <Card.Section className="card-horizontal__content">
                               <Text variant="small" styles={labelTextStyles}> {c.category} </Text>
-                              <Text styles={descriptionTextStyles}> {c.blog_title} </Text>
-                              <Text variant="small" styles={helpfulTextStyles}> Is this recommendation helpful? hello hiii </Text>
+                              <Text styles={descriptionTextStyles}> {i18next.t(c.post_title)} </Text>
+                              <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_description)} </Text>
                             </Card.Section>
                             <Card.Section className="card-horizontal__tools card__tools" styles={horizontalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                               <Icon className="tools__icon icon--view" iconName="RedEye"
-                                  onClick={e => {
-                                    this.setState({...this.state, overlay:"show_modal_blog_home"})
-                                    e.stopPropagation()
-                                  }}
+                                  onClick={() =>  console.log('eye-clicked', this) }
                                 styles={iconStyles} />
                               <Icon className="tools__icon icon--more"  iconName="MoreVertical" styles={iconStyles} />
                             </Card.Section>
@@ -212,32 +236,35 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                     this.state.data
                     .filter(c => this.state.selected_category == "" ? true : this.state.selected_category == c.category)
                     .map(c => {
-                      return <Card aria-label="Clickable vertical card with image " tokens={cardTokens} className="blog-card card-vertical"> 
+                      return <Card aria-label="Clickable vertical card with image " 
+                      onClick={() => window.location.href='/blog/blog_post_1'}
+                      tokens={cardTokens} 
+                      className="blog-card card-vertical"> 
                       <div className="card-vertical__inner">
                         <Card.Item fill className="card-vertical__visual">
-                          <Image className="card-vertical__image" src="https://placehold.it/256x144" width="100%" alt="Placeholder image." />
+                          <Image className="card-vertical__image" src={c.image_url} width="100%" alt="Placeholder image." />
                         </Card.Item>
                         <Card.Section className="card-vertical__contant css-73">
                           <Text variant="small" styles={labelTextStyles}>
                             {c.category}
                           </Text>
-                          <Text styles={descriptionTextStyles}>{c.blog_title}</Text>
+                          <Text styles={descriptionTextStyles}>{c.post_title}</Text>
                           <Text variant="small" styles={helpfulTextStyles}>
-                          Is this recommendation helpful?
+                            {i18next.t(c.post_description)}
                           </Text>
                         </Card.Section>
                         <Card.Section className="card-vertical__tools card__tools" horizontal styles={verticalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                         <Icon className="tools__icon icon--view" iconName="RedEye"
                                   onClick={e => {
-                                    this.setState({...this.state, overlay:"show_modal_blog_home"})
+                                    this.setState({...this.state, overlay:{kind:"show_modal_blog_home", selected_card:c}})
                                     e.stopPropagation()
                                   }}
                                 styles={iconStyles} />
                           <Icon className="tools__icon icon--more" iconName="MoreVertical" styles={iconStyles} />
                         </Card.Section>
                       </div>
-                    </Card>                         
-                  
+                    </Card>
+                            
                     })
                   }
                 
@@ -273,7 +300,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
         return <>
             <div className="blog-home">
              {
-               this.state.overlay == "blog_home" || this.state.overlay == "show_modal_blog_home" ? this.blog_home()
+               this.state.overlay.kind == "blog_home" || this.state.overlay.kind == "show_modal_blog_home" ? this.blog_home()
                : null
              }
                 

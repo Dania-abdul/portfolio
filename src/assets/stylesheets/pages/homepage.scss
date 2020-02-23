@@ -2,20 +2,24 @@
 //-----------------------
 //HOME PAGE | blocks
 //-----------------------
-.sm-block {
+.home-container-m {
     max-width: 800px;
     margin: 0 auto;
+}
+
+
+//----home-text
+.home-text {
+   padding-top: 50px;
+   margin-bottom: 50px;
+   @media only screen and (min-width: 768px) {
+    padding-top: 200px;
     margin-bottom: 150px;
+   }
 }
 
 
-//----text-block
-.text-block {
-   padding-top: 200px;
-}
-
-
-.text-block__title {
+.home-text__title {
     font-size: $title--m;
     margin-bottom: 20px;
     @media only screen and (min-width: 768px) {
@@ -24,7 +28,7 @@
 
 }
 
-.text-block__text {
+.home-text__text {
     max-width: 500px;
     display: inline;
     font-size: $text--s;
@@ -35,12 +39,18 @@
 
 //----code-block
 
-.code-block {
+.code-block {    
     background: #141c20;
     font-family: 'Roboto Mono', monospace;
     font-size: $text-code;
     line-height: $text-code-lineheight;
     overflow-wrap: break-word;
+
+    margin-bottom: 50px; 
+    @media only screen and (min-width: 768px) {
+         margin-bottom: 150px;
+    }
+
     .method {
         color: #5918df;
         display: inline;
@@ -106,7 +116,7 @@
     }
 }
 
-.text-block__link {
+.home-text__link {
     margin-left: 11px;
     text-transform: uppercase;
 }

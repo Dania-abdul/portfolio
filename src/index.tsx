@@ -24,6 +24,23 @@ let resources: Resource = {
             "_cvAboutText12": " NOW--- LOOKING FOR A FULL/PART TIME AS FRONTEND DEVELOPER",
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ",
+
+            "_blog-home__text" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam",
+            
+            "_post-title-1": "post-1-title-english",
+
+            "_home-text__text":"There is a lot to be done..in the meantime you can visit my blog",
+            "_home-text__link": "Here",
+
+            "post-title-1": "1 - Some title in english",
+            "post_modal_1": "1 - Some modal text in english",
+            "post_description_1": "1 -Some post description text in english",
+
+            "post-title-2": "2 - Some title in english",
+            "post_modal_2": "2 - Some modal text in english",
+            "post_description_2": "2 - Some post description text in english"
+
+            
         }
     } as ResourceLanguage,
     "nl": {
@@ -42,7 +59,24 @@ let resources: Resource = {
             "_cvAboutText11": " Als ik niet aan het werk ben, houd ik ervan om met mijn vrienden culinair hoogstaande restaurants uit te proberen, voor mijn planten te zorgen, te borduren, maar vooral op te gaan in het internet",
             "_cvAboutText12": " NOW--- LOOKING FOR A FULL/PART TIME AS FRONTEND DEVELOPER",
             "_cvSecTitle-1": "Education",
-            "_cvSecTitle-2": "Experience "
+            "_cvSecTitle-2": "Experience ", 
+
+            "_blog-home__text" :"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam",
+
+            "_post-title-1": "post-1-title-dutch",
+
+            "_home-text__text":"Er is veel te doen..bezoek ondertussen mijn blog",
+            "_home-text__link": "Hier",
+
+            
+            "post-title-1": "1 - Some title in dutch",
+            "post_modal_1": "1 - Some modal text in dutch",
+            "post_description_1": "1 -Some post description text in dutch",
+
+            "post-title-2": "2 - Some title in dutch",
+            "post_modal_2": "2 - Some modal text in dutch",
+            "post_description_2": "2 - Some post description text in dutch"
+
         }
     }
 }

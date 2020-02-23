@@ -25,20 +25,20 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
         return <>
                 <div className="home-page">
                     <div className="home-page__inner">
-                        <div className="text-block sm-block">
-                            <div className="text-block__inner row container-fluid">
+                        <div className="home-text home-container-m">
+                            <div className="home-text__inner row container-fluid">
                                 <div className="col-md-4">
-                                    <h3 className="text-block__title"> Coming Soon</h3>
+                                    <h3 className="home-text__title"> Coming Soon</h3>
                                 </div>
                                 <div className="col-md-8">
-                                    <p className="text-block__text">
-                                        There is a lot to be done..in the meantime you can visit my blog 
+                                    <p className="home-text__text">
+                                        {i18next.t("_home-text__text")} 
                                     </p>
-                                    <a href="./blog" className="text-block__link">here</a>
+                                    <a href="./blog" className="home-text__link">{i18next.t("_home-text__link")}</a>
                                 </div>
                             </div>
                         </div>
-                        <div className="code-block sm-block">
+                        <div className="code-block home-container-m">
                             <div className="code-block__inner">
                                 <div className="code-line">
                                     <div className="comment">{'<About/>'}</div>

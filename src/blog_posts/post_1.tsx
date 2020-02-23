@@ -32,7 +32,7 @@ const itemsWithHeading: IBreadcrumbItem[] = [
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
-  { text: 'demo_page', key: 'demo_page', isCurrentItem: true, as: 'h4' }
+  { text: 'post-title-1', key: 'demo_page', isCurrentItem: true, as: 'h4' }
 ];
 
 
@@ -71,32 +71,83 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
         </div>
         <div className="post">
           <div className="post__content">
-            <div className="post-block block-1">
-              <div className="block-1__inner">
-                <div className="block__content block-1__content">
-                  <h2 className="block__title block-1__title">Hello World</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt. </p>
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt.</p>
-                </div>
-                <div className="block-1__visual">
-                  <img className="block-1__img" src={Image1} alt=""/>
-                </div>
-              </div>
+           <div className="post-block post-header">
+             <div className="post-header__content">
+               <div className="post-header__top">
+                 <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
+                 <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
+               </div>
+               <div className="post-header__title">
+                 <h1 className="post-title--l">{i18next.t("_post-title-1")}</h1>
+               </div>
+               <div className="post-header__text">
+                 <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>
+               </div>
+             </div>
+             <div className="post-header__visual">
+               <img src={Image2} alt="" className="post-header__img"/>
+             </div>
+           </div>
+           <div className="post-containerm--m">
+             <blockquote className="post-block post-quote ">
+               <p className="post-quote__text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla, malesuada ut”</p>
+               <p className="post-quote__author post-text--s">Author Name</p>
+            </blockquote>
+           </div>
+           <div className="post-container--s">
+             <p className="post-block post-text post-text--m ">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li.Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+           </div>
+           <div className="post-container--m">
+             <h2 className="post-block post-center-title post-title--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla</h2>
+           </div>
+           <div className="post-container--s">
+             <div className="post-block post-text">
+              <h3 className="post-title--s">Ma quande</h3>
+              <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+              <h4 className="post-title--xs">Ma quande</h4>
+              <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+              
+              <ul className="post-list post-list--bullet">
+                <li className="post-list__item">Consectetuer</li>
+                <li className="post-list__item">Adipiscing elit</li>
+                <li className="post-list__item">Diam</li>
+                <li className="post-list__item">Tincidunt</li>
+              </ul>              
+              <ul className="post-list post-list--custom">
+                <li className="post-list__item">Consectetuer</li>
+                <li className="post-list__item">Adipiscing elit</li>
+                <li className="post-list__item">Diam</li>
+                <li className="post-list__item">Tincidunt</li>
+              </ul>
+             </div>
+           </div>
+           <div className="post-block post-photo-grid">
+             <div className="post-photo-grid__item post-photo-m">
+               <div className="post-photo-m__inner">
+                 <div className="photo-m__visual">
+                   <img  className="photo-m__img" src={Image2} alt=""/>
+                 </div>
+                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+             </div>
+             <div className="post-photo-grid__item post-photo-m">
+               <div className="post-photo-m__inner">
+                 <div className="photo-m__visual">
+                   <img  className="photo-m__img" src={Image2} alt=""/>
+                 </div>
+                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+             </div>
+             <div className="post-photo-grid__item post-photo-m">
+               <div className="post-photo-m__inner">
+                 <div className="photo-m__visual">
+                   <img  className="photo-m__img" src={Image2} alt=""/>
+                 </div>
+                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+             </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lorem nulla, malesuada ut sagittis sit amet, vulputate in leo. Maecenas vulputate congue sapien eu tincidunt. </p>
-            <div className="post__block-2">
-              <div className="block-2__inner">
-                  <div className="block-2__visual">
-                    <img src={Image2} alt="" className="block-2__img"/>
-                  </div>
-                  <div className="block-2__content">
-                    <p>lorem ipsum</p>
-
-                  </div>
-              </div>
-            </div>
-          </div>
+           </div>
         </div>
       </div>
     )
