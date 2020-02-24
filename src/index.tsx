@@ -46,7 +46,7 @@ let resources: Resource = {
     } as ResourceLanguage,
     "nl": {
         "translation": {
-            "_cvTitle": "a Front-end  with a taste of design",
+            "_cvTitle": "a Front-end developer with a taste of design",
             "_cvAboutText1": " Hooi... Mijn naam is Dania. Ik ben front-end-ontwikkelaar. Ik ben helemaal weg van het ontwerpen en bouwen van websites en heb kennis van verschillende technologieën. Ik woon momenteel ",
             "_cvAboutText2": " Rotterdam, Netherlands",
             "_cvAboutText3": " Ik houd ervan hippe, digitale projecten te maken in creatieve teams. Ik richt me vooral op HTML, CSS, JS en het bouwen van Progressive Web Apps.",
