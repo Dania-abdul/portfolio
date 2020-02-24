@@ -3,7 +3,7 @@
 //Header
 //-----------------------
 .header {
-    padding: 24px 0;
+    padding: 10px 0;
     max-width: 1140px;
     margin: 0 auto;
     display: block;
@@ -21,10 +21,10 @@
     &::before {
         content: "";
         display: block;
-        width: 183px;
+        width: 100%;
         background: white;
         position: absolute;
-        height: 22px;
+        height: 52px;
         top: 50%;
         transform: translateY(-50%);
         filter: grayscale(0.5);

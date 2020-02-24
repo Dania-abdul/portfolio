@@ -67,10 +67,12 @@
 
 .about__img {
     max-width: 100px;
+    height: 100px;
     object-fit: cover;
 
     @media only screen and (min-width: 480px) {
         max-width: 200px;
+        height: auto;
     }
 }
 

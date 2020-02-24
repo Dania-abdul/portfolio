@@ -39,8 +39,8 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                              <p className="about__label">29.08.1991</p>
                              <p className="about__label print--comment">online version: <a href="https://dania-abdul.github.io/portfolio/cv" className="link">https://dania-abdul.github.io/portfolio/cv</a></p>
                          </div>
-                         <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src="//via.placeholder.com/200x200" data-lazy-type="image"/>
-                         {/* <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src="//via.placeholder.com/500x600" data-lazy-type="image" data-src="//via.placeholder.com/350x150" /> */}
+                         {/* <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src="//via.placeholder.com/200x200" data-lazy-type="image"/> */}
+                         <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image1} data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
 
                      </div>
                     <p className="about__text styled">{i18next.t("_cvAboutText1")}</p>
