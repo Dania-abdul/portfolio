@@ -24,7 +24,8 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
         }
     }
     getPathToPage = () : PageName => {
-        let path = window.location.pathname.replace("/", "")
+        let tmp = window.location.pathname.split("/").filter(e => e != "")
+        let path = tmp[tmp.length - 1]
         return path
     }
     changeLanguage = (lng:string) : void => {

@@ -28,7 +28,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                         <div className="home-text home-container-m">
                             <div className="home-text__inner row container-fluid">
                                 <div className="col-md-4">
-                                    <h3 className="home-text__title"> Coming Soon</h3>
+                                    <h3 className="home-text__title"> {i18next.t("_home-text__title")}</h3>
                                 </div>
                                 <div className="col-md-8">
                                     <p className="home-text__text">

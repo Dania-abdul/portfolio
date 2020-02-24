@@ -74,7 +74,7 @@ const horizontalFooterCardSectionStyles: ICardSectionStyles = {
 const footerCardSectionTokens: ICardSectionTokens = { padding: '0px 0px 0px 12px' };
 
 const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/blog" } },
+  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/blog" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
@@ -110,13 +110,13 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
           { category : "category", post_title : "post-title-1", 
             is_pinned : true, modal:"post_modal_1",
             post_description: "post_description_1",
-            url : "./blog/blog_post_1",
+            url : "/portfolio/blog/blog_post_1",
             image_url : Image1
           },
           { category : "contoso", post_title : "post-title-2", 
             is_pinned : true, modal:"post_modal_2",
             post_description: "post_description_2",
-            url : "./" ,
+            url : "/portfolio" ,
             image_url : Image2
           },
         ]

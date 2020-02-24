@@ -14,62 +14,63 @@
     }
 }
 
-.about__visual {
-    position: relative;
-    align-self: flex-end;
-    flex: 50;
-    @media only screen and (min-width: 768px) {
-        align-self: flex-start;
-    }
+// .about__visual {
+//     position: relative;
+//     align-self: flex-end;
+//     flex: 50;
+//     @media only screen and (min-width: 768px) {
+//         align-self: flex-start;
+//     }
 
-}
+// }
 
-.about__visual--inner {
-    width: 65vw;
-    @media only screen and (min-width: 992px) {
-       width: 100%;
-    }
-}
-
-.about__header {
-    // position: absolute;
-    margin-bottom: 50px;
-    top: 10%;
-    color: $color-white;
-    font-family: "Abril Fatface", cursive;
-    
-    span {
-        background-color: $color-primary;
-        padding: 0 16px;
-    }
-
-    @include fluid-sizing(320px, 1440px, 32px,39px, 'font-size');
-    // line-height: calculate-relative-lineheight( $title--l, $lineheight--title-header );
-
-    // @media only screen and (min-width: 480px) {
-    //     top: 20%;
-    // }
-
-    // @media only screen and (min-width: 768px) {
-    //     left: 10%;
-    //     top: 25%;
-    // }
-    // @media only screen and (min-width: 992px) {
-    //     top: 10%;
-    //     left: 309px;
-    // }
-    // @media only screen and (min-width: 1200px) {
-    //     left: 470px;;
-    // }
-
-}
-
+// .about__visual--inner {
+//     @media only screen and (min-width: 992px) {
+//        width: 100%;
+//     }
+// }
 
 .about__content {
     flex: 50;
     padding-top: 10%;
     @media only screen and (min-width: 992px) {
         margin-left: 50px;
+    }
+}
+
+.about__content-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.about__content-top-inner {
+    margin: auto 0;
+    margin-right: 10px;
+
+}
+
+.about__header {
+    font-family: "Abril Fatface", cursive;
+    @include fluid-sizing(320px, 1440px, 32px,39px, 'font-size');
+    margin-bottom: 10px;
+}
+
+.about__label {
+    padding-top: 10px;
+    font-size: 14px;
+    color: $color-gray--dark;
+}
+
+.about__img {
+    max-width: 100px;
+    object-fit: cover;
+
+    @media only screen and (min-width: 480px) {
+        max-width: 200px;
     }
 }
 

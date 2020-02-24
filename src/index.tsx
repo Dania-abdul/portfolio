@@ -9,7 +9,7 @@ import i18next, { Resource, ResourceLanguage } from "i18next"
 let resources: Resource = {
     "en": {
         "translation": {
-            "_cvTitle": "a developer with a taste of design",
+            "_cvTitle": "a Front-end developer with a taste of design",
             "_cvAboutText1":" Hello... I am Dania, a front-end developer. I have a passion for designing and creating websites with a knowledge of different technologies. I am currently based in ",
             "_cvAboutText2": " Rotterdam, Netherlands",
             "_cvAboutText3": " I like to create cool digital projects with creative teams. My main focus is HTML, CSS, JS, and building progressive web apps",
@@ -31,6 +31,7 @@ let resources: Resource = {
 
             "_home-text__text":"There is a lot to be done..in the meantime you can visit my blog",
             "_home-text__link": "Here",
+            "_home-text__title": "Coming Soon",
 
             "post-title-1": "1 - Some title in english",
             "post_modal_1": "1 - Some modal text in english",
@@ -45,7 +46,7 @@ let resources: Resource = {
     } as ResourceLanguage,
     "nl": {
         "translation": {
-            "_cvTitle": "a developer with a taste of design",
+            "_cvTitle": "a Front-end  with a taste of design",
             "_cvAboutText1": " Hooi... Mijn naam is Dania. Ik ben front-end-ontwikkelaar. Ik ben helemaal weg van het ontwerpen en bouwen van websites en heb kennis van verschillende technologieën. Ik woon momenteel ",
             "_cvAboutText2": " Rotterdam, Netherlands",
             "_cvAboutText3": " Ik houd ervan hippe, digitale projecten te maken in creatieve teams. Ik richt me vooral op HTML, CSS, JS en het bouwen van Progressive Web Apps.",
@@ -67,7 +68,7 @@ let resources: Resource = {
 
             "_home-text__text":"Er is veel te doen..bezoek ondertussen mijn blog",
             "_home-text__link": "Hier",
-
+            "_home-text__title": "komt binnenkort",
             
             "post-title-1": "1 - Some title in dutch",
             "post_modal_1": "1 - Some modal text in dutch",

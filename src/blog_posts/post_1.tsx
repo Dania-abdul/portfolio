@@ -28,7 +28,7 @@ initializeIcons();
 
 
 const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/blog" } },
+  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/blog" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.

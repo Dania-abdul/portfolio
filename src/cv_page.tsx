@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { type } from 'os';
 import i18next from 'i18next';
-import Image from './assets/images/myPhoto_1.jpg'
+import Image from './assets/images/myPhoto_1.jpg';
+import Image1 from './assets/images/photo-bw.png';
 
 export type CvState = {
     counter : number
@@ -27,11 +28,18 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                 {/* <div className="about__visual">
                     <div className="about__visual--inner">
                         <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src="//via.placeholder.com/500x600" data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
-                        <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image} data-lazy-type="image"/>
+                        <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image1} data-lazy-type="image"/>
                     </div>
                 </div> */}
                 <div className="about__content">
-         	    <h1 className="about__header"><span>{i18next.t("_cvTitle")}</span></h1>   
+         	        <div className="about__content-top">
+                         <div className="about__content-top-inner">
+                             <h1 className="about__header">{i18next.t("_cvTitle")}</h1> 
+                             <p className="about__label">’s-Gravenland, North Holland Province, Netherlands </p> 
+                            <p className="about__label">29.08.1991</p>
+                         </div>
+                         <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image1} data-lazy-type="image"/>
+                     </div>
                     <p className="about__text styled">{i18next.t("_cvAboutText1")}</p>
                     <p className="about__text styled--city">{i18next.t("_cvAboutText2")}</p>
                     <p className="about__text">{i18next.t("_cvAboutText3")}</p>
