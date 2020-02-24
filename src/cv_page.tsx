@@ -93,7 +93,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <div className="collapse multi-collapse" id="jobDesc">
                                             <div className="card card-body">
                                                 <p>Development of online applications, working on HTML5 and CSS.</p> 
-                                                <ul>
+                                                <ul className="post-list--custom">
                                                     <li> Developing and designing HTML/CSS from scratch. </li>  
                                                     <li> Creating projects’ styleguide. </li> 
                                                     <li> Cross-Browser Testing. </li>
@@ -117,7 +117,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc2" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse " id="jobDesc2">
                                             <div className="card card-body">
-                                                <ul>
+                                                <ul className="post-list--custom">
                                                     <li> Gathering and evaluating user requirements, in collaboration with product managers and developers.</li>  
                                                     <li> Illustrating design ideas using storyboards, process ﬂows and sitemaps.</li> 
                                                     <li> Designing graphic user interface elements, like menus, tabs and widgets. </li>
@@ -140,7 +140,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc3" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc3">
                                             <div className="card card-body">
-                                                <ul>
+                                                <ul className="post-list--custom">
                                                     <li> Optimizing landing pages for search engine optimization.</li>  
                                                     <li> Performing ongoing keyword research including discovery and expansion of keyword opportunities. </li> 
                                                     <li> Researching and implementing content recommendations for organic SEO success.</li>
@@ -162,7 +162,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc4" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc4">
                                             <div className="card card-body">
-                                                <ul>
+                                                <ul className="post-list--custom">
                                                     <li> Design, build and maintain social media presence, and advertising campaigns (Facebook, Twitter, instagram...etc.). </li>  
                                                     <li> Work with editorial and marketing teams to drive SEO in content creation and content programming.</li> 
                                                     <li> On-page SEO.</li>
@@ -186,7 +186,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc5" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc5">
                                             <div className="card card-body">
-                                                <ul>
+                                                <ul className="post-list--custom">
                                                     <li> Responsible for maintaining, expanding, and scaling the company website.</li>  
                                                     <li> Gather and reﬁne speciﬁcations and requirements based on technical needs. </li> 
                                                     <li> Create and maintain software documentations..  </li>
@@ -208,7 +208,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <div className="collapse multi-collapse" id="jobDesc6">
                                             <div className="card card-body">
                                                 <p>Part time student graphic designer for the Deanship of students affairs During my University time.</p> 
-                                                <ul>
+                                                <ul className="post-list--custom">
                                                     <li>Working in deferent forms of layouts as (ﬂayers, advertisements, cards, logos, charts, folding) </li>  
                                                 </ul>
                                             </div>

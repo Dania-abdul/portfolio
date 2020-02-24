@@ -3,6 +3,7 @@
 //Header
 //-----------------------
 .header {
+    padding: 24px 0;
     max-width: 1140px;
     margin: 0 auto;
     display: block;
@@ -14,8 +15,20 @@
 
 
 .header__inner {
-    padding: 24px 0;
-
+    position: relative;
+    align-items: center;
+    
+    &::before {
+        content: "";
+        display: block;
+        width: 183px;
+        background: white;
+        position: absolute;
+        height: 22px;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: grayscale(0.5);
+    }
     .col {
         @media only screen and (max-width: 768px) {
             padding-right: 0;
@@ -28,6 +41,7 @@
     font-family: $font--abril;
     text-transform: uppercase;
 }
+
 
 //-----------------------
 //Header - Nav
