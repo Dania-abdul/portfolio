@@ -49,11 +49,11 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                 </div>
                                 <div className="code-line">
                                     <div className="dots">..</div>
-                                    <div className="comment">//comment is here</div>
+                                    <div className="comment">// a  frontend developer  </div>
                                 </div>
                                 <div className="code-line">
                                     <div className="dots">..</div>
-                                    <div className="comment">//comment is here</div>
+                                    <div className="comment">// able to write great (S)CSS/HTML , and React, TypeScript.</div>
                                 </div>
                                 <div className="code-line">
                                     <div className="dots">..</div>

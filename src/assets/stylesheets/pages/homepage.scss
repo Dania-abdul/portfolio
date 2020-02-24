@@ -39,7 +39,8 @@
 
 //----code-block
 
-.code-block {    
+.code-block {  
+    @include fluid-sizing(320px, 1440px, 14px, 16px, 'font-size') ;  
     background: #141c20;
     font-family: 'Roboto Mono', monospace;
     font-size: $text-code;
