@@ -108,7 +108,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
         selected_category : "",
         data : [
           { category : "category", post_title : "post-title-1", 
-            is_pinned : true, modal:"post_modal_1",
+            is_pinned : false, modal:"post_modal_1",
             post_description: "post_description_1",
             url : "/portfolio/blog/blog_post_1",
             image_url : Image1

@@ -68,7 +68,7 @@ let resources: Resource = {
 
             "_home-text__text":"Er is veel te doen..bezoek ondertussen mijn blog",
             "_home-text__link": "Hier",
-            "_home-text__title": "komt binnenkort",
+            "_home-text__title": "Binnenkort",
             
             "post-title-1": "1 - Some title in dutch",
             "post_modal_1": "1 - Some modal text in dutch",
