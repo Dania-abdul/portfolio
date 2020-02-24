@@ -36,7 +36,8 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                          <div className="about__content-top-inner">
                              <h1 className="about__header">{i18next.t("_cvTitle")}</h1> 
                              <p className="about__label">’s-Gravenland, North Holland Province, Netherlands </p> 
-                            <p className="about__label">29.08.1991</p>
+                             <p className="about__label">29.08.1991</p>
+                             <p className="about__label print--comment">online version: <a href="https://dania-abdul.github.io/portfolio/cv" className="link">https://dania-abdul.github.io/portfolio/cv</a></p>
                          </div>
                          <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image1} data-lazy-type="image"/>
                      </div>

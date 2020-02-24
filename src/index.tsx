@@ -21,7 +21,7 @@ let resources: Resource = {
             "_cvAboutText9": " I started with my design journey in a digital agency startup for cloud solutions and progressive Web/App development, with a main focus on e-learning and leaning management systems, building various applications for private and governmental sectors, taking a project from its early phase of intensive end-user and client research to building a full functional solution to serve the right purpose. This was so inspiring for me",
             "_cvAboutText10": " Working in a start-up company brought me a variety of tasks such as working on CSS and HTML. It gave me the opportunity to practice more and more and improve my development skills",
             "_cvAboutText11": " When I am not at work, I love to try gastronomic restaurants with my friends, taking care of my plants, embroider, and foremost lose myself in the Internet",
-            "_cvAboutText12": " NOW--- LOOKING FOR A FULL/PART TIME AS FRONTEND DEVELOPER",
+            "_cvAboutText12": " NOW--- Scaling up my technical skills (CSS, TypeScript, React), Open for a full/part time as frontend developer",
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ",
 
@@ -58,7 +58,7 @@ let resources: Resource = {
             "_cvAboutText9": "Mijn ontdekkingsreis op het gebied van ontwerpen begon in een startup die digitale diensten leverde (een digital agency) waaronder cloudoplossingen en PWA's. De meeste aandacht ging uit naar e-learning en LMS-programma's. We bouwden diverse applicaties voor zowel de private als de overheidssector. We waren betrokken bij een project vanaf de allereerste fase, met intensief onderzoek naar klant en eindgebruiker, en bouwden een volledig werkende oplossing die aan het juiste doel beantwoordde. Dat vond ik heel inspirerend",
             "_cvAboutText10": " Het werken in een startup bracht met zich mee dat ik een divers takenpakket had, waaronder werken met CSS en HTML. Het bood mij de gelegenheid om meer en meer ervaring op te doen en mijn programmeervaardigheden te verbeteren",
             "_cvAboutText11": " Als ik niet aan het werk ben, houd ik ervan om met mijn vrienden culinair hoogstaande restaurants uit te proberen, voor mijn planten te zorgen, te borduren, maar vooral op te gaan in het internet",
-            "_cvAboutText12": " NOW--- LOOKING FOR A FULL/PART TIME AS FRONTEND DEVELOPER",
+            "_cvAboutText12": " NOW--- Scaling up my technical skills (CSS, TypeScript, React), Open for a full/part time as frontend developer",
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ", 
 

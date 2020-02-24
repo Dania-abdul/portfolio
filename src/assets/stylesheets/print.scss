@@ -1,18 +1,22 @@
 @media print{
 
+    a,
+    .header__link{
+        text-decoration: none !important;
+    }
+
     .header {
         position: relative;
     }
 
-    .icon--save{
+    .icon--save,
+    .language-switch,
+    .footer{
         display: none;
     }
 
     .about__img {
         width: 300px;
-    }
-    .footer {
-        display: none;
     }
     .cv-table{
         .row {
@@ -23,6 +27,10 @@
         .collapse:not(.show) {
             display: inline !important;
         }
+    }
+
+    .print--comment {
+        display: block !important;
     }
 
 }

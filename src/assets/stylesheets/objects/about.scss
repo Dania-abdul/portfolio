@@ -101,5 +101,10 @@ p[class*="styled"] {
     }
 }
  .styled--bold {
-     font-weight: 500px;
+    text-transform: uppercase;
+     font-weight: 500;
+ }
+
+ .print--comment {
+    display: none;
  }
