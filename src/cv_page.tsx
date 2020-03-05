@@ -54,7 +54,8 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     <p className="about__text ">{i18next.t("_cvAboutText9")}</p>
                     <p className="about__text ">{i18next.t("_cvAboutText10")}</p>
                     <p className="about__text ">{i18next.t("_cvAboutText11")}</p>
-                    <p className="about__text styled--bold">{i18next.t("_cvAboutText12")}</p>
+                    <p className="about__text ">{i18next.t("_cvAboutText12")}</p>
+                    <p className="about__text styled--bold">{i18next.t("_cvAboutText13")}</p>
 
                 </div>
             </section>

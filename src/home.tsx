@@ -72,7 +72,22 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                     <div className="scope">this</div><p className="symbol">.</p><span className="prop2">email</span><span className="scope"> =</span><span className="number"> ' dbashayreh@gmail.com '</span>
                                 </div>
                                 <div className="code-line">
-                                    <p className="symbol">{'}'}</p>
+                                    <div className="dots">..</div>
+                                    <p className="symbol">{'}'}</p> 
+                                </div>
+                                <div className="code-line">
+                                     <div className="dots">..</div>
+                                     <span className="propname"> skills</span><p className="symbol">() {'{'}</p>
+                                </div>
+                                <div className="code-line">
+                                    <div className="dots">····</div>
+                                    <p className="method">return</p><p className="symbol"> [</p> <span className="string"> 'HTML5/CSS4/JS' , 'Bootstrap/Material Design' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 'Wordpress ', 'Photoshop/Illustrator', 'Sketch/Figma' , 'UX/UI', 'Email templates'</span> 
+                                    <p className="symbol"> ]</p>
+                                    
+                                </div>
+                                <div className="code-line">
+                                    <div className="dots">..</div>
+                                    <p className="symbol"> {'}'}</p>
                                 </div>
                             </div>
                         </div>

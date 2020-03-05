@@ -64,6 +64,7 @@
     .dots {
         color: #3b3553;
         display: inline;
+        vertical-align: text-top;
     }
     
     .comment {
@@ -105,7 +106,7 @@
 
     &::before {
         position: absolute;
-        left: -20px;
+        left: -30px;
         color: $color-white;
         font-size: 16px;
         top: 0;
