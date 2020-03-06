@@ -29,8 +29,17 @@
         }
     }
 
+    .about__content {
+        margin-bottom: 40px;
+    }
+
     .print--comment {
         display: block !important;
     }
 
+    .styled--city {
+        &::before {
+            display: none;
+        }
+    }
 }

@@ -20,7 +20,7 @@ let resources: Resource = {
             "_cvAboutText8": " Starting from working as a trainee in marketing teams in e-commerce companies, I learned the basic knowledge in SEO and analytics. After my experience with SEO I started to focus my career more toward design",
             "_cvAboutText9": " I started with my design journey in a digital agency startup for cloud solutions and progressive Web/App development, with a main focus on e-learning and leaning management systems. In this context I worked on various applications for private and governmental sectors, and helped transitioning projects from their early phase of intensive end-user and client research into fully-functional solutions to serve the right purpose. This was so inspiring for me",
             "_cvAboutText10": " Working in a start-up company brought me a variety of tasks such as working on CSS and HTML. It gave me the opportunity to practice more and more and improve my development skills",
-            "_cvAboutText11": "I moved to the Netherlands to start my development career in Hoppinger BV and specialize in front-end development. This gave me the opportunity to sharpen my technical skills to develop semantic well-structured components that can used by the client to build webpages. I learned to work on code quality and fast prototyping though the use of styleguides.",
+            "_cvAboutText11": "I moved to the Netherlands to start my development career in Hoppinger BV and specialize in front-end development. This gave me the opportunity to sharpen my technical skills to develop semantic well-structured components that can be used by the client to build webpages. I learned to work on code quality and fast prototyping though the use of styleguides.",
             "_cvAboutText12": " Besides work I've always been curious person, I love to travel and see the world. I find comfort in spending quality time with my friends and people in general, I enjoy taking care of my plants, embroider, and foremost lose myself in the Internet.",
             "_cvAboutText13": " NOW--- Scaling up my technical skills (CSS, TypeScript, React), Open for a full/part time as frontend developer",
             "_cvSecTitle-1": "Education",
@@ -48,7 +48,7 @@ let resources: Resource = {
     "nl": {
         "translation": {
             "_cvTitle": "a Front-end developer with a taste of design",
-            "_cvAboutText1": " Hooi... Mijn naam is Dania. Ik ben front-end-ontwikkelaar. Ik ben helemaal weg van het ontwerpen en bouwen van websites en heb kennis van verschillende technologieën. Ik woon momenteel ",
+            "_cvAboutText1": " Hooi... Mijn naam is Dania. Ik ben Frontend developer. Ik ben helemaal weg van het ontwerpen en bouwen van websites en heb kennis van verschillende technologieën. Ik woon momenteel ",
             "_cvAboutText2": " Rotterdam, Netherlands",
             "_cvAboutText3": " Ik houd ervan hippe, digitale projecten te maken in creatieve teams. Ik richt me vooral op HTML, CSS, JS en het bouwen van Progressive Web Apps.",
             "_cvAboutText4": " Voordat ik me bezighield met frond-end-ontwikkeling en nadat ik was afgestudeerd in IT-Multimedia (met BSC-bachelordiploma) werkte ik aan het verder ontwikkelen van mijn vaardigheden in diverse rollen in de webindustrie, waaronder SEO (zoekmachineoptimalisatie), marketing en design",
@@ -58,8 +58,8 @@ let resources: Resource = {
             "_cvAboutText8": "Ik begon als stagiaire in marketingteams van e-commerce-bedrijven en verkreeg daar de basiskennis voor SEO en data-analyse (analytics). Na ervaring te hebben opgedaan op het gebied van SEO, is mijn loopbaan meer richting het ontwerpen gegaan",
             "_cvAboutText9": "Mijn ontdekkingsreis op het gebied van ontwerpen begon in een startup die digitale diensten leverde (een digital agency) waaronder cloudoplossingen en PWA's. De meeste aandacht ging uit naar e-learning en LMS-programma's. We bouwden diverse applicaties voor zowel de private als de overheidssector. We waren betrokken bij een project vanaf de allereerste fase, met intensief onderzoek naar klant en eindgebruiker, en bouwden een volledig werkende oplossing die aan het juiste doel beantwoordde. Dat vond ik heel inspirerend",
             "_cvAboutText10": " Het werken in een startup bracht met zich mee dat ik een divers takenpakket had, waaronder werken met CSS en HTML. Het bood mij de gelegenheid om meer en meer ervaring op te doen en mijn programmeervaardigheden te verbeteren",
-            "_cvAboutText11": " Als ik niet aan het werk ben, houd ik ervan om met mijn vrienden culinair hoogstaande restaurants uit te proberen, voor mijn planten te zorgen, te borduren, maar vooral op te gaan in het internet",
-            "_cvAboutText12": " NOW--- Scaling up my technical skills (CSS, TypeScript, React), Open for a full/part time as frontend developer",
+            "_cvAboutText12": " Als ik niet aan het werk ben, houd ik ervan om met mijn vrienden culinair hoogstaande restaurants uit te proberen, voor mijn planten te zorgen, te borduren, maar vooral op te gaan in het internet",
+            "_cvAboutText13": " NOW--- Scaling up my technical skills (CSS, TypeScript, React), Open for a full/part time as frontend developer",
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ", 
 
