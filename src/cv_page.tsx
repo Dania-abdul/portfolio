@@ -31,7 +31,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                         <img className="about__img img-fluid" aria-label="impressive picture of me" alt="Responsive image" src={Image1} data-lazy-type="image"/>
                     </div>
                 </div> */}
-                <div className="about__content">
+                <div className="about__">
          	        <div className="about__content-top">
                          <div className="about__content-top-inner">
                              <h1 className="about__header">{i18next.t("_cvTitle")}</h1> 
@@ -96,7 +96,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc">
                                             <div className="card card-body">
-                                                <p>Development of online applications, working on HTML5 and CSS.</p> 
+                                                <p>Development of online applications, working on HTML5, CSS, JS.</p> 
                                                 <ul className="post-list--custom">
                                                     <li> Developing and designing HTML/CSS from scratch. </li>  
                                                     <li> Creating projects’ styleguide. </li> 

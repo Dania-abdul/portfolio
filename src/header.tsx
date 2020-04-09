@@ -4,7 +4,8 @@ export const Header = (language: string, update_language:(new_language:string) =
     
     <div className="header">
         <div className="header__inner row">
-            <div className="col">
+            <div className="col"> </div>
+            <div className="header__logo col">
                 <a href="/portfolio" className="header__name header__name--black header__link" >Dania Abdul.</a>
             </div>
             <div className="col">

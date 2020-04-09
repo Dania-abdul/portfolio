@@ -3,8 +3,7 @@
 //Header
 //-----------------------
 .header {
-    padding: 10px 0;
-    max-width: 1140px;
+    padding: 40px 0;
     margin: 0 auto;
     display: block;
     position: sticky;
@@ -30,6 +29,10 @@
             }
         }
     }
+}
+
+.header__logo {
+    text-align: center;
 }
 
 .header__name {

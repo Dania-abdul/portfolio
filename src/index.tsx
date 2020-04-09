@@ -31,7 +31,6 @@ let resources: Resource = {
             "_post-title-1": "post-1-title-english",
 
             "_home-text__text":"There is a lot to be done..in the meantime you can visit my blog",
-            "_home-text__link": "Here",
             "_home-text__title": "Coming Soon",
 
             "post-title-1": "1 - Some title in english",
@@ -68,7 +67,6 @@ let resources: Resource = {
             "_post-title-1": "post-1-title-dutch",
 
             "_home-text__text":"Er is veel te doen..bezoek ondertussen mijn blog",
-            "_home-text__link": "Hier",
             "_home-text__title": "Binnenkort",
             
             "post-title-1": "1 - Some title in dutch",

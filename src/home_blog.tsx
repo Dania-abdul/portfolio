@@ -108,13 +108,13 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
         selected_category : "",
         data : [
           { category : "category", post_title : "post-title-1", 
-            is_pinned : false, modal:"post_modal_1",
+            is_pinned : true, modal:"post_modal_1",
             post_description: "post_description_1",
             url : "/portfolio/blog/blog_post_1",
             image_url : Image1
           },
           { category : "contoso", post_title : "post-title-2", 
-            is_pinned : true, modal:"post_modal_2",
+            is_pinned : false, modal:"post_modal_2",
             post_description: "post_description_2",
             url : "/portfolio" ,
             image_url : Image2
@@ -159,7 +159,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
             <div className="post-header">
               <div className="post-header__content">
                 <div className="post-header__top">
-                  <div className="post-header__label post-text--s"><span className="post-label">label</span></div>
+                  <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
                   <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                 </div>
                 <div className="post-header__title">
