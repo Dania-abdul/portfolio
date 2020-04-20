@@ -1,20 +1,55 @@
 //=======================
-//Colors
+//Colors -- light mood
 //=======================
-$color-primary: #FF7F50;
 
-$color-black: #000000;
-$color-white: #ffffff;
+$color-link: orange;
 
-$color-gray--dark: #696969;
+$color-primary: darkorchid;
+$color-secondary : antiquewhite;
+
+$color-gray--dark:#696969;
 $color-gray--light: rgba( $color-gray--dark, 0.2 );
+
+//use for
+//  background-color:  var(--background-color);
+//  color:  var(--text-color);
+:root {
+    // --text-color: chartreuse;
+    // --background-color:green;
+    --text-color: black;
+    --background-color:white;
+    --link-color: coral;
+    --main-headline-color: rgb(233, 30, 99);
+    --accent-background-color: rgb(0, 188, 212);
+    --accent-color: rgb(5, 5, 5);
+  }
+
+  //////////
+  // DARK//
+  /////////
+//   :root {
+//     --text-color: white ;
+//     --background-color:black;
+//     --link-color: #00bcd4;
+//     --main-headline-color: rgb(233, 30, 99);
+//     --accent-background-color: rgb(0, 188, 212);
+//     --accent-color: rgb(5, 5, 5);
+//   }
 
 
 //----- code ceditor 
 $code-editor-theme: (
-    editor-background: #263238,
-
+    editor--background: #141c20,
+    editor--method: #6796E6,
+    editor--propname: #4EC9B0,
+    editor--dots: #3b3553, 
+    editor--comment: #78707e,
+    editor--scope: #4EC9B0,
+    editor--prop2:#9CDCFE,
+    editor--string: #CE9178,
+    editor--number:#DCDCAA
 );
+
 
 //=======================
 //Sizes

@@ -10,35 +10,29 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background: #ffffff;
+    background-color:  var(--background-color);
 }
 
 
 .header__inner {
-    position: relative;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     
-
-    .col {
-        @media only screen and (max-width: 768px) {
-            &:first-child{
-                padding-right: 0;
-            }
-            &:last-child {
-                padding-left: 0;
-            }
-        }
-    }
 }
 
 .header__logo {
     text-align: center;
 }
 
+.header__nav {
+    align-self: center;
+}
 .header__name {
+    color: var(--text-color);      
     @include fluid-sizing(320px, 1440px, 20px,24px, 'font-size') ;
     font-family: $font--abril;
     text-transform: uppercase;
+    padding-left: 23px;
 }
 
 
@@ -64,7 +58,8 @@
         }
         &:hover {
             svg {
-                fill: $color-primary;
+                fill: var(--link-color); 
+                ;
             }
         }
     }
@@ -83,34 +78,34 @@ button[class^="language-switch__button--"] {
 }
 
 .language-switch__button--nl {
-    box-shadow: inset 0 0 0 $color-primary;
+    box-shadow: inset 0 0 0 var(--link-color);
    
     &:hover,
     &:focus,
     &:active {
-        box-shadow: inset -10em 0 0  $color-primary;
+        box-shadow: inset -10em 0 0  var(--link-color);
     }
 }
 
 .language-switch__button--nl--active {
-    background: $color-primary;
+    background:  var(--link-color);
     color: white;
 }
 
 
 .language-switch__button--en {
-    box-shadow: inset 0 0 0 #696969;
+    box-shadow: inset 0 0 0 $color-gray--dark;
    
     &:hover,
     &:focus,
     &:active {
-        box-shadow: inset 10em 0 0 #696969;
+        box-shadow: inset 10em 0 0 $color-gray--dark;
 
     }
 }
 
 .language-switch__button--en--active {
-    background: #696969;
+    background: $color-gray--dark;
     color: white;
 }
 

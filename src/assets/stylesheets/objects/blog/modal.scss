@@ -12,8 +12,8 @@
 }
 
 .modal__header {
-    background: $color-black;
-    color: $color-white;
+    background-color:  var(--background-color);
+    color:  var(--text-color);
     padding:  20px;
     align-items: center;
     display: flex;
@@ -24,14 +24,14 @@
 }
 
 .ms-Button--icon{
-    color: $color-white;
+    color: $color-secondary ;
     transition: all 0.5s;
-    box-shadow: inset 0 0 0 $color-white;
+    box-shadow: inset 0 0 0 $color-secondary ;
 
     &:hover {
-        color: $color-black;
-        background: $color-white;
-        box-shadow: inset -10em 0 0  $color-white;
+        color: $color-primary;
+        background: $color-secondary ;
+        box-shadow: inset -10em 0 0  $color-secondary ;
     }
 
     &:focus {
@@ -61,13 +61,13 @@
 
 .modal__btn-more {
     border: none;
-    color: $color-black;
+    color: $color-primary;
     transition: all 0.5s;
-    box-shadow: inset 0 0 0 $color-black;
+    box-shadow: inset 0 0 0 $color-primary;
     
     &:hover {
-        color: $color-white;
-        box-shadow: inset -10em 0 0  $color-black;
+        color: $color-secondary ;
+        box-shadow: inset -10em 0 0  $color-primary;
     }
 
 }

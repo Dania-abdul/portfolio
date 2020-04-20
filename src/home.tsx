@@ -3,6 +3,8 @@ import { type } from 'os';
 import i18next from 'i18next';
 import Image1 from './assets/images/img-1.png';
 import Image2 from './assets/images/img-2.jpg';
+import Image3 from './assets/images/intro-photo.jpeg';
+
 
 export type HomeState = {
     counter : number
@@ -26,20 +28,37 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
         return <>
                 <div className="home-page">
                     <div className="home-page__inner">
-                        <div className="home-text home-container-l">
-                            <div className="home-text__inner  container-fluid">
-                                <h2 className="home-text__title">
-                                    {i18next.t("_home-text__title")} 
-                                </h2>
-                                <p className="home-text__text">
-                                    {i18next.t("_home-text__text")} 
+                    <div className="home-intro">
+                        <div className="home-intro__content">
+                            <div className="home-intro__content-inner">
+                                <p className="intro__text">
+                                    heyo <br/>
+                                    I'm a Front-end developer,
+                                    I enjoy building websites using 
+                                    different technologies
                                 </p>
+                                <p className="intro__text">
+                                    On daily bases...<br/>
+                                    I write css, care of my plants, embroider,
+                                    make good food,
+                                    and drink a lot of coffee
+                                </p>
+                                <ul className="home-intro__social">
+                                    <li><a href="https://github.com/Dania-abdul" className="intro__social">Git</a></li>
+                                    <li><a href="https://www.linkedin.com/in/dania-abdul/" className="intro__social">Ln</a></li>
+                                    <li><a href="https://www.behance.net/DaniaAb" className="intro__social">Be</a></li>
+                                </ul>
                             </div>
                         </div>
+                        <div className="home-intro__visual">
+                            <img className="" aria-label="impressive picture of me" alt="Responsive image" src={Image3} data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
+                        </div>
+
+                    </div>
                         
                         <div className="home-blog">
                             <header className="home-sec-header">
-                                <span>BLOG</span>
+                                <a href="/portfolio/blog">BLOG</a>
                             </header>
                             <div className="home-blog__inner">
                                 <div className="home-blog__post">

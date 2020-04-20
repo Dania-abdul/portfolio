@@ -2,13 +2,12 @@ import React from "react";
 
 export const Header = (language: string, update_language:(new_language:string) => void) => (
     
-    <div className="header">
-        <div className="header__inner row">
-            <div className="col"> </div>
-            <div className="header__logo col">
+    <div className="header container">
+        <div className="header__inner">
+            <div className="header__logo">
                 <a href="/portfolio" className="header__name header__name--black header__link" >Dania Abdul.</a>
             </div>
-            <div className="col">
+            <div className="header__nav">
                 <ul className="header__nav-list nav">
                     <li className="nav-list__item language-switch ">
                         <button className={`language-switch__button--nl${language.toLowerCase() == "nl" ? "--active" : ""}`} onClick={() => update_language('nl')}>NL</button><span>|</span>

@@ -16,7 +16,7 @@
     transition: all 0.3s;
     &:hover,
     &:focus {
-        color: $color-primary;
+        color:  var(--link-color);
     }
 }
 

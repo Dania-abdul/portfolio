@@ -5,7 +5,7 @@
 
 ///------------- shared
 .post {
-    color: #000000;
+    color:  var(--text-color);
 }
 
 .post-block {
@@ -24,8 +24,8 @@
 
 
 .post-label {
-    color: #ffffff;
-    background-color: $color-primary;
+    color: $color-secondary ;
+    background-color:  var(--link-color);
     padding: 4px 8px;
 }
 
@@ -89,7 +89,7 @@
             left: 0;
             top: 6px;
             border-style: solid;
-            border-color: transparent $color-primary;
+            border-color: transparent var(--link-color);
             border-width: 0.35em 0 0.35em 0.45em;
         }
     }
@@ -104,11 +104,11 @@
      }
 
     .post-link {
-        color: $color-primary;
+        color:  var(--link-color);
 
         &:hover,
         &:focus {
-            color: #000000;
+            color: $color-primary;
         }
     }
 }
@@ -174,7 +174,7 @@
     &:before {
         content: "";
         width: 200px;
-        background-color: #000000;
+        background-color: $color-primary;
         height: 1px;
         display: block;
         margin: 0 auto;
@@ -211,7 +211,7 @@
     &:before {
         content: "";
         width: 200px;
-        background-color: #000000;
+        background-color: $color-primary;
         height: 1px;
         display: block;
         margin: 0 auto;

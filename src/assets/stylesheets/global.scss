@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  color:  var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size-adjust: auto;
@@ -130,12 +131,12 @@ html {
 //-----------------------
 
 a {
-  color: $color-black;
+  color: var(--link-color); 
   display: inline-block;
-  transition: color 0.2s;
+  transition: all 0.3s;
     
   &:hover {
-    color: $color-primary;      
+    color: var(--text-color);      
     text-decoration: none;
   } 
 }
@@ -145,7 +146,7 @@ a {
 .page-layout {
   min-height: 100%;
   position: relative;
-  background: #fff;
+  background-color:  var(--background-color);
 }
 
 .content {
@@ -155,5 +156,7 @@ a {
 //-----
 
 img {
-  width: 100%;
+  display: block;
+    max-width: 100%;
+    height: auto;
 }

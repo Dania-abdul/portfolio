@@ -50,7 +50,7 @@
     &:hover {
         
       .strikethrough{
-        color: #ff6933;
+        color: var(--link-color);
     }
 
       .strikethrough:after {
