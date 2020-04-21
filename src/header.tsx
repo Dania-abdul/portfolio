@@ -1,6 +1,9 @@
 import React from "react";
 
-export const Header = (language: string, update_language:(new_language:string) => void) => (
+export const Header = (language: string, 
+                       is_dark:boolean,
+                       update_language:(new_language:string) => void,
+                       toggle_theme:() => void) => (
     
     <div className="header container">
         <div className="header__inner">
@@ -8,6 +11,12 @@ export const Header = (language: string, update_language:(new_language:string) =
                 <a href="/portfolio" className="header__name header__name--black header__link" >Dania Abdul.</a>
             </div>
             <div className="header__nav">
+                <div className="header__utilities"> 
+                    <label className="switch">
+                        <input type="checkbox" onChange={toggle_theme} defaultChecked={!is_dark}/>
+                        <span className="slider round" />
+                    </label>
+                </div>
                 <ul className="header__nav-list nav">
                     <li className="nav-list__item language-switch ">
                         <button className={`language-switch__button--nl${language.toLowerCase() == "nl" ? "--active" : ""}`} onClick={() => update_language('nl')}>NL</button><span>|</span>

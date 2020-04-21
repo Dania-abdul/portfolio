@@ -8,7 +8,7 @@
 }
 
 .footer__inner {
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--accent-color);
     padding-top: 120px;
     padding-bottom: 120px; 
 }
@@ -45,17 +45,5 @@
 
     &:not(:last-child) {
       margin-right: 30px;
-    }
-
-    &:hover {
-        
-      .strikethrough{
-        color: var(--link-color);
-    }
-
-      .strikethrough:after {
-          transform: scaleX(0);
-          transform-origin: center right;
-      }
     }
 }

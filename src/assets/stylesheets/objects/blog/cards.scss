@@ -1,6 +1,10 @@
 
 //----- BLOG | CARDS 
 
+.card-vertical__inner,
+.card-horizontal__inner  {
+    background: $color-secondary;
+}
 
 .card__tools {
     justify-content: space-between;
@@ -8,6 +12,9 @@
     margin: 12px;
 }
 
+.tools__icon {
+    color: $color-primary;
+}
 .icon--more {
     margin: 0;
 }

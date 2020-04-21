@@ -32,21 +32,17 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                         <div className="home-intro__content">
                             <div className="home-intro__content-inner">
                                 <p className="intro__text">
-                                    heyo <br/>
-                                    I'm a Front-end developer,
-                                    I enjoy building websites using 
-                                    different technologies
+                                    I'm a Front-end developer, currently based in Rotterdam, Netherlands <br/>
+                                    I'm passionate about building websites and working on different web technologies. 
                                 </p>
                                 <p className="intro__text">
-                                    On daily bases...<br/>
-                                    I write css, care of my plants, embroider,
-                                    make good food,
-                                    and drink a lot of coffee
+                                    Besides development...<br/>
+                                    I care of many plants, I read, embroider, and enjoy life
                                 </p>
-                                <ul className="home-intro__social">
-                                    <li><a href="https://github.com/Dania-abdul" className="intro__social">Git</a></li>
-                                    <li><a href="https://www.linkedin.com/in/dania-abdul/" className="intro__social">Ln</a></li>
-                                    <li><a href="https://www.behance.net/DaniaAb" className="intro__social">Be</a></li>
+                                <ul className="home-intro__list list-social">
+                                    <li><a href="https://github.com/Dania-abdul" className="list-social__item">Git</a></li>
+                                    <li><a href="https://www.linkedin.com/in/dania-abdul/" className="list-social__item">Ln</a></li>
+                                    <li><a href="https://www.behance.net/DaniaAb" className="ilist-social__item">Be</a></li>
                                 </ul>
                             </div>
                         </div>

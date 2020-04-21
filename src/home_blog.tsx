@@ -4,7 +4,7 @@ import i18next from 'i18next';
 import { IFontStyles, PrimaryButton, Stack, DefaultButton, Text, Image, ITextStyles, FontWeights, IIconStyles, Icon, Modal, IconButton, getTheme, mergeStyleSets, FontSizes} from 'office-ui-fabric-react'
 import { Card, ICardTokens, ICardSectionStyles, ICardSectionTokens } from '@uifabric/react-cards';
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
-import { Nav, INavLinkGroup, INavProps } from 'office-ui-fabric-react/lib/Nav';
+import { Nav, INavStyles, INavLinkGroup, INavProps } from 'office-ui-fabric-react/lib/Nav';
 import { Separator } from 'office-ui-fabric-react/lib/Separator';
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
@@ -70,8 +70,21 @@ const horizontalFooterCardSectionStyles: ICardSectionStyles = {
 		alignSelf: 'stretch',
 		borderTop: '1px solid #F3F2F1'
 	  }
-	};
-const footerCardSectionTokens: ICardSectionTokens = { padding: '0px 0px 0px 12px' };
+  };
+  
+  // const navStyles : INavStyles = {
+  //   root: {
+  //     color: '#000000',
+  //   }
+  // };
+  const styles = {
+    root: [
+      {
+        color: 'green',
+      }
+    ]
+  };
+  const footerCardSectionTokens: ICardSectionTokens = { padding: '0px 0px 0px 12px' };
 
 const itemsWithHeading: IBreadcrumbItem[] = [
   { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/blog" } },
@@ -125,18 +138,6 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
 
   
   blog_home_modal = (selected_card:cardData) => {
-    const theme = getTheme();
-    const iconButtonStyles = mergeStyleSets({
-      root: {
-        color: theme.palette.themeDark,
-        marginLeft: 'auto',
-        marginTop: '4px',
-        marginRight: '2px'
-      },
-      rootHovered: {
-        color: theme.palette.themeDark
-      }
-    });
     
     return (
       <Modal
@@ -149,7 +150,6 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
           <div className={"modal__header"}>
             <h4 className="modal__title ">{i18next.t(selected_card.post_title)}</h4>
             <IconButton
-              styles={iconButtonStyles}
               iconProps={{ iconName: 'Cancel' }}
               ariaLabel="Close popup modal"
               onClick={() => {this.setState({...this.state, overlay : {kind:"blog_home"}})}}
@@ -177,7 +177,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
             </div>
           </div>
           <div className="modal__footer">
-            <DefaultButton className="modal__btn-more" text="Read more" onClick={() => window.location.href=selected_card.url} allowDisabledFocus  />
+            <DefaultButton className="modal__btn" text="Read more" onClick={() => window.location.href=selected_card.url} allowDisabledFocus  />
           </div> 
         </Modal>
     )
@@ -277,15 +277,17 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
           </div>
           <div className="blog-contnt--right">
             <Nav
-              onRenderGroupHeader={_onRenderGroupHeader as any}
               ariaLabel="Nav with group headers"
+              className="nav-category"
               onLinkClick={(_,e) => {
                 this.setState({...this.state, selected_category: e == undefined || e.name == "All" ? "" : e.name})
               }}
               groups={[{
                 name: 'read about ',
+                expandAriaLabel: 'Expand Extended components section',
+                collapseAriaLabel: 'Collapse Extended components section',
                 links:
-                  [{ name: "All", url: '', key: "All", target: '_blank' }].concat(
+                  [{ name: "All", url: '', key: "All", target: '_blank',}].concat(
                   List(this.state.data).map(c => c.category).toSet().map(c => ({ name: c, url: '', key: c, target: '_blank' })).toArray())
               }
               ]}

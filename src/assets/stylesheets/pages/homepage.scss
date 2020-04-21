@@ -67,7 +67,7 @@
     }
 }
 
-.home-intro__social {
+.list-social {
     font-family: "Abril Fatface", cursive;
     font-size: 18px;
     display: flex;
@@ -179,7 +179,7 @@
 	height: 1px;
 	box-shadow: 0 1px rgba(255,255,255,0.6);
 	margin-top: -0.7em;
-	background: #000;
+	background: var(--accent-color);
 	transform-origin: center left;
 	animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
 	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);

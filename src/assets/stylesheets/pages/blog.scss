@@ -23,13 +23,26 @@
     @media only screen and (min-width:768px){
         flex: 1 auto;
         padding-right:40px;
+        margin-top: 36px;
         max-width: calc(100% - 124px);
+    }
+    .content-62 {
+        color: var(--text-color);
+        background: var(--background-color);
+    }
+    .root-61 {
+        &:before {
+            background-color: var(--accent-color);;
+        }
     }
 
 }
 
 .blog-contnt--right { 
-
+    margin-bottom: 52px;
+    @media only screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
     button.ms-Button {
         padding-left: 10px;
     }
@@ -42,4 +55,18 @@
 
 .ms-Nav-group {
     min-width: 124px;
+}
+
+.nav-category {
+    .ms-Nav-chevronButton {
+        color: var(--text-color);
+        background-color: var(--accent-color);
+    }
+    .ms-Nav-link
+     {
+        color: var(--text-color);
+    }
+    .ms-Nav-compositeLink:hover .link-110 {
+        background-color: var(--accent-color);
+    }
 }
