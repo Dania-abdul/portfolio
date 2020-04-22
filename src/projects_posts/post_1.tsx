@@ -55,7 +55,7 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
       this.state = { overlay : "projects_home" } 
   }
 
-  blog_post_1 = () => {
+  project_post_1 = () => {
     return (
       <div className="blog-post__inner">
         <div className="blog-post__breadcrumb">
@@ -156,7 +156,7 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
     render(){
         return <>
             <div className="blog-post">
-                 { this.blog_post_1() }
+                 { this.project_post_1() }
             </div>
         </>
     }

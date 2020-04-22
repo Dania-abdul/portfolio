@@ -3,10 +3,10 @@ import { type } from 'os';
 import i18next from 'i18next';
 import { Route, Switch } from 'react-router-dom';
 import { CvComponent } from './cv_page';
-import { HomeProjectsComponent } from './home_blog';
+import { HomeProjectsComponent } from './home_projects';
 import { Footer } from './footer';
 import { Header } from './header'
-import { post1Component } from './blog_posts/post_1';
+import { post1Component } from './projects_posts/post_1';
 import { HomeComponent } from './home';
 
 export type LayoutState = {
@@ -56,7 +56,7 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
                     <Route exact path='/' component={HomeComponent}/> 
                     <Route path='/cv' component={CvComponent}/> 
                     <Route exact path='/projects' component={HomeProjectsComponent}/>
-                    <Route path='/projects/blog_post_1' component={post1Component}/>
+                    <Route path='/projects/project_post_1' component={post1Component}/>
                     <Route component={() => <h1>Not found.</h1>}/>
                 </Switch>
             </main>

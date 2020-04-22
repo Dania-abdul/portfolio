@@ -123,7 +123,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
           { category : "category", post_title : "post-title-1", 
             is_pinned : true, modal:"post_modal_1",
             post_description: "post_description_1",
-            url : "/portfolio/projects/blog_post_1",
+            url : "/portfolio/projects/project_post_1",
             image_url : Image1
           },
           { category : "contoso", post_title : "post-title-2", 
