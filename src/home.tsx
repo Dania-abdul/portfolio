@@ -63,7 +63,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                             <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
                                         <div className="home-projects__content">
-                                            <h3 className="home-projects__title strikethrough">Mary Jhun - Artist</h3>
+                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
                                             <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>
@@ -74,7 +74,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                             <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
                                         <div className="home-projects__content">
-                                            <h3 className="home-projects__title strikethrough">Mary Jhun - Artist</h3>
+                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
                                             <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>
@@ -85,7 +85,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                             <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
                                         <div className="home-projects__content">
-                                            <h3 className="home-projects__title strikethrough">Mary Jhun - Artist</h3>
+                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
                                             <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>

@@ -67,6 +67,16 @@
   
 }
 
+@mixin link--reversed-color {
+  a {
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--link-color);  
+    }  
+  }
+}
+
 
 
 //-----------------------

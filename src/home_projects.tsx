@@ -211,7 +211,9 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                               <Image className="card-horizontal__image" src={c.image_url} alt="Placeholder image." />
                             </Card.Item>
                             <Card.Section className="card-horizontal__content">
-                              <Text variant="small" styles={labelTextStyles}> {c.category} </Text>
+                              <div>
+                                <Text variant="small" className= "post-label" styles={labelTextStyles}> {c.category} </Text>
+                              </div>
                               <Text styles={descriptionTextStyles}> {i18next.t(c.post_title)} </Text>
                               <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_description)} </Text>
                             </Card.Section>
@@ -248,9 +250,11 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                           <Image className="card-vertical__image" src={c.image_url} width="100%" alt="Placeholder image." />
                         </Card.Item>
                         <Card.Section className="card-vertical__contant ">
-                          <Text variant="small" styles={labelTextStyles}>
-                            {c.category}
-                          </Text>
+                          <div>
+                            <Text variant="small"  className="post-label" styles={labelTextStyles}>
+                              {c.category}
+                            </Text>
+                          </div>
                           <Text styles={descriptionTextStyles}>{i18next.t(c.post_title)}</Text>
                           <Text variant="small" styles={helpfulTextStyles}>
                             {i18next.t(c.post_description)}

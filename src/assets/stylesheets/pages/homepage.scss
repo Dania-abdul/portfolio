@@ -105,6 +105,10 @@
     margin-bottom: 40px;
 
     &:hover {
+        .home-projects__title {
+            color: var(--link-color);
+        }
+
         .home-projects__img {
             -webkit-transform: scale(1.3);
             transform: scale(1.3);
@@ -151,6 +155,8 @@
 }
 
 .home-projects__title {
+    color: var(--text-color);
+    transition: all 0.3s;
     font-size: 14px;
     margin-top: 20px;
 }

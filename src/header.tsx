@@ -7,8 +7,8 @@ export const Header = (language: string,
     
     <div className="header container">
         <div className="header__inner">
-            <div className="header__logo">
-                <a href="/portfolio" className="header__name header__name--black header__link" >Dania Abdul.</a>
+            <div className="header__logo header__name">
+                <a href="/portfolio" className="header__link" >Dania Abdul.</a>
             </div>
             <div className="header__nav">
                 <div className="header__utilities"> 

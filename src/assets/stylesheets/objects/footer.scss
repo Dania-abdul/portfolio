@@ -20,8 +20,9 @@
   flex-wrap: wrap;
   // justify-content: center;
   // margin: 0 auto;
-
     
+    @include link--reversed-color;
+      
     li:hover ~ li p {
         animation: wave-animation 0.3s infinite;
       }
