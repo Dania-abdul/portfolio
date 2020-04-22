@@ -52,7 +52,7 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 export class post1Component extends React.Component <DemoPostProps, DemoPostState> {
   constructor(props : DemoPostProps) {
       super(props);
-      this.state = { overlay : "blog_home" } 
+      this.state = { overlay : "projects_home" } 
   }
 
   blog_post_1 = () => {

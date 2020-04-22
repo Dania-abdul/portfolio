@@ -23,13 +23,13 @@ type cardData = {
   image_url : string
 }
 
-export type HomeBlogState = {
-  overlay : {kind:"show_modal_blog_home", selected_card:cardData} | {kind:"blog_home"},
+export type HomeProjectsState = {
+  overlay : {kind:"show_modal_projects_home", selected_card:cardData} | {kind:"projects_home"},
   data : cardData[],
   selected_category : string
 }
 
-export type HomeBlogProps = {}
+export type HomeProjectsProps = {}
 
 initializeIcons();
 
@@ -87,7 +87,7 @@ const horizontalFooterCardSectionStyles: ICardSectionStyles = {
   const footerCardSectionTokens: ICardSectionTokens = { padding: '0px 0px 0px 12px' };
 
 const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/blog" } },
+  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
@@ -112,18 +112,18 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 
 
-export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogState> {
+export class HomeProjectsComponent extends React.Component <HomeProjectsProps, HomeProjectsState> {
 
-  constructor(props : HomeBlogProps) {
+  constructor(props : HomeProjectsProps) {
       super(props);
       this.state = { 
-        overlay: {kind:'blog_home'},  
+        overlay: {kind:'projects_home'},  
         selected_category : "",
         data : [
           { category : "category", post_title : "post-title-1", 
             is_pinned : true, modal:"post_modal_1",
             post_description: "post_description_1",
-            url : "/portfolio/blog/blog_post_1",
+            url : "/portfolio/projects/blog_post_1",
             image_url : Image1
           },
           { category : "contoso", post_title : "post-title-2", 
@@ -137,7 +137,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
   }
 
   
-  blog_home_modal = (selected_card:cardData) => {
+  projects_home_modal = (selected_card:cardData) => {
     
     return (
       <Modal
@@ -145,14 +145,14 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
           subtitleAriaId={"Some subtitle (use i18 for multilangauge)"}
           isOpen={true}
           isBlocking={false}
-          onDismiss={() => {this.setState({...this.state, overlay : {kind:"blog_home"}})}}
+          onDismiss={() => {this.setState({...this.state, overlay : {kind:"projects_home"}})}}
           containerClassName={"container modal__container"}>
           <div className={"modal__header"}>
             <h4 className="modal__title ">{i18next.t(selected_card.post_title)}</h4>
             <IconButton
               iconProps={{ iconName: 'Cancel' }}
               ariaLabel="Close popup modal"
-              onClick={() => {this.setState({...this.state, overlay : {kind:"blog_home"}})}}
+              onClick={() => {this.setState({...this.state, overlay : {kind:"projects_home"}})}}
             />
           </div>
           <div className={"modal__content"}>
@@ -182,7 +182,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
         </Modal>
     )
   }
-	blog_home = () => {
+	projects_home = () => {
 		return (
 			<div > 
         <Stack horizontal>
@@ -192,7 +192,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
         <div className="blog-home__content">
           <div className="blog-contnt--left">
             <Stack  gap={20}>
-              {this.state.overlay.kind == "show_modal_blog_home" ? this.blog_home_modal(this.state.overlay.selected_card) : null}
+              {this.state.overlay.kind == "show_modal_projects_home" ? this.projects_home_modal(this.state.overlay.selected_card) : null}
               <Separator alignContent="start">Pinned</Separator>
               <Card horizontal className="blog-content__pinned">
                 <Stack.Item className="pinned__list">
@@ -218,7 +218,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                             <Card.Section className="card-horizontal__tools card__tools" styles={horizontalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                               <Icon className="tools__icon icon--view" iconName="RedEye"
                                   onClick={e => {
-                                    this.setState({...this.state, overlay:{kind:"show_modal_blog_home", selected_card:c}})
+                                    this.setState({...this.state, overlay:{kind:"show_modal_projects_home", selected_card:c}})
                                     e.stopPropagation()
                                   }}
                                 styles={iconStyles} />
@@ -259,7 +259,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
                         <Card.Section className="card-vertical__tools card__tools" horizontal styles={verticalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                         <Icon className="tools__icon icon--view" iconName="RedEye"
                                   onClick={e => {
-                                    this.setState({...this.state, overlay:{kind:"show_modal_blog_home", selected_card:c}})
+                                    this.setState({...this.state, overlay:{kind:"show_modal_projects_home", selected_card:c}})
                                     e.stopPropagation()
                                   }}
                                 styles={iconStyles} />
@@ -305,7 +305,7 @@ export class HomeBlogComponent extends React.Component <HomeBlogProps, HomeBlogS
         return <>
             <div className="blog-home">
              {
-               this.state.overlay.kind == "blog_home" || this.state.overlay.kind == "show_modal_blog_home" ? this.blog_home()
+               this.state.overlay.kind == "projects_home" || this.state.overlay.kind == "show_modal_projects_home" ? this.projects_home()
                : null
              }
                 

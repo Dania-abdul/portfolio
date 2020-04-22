@@ -7,7 +7,7 @@ export const Footer = () => (
                 <li className="footer__item "><a href="https://github.com/Dania-abdul">Git</a></li>
                 <li className="footer__item "><a href="https://www.linkedin.com/in/dania-abdul/">In</a></li>
                 <li className="footer__item "><a href="/portfolio">Website</a></li>
-                <li className="footer__item "><a href="/portfolio/blog">My Blog</a></li>
+                <li className="footer__item "><a href="/portfolio/projects">Projects</a></li>
                 <li className="footer__item"> 
                     <p>👋</p>
                 </li>
