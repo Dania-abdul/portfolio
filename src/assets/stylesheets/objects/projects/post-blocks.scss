@@ -2,8 +2,8 @@
     margin: 40px 0;
 
     .ms-Breadcrumb-listItem {
-        * {
-            color: var(--text-color); 
+        h4 {
+            color: var(--text-color)!important ;  
         }
         button {
             color: var(--text-color); 

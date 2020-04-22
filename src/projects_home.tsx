@@ -87,6 +87,7 @@ const horizontalFooterCardSectionStyles: ICardSectionStyles = {
   };
   const footerCardSectionTokens: ICardSectionTokens = { padding: '0px 0px 0px 12px' };
 
+//delete
 const itemsWithHeading: IBreadcrumbItem[] = [
   { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
@@ -116,7 +117,7 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 export let data : cardData[] = [
   { 
     category : "category", 
-    post_title : "_post-1-title", 
+    post_title : "_post_1_title", 
     is_pinned : true, 
     post_card_description: "_post_1_card_desc",
     modal_desc:"_post_1_modal_desc",
@@ -125,13 +126,13 @@ export let data : cardData[] = [
     id:"project_post_1"
   },
   { 
-    category : "contoso", 
-    post_title : "post-title-2", 
+    category : "category", 
+    post_title : "_post-2-title", 
     is_pinned : false, 
     post_card_description: "_post_2_card_desc",
     modal_desc:"_post_2_modal_desc",
-    url : "/portfolio" ,
-    image_url : Image2,
+    url : "/portfolio/projects/project_post_2",
+    image_url : Image1,
     id:"project_post_2"
   }
 ]
