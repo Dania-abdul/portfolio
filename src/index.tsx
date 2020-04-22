@@ -28,14 +28,17 @@ let resources: Resource = {
 
             "_projects-home__text" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam",
             
+            "_category_1" : "category-1",
+            "_category_2" : "category-2",
+
             "_post_1_title": "post-1-title-english",
             "_post_1_card_desc": "post-1 short desc",
             "_post_1_modal_desc" : "post-1 modal long desc english",
 
             
-            "_post_2_title": "post-1-title-english",
-            "_post_2_card_desc": "post-1 short desc",
-            "_post_2_modal_desc" : "post-1 modal long desc english",
+            "_post_2_title": "post-2-title-english",
+            "_post_2_card_desc": "post-2 short desc",
+            "_post_2_modal_desc" : "post-2 modal long desc english",
             
         }
     } as ResourceLanguage,
@@ -59,11 +62,15 @@ let resources: Resource = {
 
             "_projects-home__text" :"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam",
 
+            "_hello" : "helooo",
+            "_category_1" : "category-1 dutch",
+            "_category_2" : "category-2 dutch",
+
             "_post_1_title": "post-2-title-dutch",
             "_post_1_card_desc": "post-2 short desc Dutch",
             "_post_1_modal_desc" : "post-2 modal long desc Dutch",
             
-            "_post_2_title": "post-1-title-dutch",
+            "_post_2_title": "post-2-title-dutch",
             "_post_2_card_desc": "post-2 short desc dutch",
             "_post_2_modal_desc" : "post-2 modal long desc dutch",
 

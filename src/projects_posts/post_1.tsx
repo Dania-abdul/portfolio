@@ -20,7 +20,7 @@ import { useParams } from 'react-router-dom';
 
 
 export type DemoPostState = {
-  myData : cardData | undefined
+  myData : cardData 
 }
 
 export type DemoPostProps = {
@@ -37,7 +37,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
     
     super(props);
     let { id } = props.match.params
-    this.state = { myData:data.find(d => d.id == id) } 
+    this.state = { myData:data.find(d => d.id == id) as any } 
   }
   
   itemsWithHeading = () : IBreadcrumbItem[] => [
@@ -45,10 +45,8 @@ export class post1Component extends React.Component <any, DemoPostState> {
     // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
     // Generally, only the last item should ever be a heading.
     // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
-    { text: (this.state.myData as any).post_title, key: 'demo_page', isCurrentItem: true, as: 'h4' }
+    { text: i18next.t(this.state.myData.post_title) , key: 'demo_page', isCurrentItem: true, as: 'h4' }
   ];
-
-
 
   _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
     const tooltipText = dividerProps.item ? dividerProps.item.text : '';
@@ -84,7 +82,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
                  <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                </div>
                <div className="post-header__title">
-                 <h1 className="post-title--l">{this.state.myData?.post_title}</h1>
+                 <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
                </div>
                <div className="post-header__text">
                  <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>

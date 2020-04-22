@@ -116,7 +116,7 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 export let data : cardData[] = [
   { 
-    category : "category", 
+    category : "_category_1", 
     post_title : "_post_1_title", 
     is_pinned : true, 
     post_card_description: "_post_1_card_desc",
@@ -126,8 +126,8 @@ export let data : cardData[] = [
     id:"project_post_1"
   },
   { 
-    category : "category", 
-    post_title : "_post-2-title", 
+    category : "_category_2", 
+    post_title : "_post_2_title", 
     is_pinned : false, 
     post_card_description: "_post_2_card_desc",
     modal_desc:"_post_2_modal_desc",
@@ -171,7 +171,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
             <div className="post-header">
               <div className="post-header__content">
                 <div className="post-header__top">
-                  <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
+                  <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(selected_card.category)}</span></div>
                   <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                 </div>
                 <div className="post-header__title">
@@ -194,6 +194,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
         </Modal>
     )
   }
+
 	projects_home = () => {
 		return (
 			<div > 
@@ -224,7 +225,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                             </Card.Item>
                             <Card.Section className="card-horizontal__content">
                               <div>
-                                <Text variant="small" className= "post-label" styles={labelTextStyles}> {c.category} </Text>
+                                <Text variant="small" className= "post-label" styles={labelTextStyles}> {i18next.t(c.category)} </Text>
                               </div>
                               <Text styles={descriptionTextStyles}> {i18next.t(c.post_title)} </Text>
                               <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_card_description)} </Text>
@@ -264,7 +265,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                         <Card.Section className="card-vertical__contant ">
                           <div>
                             <Text variant="small"  className="post-label" styles={labelTextStyles}>
-                              {c.category}
+                             {i18next.t(c.category)}
                             </Text>
                           </div>
                           <Text styles={descriptionTextStyles}>{i18next.t(c.post_title)}</Text>
@@ -296,15 +297,15 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
               ariaLabel="Nav with group headers"
               className="nav-category"
               onLinkClick={(_,e) => {
-                this.setState({...this.state, selected_category: e == undefined || e.name == "All" ? "" : e.name})
+                this.setState({...this.state, selected_category: e == undefined || e.key == "All" ? "" : e.key as any})
               }}
               groups={[{
-                name: 'read about ',
+                name: 'read about ', //translate
                 expandAriaLabel: 'Expand Extended components section',
                 collapseAriaLabel: 'Collapse Extended components section',
                 links:
                   [{ name: "All", url: '', key: "All", target: '_blank',}].concat(
-                  List(this.state.data).map(c => c.category).toSet().map(c => ({ name: c, url: '', key: c, target: '_blank' })).toArray())
+                  List(this.state.data).map(c => c.category).toSet().map(c => ({ name: i18next.t(c), url: '', key: c, target: '_blank' })).toArray())
               }
               ]}
             />
@@ -323,9 +324,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
              {
                this.state.overlay.kind == "projects_home" || this.state.overlay.kind == "show_modal_projects_home" ? this.projects_home()
                : null
-             }
-                
-                    
+             }  
             </div>
         </>
     }

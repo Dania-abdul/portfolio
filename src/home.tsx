@@ -1,9 +1,11 @@
  import * as React from 'react';
 import { type } from 'os';
 import i18next from 'i18next';
+
 import Image1 from './assets/images/img-1.png';
 import Image2 from './assets/images/img-2.jpg';
 import Image3 from './assets/images/intro-photo.jpeg';
+import { data } from './projects_home';
 
 
 export type HomeState = {
@@ -57,17 +59,20 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                 <a href="/portfolio/projects">PROJECTS</a>
                             </header>
                             <div className="home-projects__inner">
-                                <div className="home-projects__post">
+                                {
+                                data.map(card => <div className="home-projects__post">
                                     <a href="./portfolio/projects/project_post_1">
                                         <div className="home-projects__visual">
                                             <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
                                         <div className="home-projects__content">
-                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
-                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
+                                            <h3 className="home-projects__title ">{i18next.t(card.post_title)}</h3>
+                                            <p className="home-projects__text">{i18next.t(card.post_card_description)}</p>
                                         </div>
                                     </a>
-                                </div>
+                                </div>)
+                                }
+{/*                                 
                                 <div className="home-projects__post">
                                     <a href="">
                                         <div className="home-projects__visual">
@@ -89,7 +94,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                             <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="home-about">
