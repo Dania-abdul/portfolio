@@ -28,7 +28,7 @@ initializeIcons();
 
 
 const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/blog" } },
+  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
@@ -57,8 +57,8 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
 
   project_post_1 = () => {
     return (
-      <div className="blog-post__inner">
-        <div className="blog-post__breadcrumb">
+      <div className="projects-post__inner">
+        <div className="projects-post__breadcrumb">
           {/* <a href="/fabric">/Home</a>
            */}
           <Breadcrumb
@@ -155,7 +155,7 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
 
     render(){
         return <>
-            <div className="blog-post">
+            <div className="projects-post">
                  { this.project_post_1() }
             </div>
         </>

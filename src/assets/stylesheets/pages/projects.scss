@@ -1,14 +1,14 @@
 //------
 
 
-.blog-home__text {
+.projects-home__text {
     display: block;
     padding: 52px 0;
     font-size:$text--s;
     font-family: $font--raleway;
 }
 
-.blog-home__content {
+.projects-home__content {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 40px;
@@ -18,7 +18,7 @@
     }
 }
  
-.blog-contnt--left {
+.projects-contnt--left {
 
     @media only screen and (min-width:768px){
         flex: 1 auto;
@@ -38,7 +38,7 @@
 
 }
 
-.blog-contnt--right { 
+.projects-contnt--right { 
     margin-bottom: 52px;
     @media only screen and (min-width:768px) {
         margin-bottom: 0;

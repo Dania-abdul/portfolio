@@ -80,14 +80,14 @@
 }
 
 
-//---- HOME BLOG
+//---- HOME PROJECTS
 
-.home-blog {
+.home-projects {
     margin-bottom: 100px;
 }
 
 
-.home-blog__inner {
+.home-projects__inner {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -96,16 +96,16 @@
     }
 }
 
-.home-blog__inner {
+.home-projects__inner {
     margin: 0 -20px;
 }
 
-.home-blog__post {
+.home-projects__post {
     padding: 0 20px;
     margin-bottom: 40px;
 
     &:hover {
-        .home-blog__img {
+        .home-projects__img {
             -webkit-transform: scale(1.3);
             transform: scale(1.3);
         }
@@ -130,11 +130,11 @@
 }
 
 
-.home-blog__visual {
+.home-projects__visual {
     overflow: hidden;
 }
 
-.home-blog__img {
+.home-projects__img {
     object-fit: cover;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -145,17 +145,17 @@
 }
 
 
-.home-blog__content {
+.home-projects__content {
     text-align: center;
     color: var(--text-color);
 }
 
-.home-blog__title {
+.home-projects__title {
     font-size: 14px;
     margin-top: 20px;
 }
 
-.home-blog__text {
+.home-projects__text {
     font-family: 'PT Mono', monospace;
     font-size: 17px;
     margin-top: 10px;

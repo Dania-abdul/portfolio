@@ -52,41 +52,41 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
 
                     </div>
                         
-                        <div className="home-blog">
+                        <div className="home-projects">
                             <header className="home-sec-header">
                                 <a href="/portfolio/projects">Projects</a>
                             </header>
-                            <div className="home-blog__inner">
-                                <div className="home-blog__post">
+                            <div className="home-projects__inner">
+                                <div className="home-projects__post">
                                     <a href="">
-                                        <div className="home-blog__visual">
-                                            <img className="home-blog__img" src={Image2} alt=""/>
+                                        <div className="home-projects__visual">
+                                            <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
-                                        <div className="home-blog__content">
-                                            <h3 className="home-blog__title strikethrough">Mary Jhun - Artist</h3>
-                                            <p className="home-blog__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
+                                        <div className="home-projects__content">
+                                            <h3 className="home-projects__title strikethrough">Mary Jhun - Artist</h3>
+                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="home-blog__post">
+                                <div className="home-projects__post">
                                     <a href="">
-                                        <div className="home-blog__visual">
-                                            <img className="home-blog__img" src={Image2} alt=""/>
+                                        <div className="home-projects__visual">
+                                            <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
-                                        <div className="home-blog__content">
-                                            <h3 className="home-blog__title strikethrough">Mary Jhun - Artist</h3>
-                                            <p className="home-blog__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
+                                        <div className="home-projects__content">
+                                            <h3 className="home-projects__title strikethrough">Mary Jhun - Artist</h3>
+                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>
                                 </div>
-                                <div className="home-blog__post">
+                                <div className="home-projects__post">
                                     <a href="">
-                                        <div className="home-blog__visual">
-                                            <img className="home-blog__img" src={Image2} alt=""/>
+                                        <div className="home-projects__visual">
+                                            <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>
-                                        <div className="home-blog__content">
-                                            <h3 className="home-blog__title strikethrough">Mary Jhun - Artist</h3>
-                                            <p className="home-blog__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
+                                        <div className="home-projects__content">
+                                            <h3 className="home-projects__title strikethrough">Mary Jhun - Artist</h3>
+                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
                                         </div>
                                     </a>
                                 </div>

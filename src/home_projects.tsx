@@ -186,22 +186,22 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
 		return (
 			<div > 
         <Stack horizontal>
-          <Text className="blog-home__text" >{i18next.t("_blog-home__text")}</Text>   
+          <Text className="projects-home__text" >{i18next.t("_projects-home__text")}</Text>   
         </Stack>
 
-        <div className="blog-home__content">
-          <div className="blog-contnt--left">
+        <div className="projects-home__content">
+          <div className="projects-contnt--left">
             <Stack  gap={20}>
               {this.state.overlay.kind == "show_modal_projects_home" ? this.projects_home_modal(this.state.overlay.selected_card) : null}
               <Separator alignContent="start">Pinned</Separator>
-              <Card horizontal className="blog-content__pinned">
+              <Card horizontal className="projects-content__pinned">
                 <Stack.Item className="pinned__list">
                   {
                     this.state.data
                       .filter(c => c.is_pinned)
                       .filter(c => this.state.selected_category == "" ? true : this.state.selected_category == c.category)
                       .map(c => {
-                        return <div className="blog-card card-horizontal">
+                        return <div className="projects-card card-horizontal">
                           <Card aria-label="Clickable horizontal card with image " horizontal 
                             className="card-horizontal__inner"
                             onClick={() => window.location.href=c.url}
@@ -233,7 +233,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                 
               </Card>
               <Separator alignContent="start">Posts</Separator>
-              <div className="blog-content__cards">
+              <div className="projects-content__cards">
                 <Stack.Item className="cards__list">
                   {
                     this.state.data
@@ -242,7 +242,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                       return <Card aria-label="Clickable vertical card with image " 
                       onClick={() => window.location.href=c.url}
                       tokens={cardTokens} 
-                      className="blog-card card-vertical"> 
+                      className="projects-card card-vertical"> 
                       <div className="card-vertical__inner">
                         <Card.Item fill className="card-vertical__visual">
                           <Image className="card-vertical__image" src={c.image_url} width="100%" alt="Placeholder image." />
@@ -275,7 +275,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
               </div>
             </Stack>
           </div>
-          <div className="blog-contnt--right">
+          <div className="projects-contnt--right">
             <Nav
               ariaLabel="Nav with group headers"
               className="nav-category"
@@ -303,7 +303,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
     
     render(){
         return <>
-            <div className="blog-home">
+            <div className="projects-home">
              {
                this.state.overlay.kind == "projects_home" || this.state.overlay.kind == "show_modal_projects_home" ? this.projects_home()
                : null

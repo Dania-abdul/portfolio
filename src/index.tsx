@@ -26,7 +26,7 @@ let resources: Resource = {
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ",
 
-            "_blog-home__text" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam",
+            "_projects-home__text" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam",
             
             "_post-title-1": "post-1-title-english",
 
@@ -59,7 +59,7 @@ let resources: Resource = {
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ", 
 
-            "_blog-home__text" :"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam",
+            "_projects-home__text" :"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam",
 
             "_post-title-1": "post-1-title-dutch",
 
