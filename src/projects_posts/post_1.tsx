@@ -11,6 +11,8 @@ import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-r
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import Image1 from '../assets/images/img-1.png';
 import Image2 from '../assets/images/img-2.jpg';
+import { cardData, data } from '../projects_home';
+import { useParams } from 'react-router-dom';
 
 
 
@@ -18,6 +20,7 @@ import Image2 from '../assets/images/img-2.jpg';
 
 
 export type DemoPostState = {
+  myData : cardData | undefined
 }
 
 export type DemoPostProps = {
@@ -27,32 +30,35 @@ initializeIcons();
 
 
 
-const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
-  // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
-  // Generally, only the last item should ever be a heading.
-  // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
-  { text: 'post-title-1', key: 'demo_page', isCurrentItem: true, as: 'h4' }
-];
+
+
+export class post1Component extends React.Component <any, DemoPostState> {
+  constructor(props : any) {
+    
+    super(props);
+    let { id } = props.match.params
+    this.state = { myData:data.find(d => d.id == id) } 
+  }
+  
+  itemsWithHeading = () : IBreadcrumbItem[] => [
+    { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
+    // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
+    // Generally, only the last item should ever be a heading.
+    // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
+    { text: (this.state.myData as any).post_title, key: 'demo_page', isCurrentItem: true, as: 'h4' }
+  ];
 
 
 
-function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
-  const tooltipText = dividerProps.item ? dividerProps.item.text : '';
-  return (
-    <TooltipHost content={`Show ${tooltipText} contents`} calloutProps={{ gapSpace: 0 }}>
-      <span aria-hidden="true" style={{ cursor: 'pointer', padding: 5 }}>
-        /
-      </span>
-    </TooltipHost>
-  );
-}
-
-
-export class post1Component extends React.Component <DemoPostProps, DemoPostState> {
-  constructor(props : DemoPostProps) {
-      super(props);
-      this.state = { overlay : "projects_home" } 
+  _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
+    const tooltipText = dividerProps.item ? dividerProps.item.text : '';
+    return (
+      <TooltipHost content={`Show ${tooltipText} contents`} calloutProps={{ gapSpace: 0 }}>
+        <span aria-hidden="true" style={{ cursor: 'pointer', padding: 5 }}>
+          /
+        </span>
+      </TooltipHost>
+    );
   }
 
   project_post_1 = () => {
@@ -62,10 +68,10 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
           {/* <a href="/fabric">/Home</a>
            */}
           <Breadcrumb
-            items={itemsWithHeading}
+            items={this.itemsWithHeading()}
             maxDisplayedItems={3}
             ariaLabel="bread crumb links "
-            dividerAs={_getCustomDivider}
+            dividerAs={this._getCustomDivider}
             overflowAriaLabel="More links"
           />
         </div>
@@ -78,7 +84,7 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
                  <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                </div>
                <div className="post-header__title">
-                 <h1 className="post-title--l">{i18next.t("_post-title-1")}</h1>
+                 <h1 className="post-title--l">{this.state.myData?.post_title}</h1>
                </div>
                <div className="post-header__text">
                  <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>
@@ -154,6 +160,7 @@ export class post1Component extends React.Component <DemoPostProps, DemoPostStat
   }
 
     render(){
+        if(this.state.myData == undefined) return <div>Not found</div>
         return <>
             <div className="projects-post">
                  { this.project_post_1() }

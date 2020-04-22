@@ -13,14 +13,15 @@ import {List} from "immutable";
 import Image1 from './assets/images/img-1.png';
 import Image2 from './assets/images/img-2.jpg';
 
-type cardData = {
+export type cardData = {
   category : string
   post_title : string
   is_pinned : boolean
-  modal : string
-  post_description : string
+  modal_desc : string
+  post_card_description : string
   url : string
-  image_url : string
+  image_url : string,
+  id : string
 }
 
 export type HomeProjectsState = {
@@ -112,6 +113,29 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 
 
+export let data : cardData[] = [
+  { 
+    category : "category", 
+    post_title : "_post-1-title", 
+    is_pinned : true, 
+    post_card_description: "_post_1_card_desc",
+    modal_desc:"_post_1_modal_desc",
+    url : "/portfolio/projects/project_post_1",
+    image_url : Image1,
+    id:"project_post_1"
+  },
+  { 
+    category : "contoso", 
+    post_title : "post-title-2", 
+    is_pinned : false, 
+    post_card_description: "_post_2_card_desc",
+    modal_desc:"_post_2_modal_desc",
+    url : "/portfolio" ,
+    image_url : Image2,
+    id:"project_post_2"
+  }
+]
+
 export class HomeProjectsComponent extends React.Component <HomeProjectsProps, HomeProjectsState> {
 
   constructor(props : HomeProjectsProps) {
@@ -119,20 +143,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
       this.state = { 
         overlay: {kind:'projects_home'},  
         selected_category : "",
-        data : [
-          { category : "category", post_title : "post-title-1", 
-            is_pinned : true, modal:"post_modal_1",
-            post_description: "post_description_1",
-            url : "/portfolio/projects/project_post_1",
-            image_url : Image1
-          },
-          { category : "contoso", post_title : "post-title-2", 
-            is_pinned : false, modal:"post_modal_2",
-            post_description: "post_description_2",
-            url : "/portfolio" ,
-            image_url : Image2
-          },
-        ]
+        data : data
       }
   }
 
@@ -167,7 +178,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                 </div>
                 <div className="post-header__text">
                   <p className="post-text--m">
-                    {i18next.t(selected_card.modal)}
+                    {i18next.t(selected_card.modal_desc)}
                   </p>
                 </div>
               </div>
@@ -215,7 +226,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                                 <Text variant="small" className= "post-label" styles={labelTextStyles}> {c.category} </Text>
                               </div>
                               <Text styles={descriptionTextStyles}> {i18next.t(c.post_title)} </Text>
-                              <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_description)} </Text>
+                              <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_card_description)} </Text>
                             </Card.Section>
                             <Card.Section className="card-horizontal__tools card__tools" styles={horizontalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                               <Icon className="tools__icon icon--view" iconName="RedEye"
@@ -257,7 +268,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                           </div>
                           <Text styles={descriptionTextStyles}>{i18next.t(c.post_title)}</Text>
                           <Text variant="small" styles={helpfulTextStyles}>
-                            {i18next.t(c.post_description)}
+                            {i18next.t(c.post_card_description)}
                           </Text>
                         </Card.Section>
                         <Card.Section className="card-vertical__tools card__tools" horizontal styles={verticalFooterCardSectionStyles} tokens={footerCardSectionTokens}>

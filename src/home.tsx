@@ -54,11 +54,11 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                         
                         <div className="home-projects">
                             <header className="home-sec-header">
-                                <a href="/portfolio/projects">Projects</a>
+                                <a href="/portfolio/projects">PROJECTS</a>
                             </header>
                             <div className="home-projects__inner">
                                 <div className="home-projects__post">
-                                    <a href="">
+                                    <a href="./portfolio/projects/project_post_1">
                                         <div className="home-projects__visual">
                                             <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>

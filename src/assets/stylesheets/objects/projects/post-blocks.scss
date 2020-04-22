@@ -1,5 +1,18 @@
 .projects-post__breadcrumb {
     margin: 40px 0;
+
+    .ms-Breadcrumb-listItem {
+        * {
+            color: var(--text-color); 
+        }
+        button {
+            color: var(--text-color); 
+            &:hover {
+                background-color: transparent;
+                color: var(--link-color);  
+            }
+        }
+    }
 }
 
 
@@ -174,7 +187,7 @@
     &:before {
         content: "";
         width: 200px;
-        background-color: $color-primary;
+        background-color: var(--accent-color);
         height: 1px;
         display: block;
         margin: 0 auto;
