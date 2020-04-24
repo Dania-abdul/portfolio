@@ -59,7 +59,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
     );
   }
 
-  project_post_1 = () => {
+  project_post_2 = () => {
     return (
       <div className="projects-post__inner">
         <div className="projects-post__breadcrumb">
@@ -75,52 +75,57 @@ export class post1Component extends React.Component <any, DemoPostState> {
         </div>
         <div className="post">
           <div className="post__content">
-              <div className="post-block post-header">
-                <div className="post-header__content">
-                  <div className="post-header__top">
-                    <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
-                    <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
-                  </div>
-                  <div className="post-header__title">
-                    <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
-                  </div>
-                  <div className="post-header__text">
-                    <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>
-                  </div>
-                </div>
-                <div className="post-header__visual">
-                  <img src={Image2} alt="" className="post-header__img"/>
-                </div>
-              </div>
-              <div className="post-divider div-transparent"></div>
-              <div className="post-container--s">
-                <p className="post-block post-text post-text--m ">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li.Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
-              </div>
-              <div className="post-container--m">
-                <h2 className="post-block post-center-title post-title--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla</h2>
-              </div>
-              <div className="post-container--s">
-                <div className="post-block post-text">
-                  <h3 className="post-title--s">Ma quande</h3>
-                  <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
-                  <h4 className="post-title--xs">Ma quande</h4>
-                  <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
-                  
-                  <ul className="post-list post-list--bullet">
-                    <li className="post-list__item">Consectetuer</li>
-                    <li className="post-list__item">Adipiscing elit</li>
-                    <li className="post-list__item">Diam</li>
-                    <li className="post-list__item">Tincidunt</li>
-                  </ul>              
-                  <ul className="post-list post-list--custom">
-                    <li className="post-list__item">Consectetuer</li>
-                    <li className="post-list__item">Adipiscing elit</li>
-                    <li className="post-list__item">Diam</li>
-                    <li className="post-list__item">Tincidunt</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="post-block post-photo-grid">
+           <div className="post-block post-header">
+             <div className="post-header__content">
+               <div className="post-header__top">
+                 <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
+                 <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
+               </div>
+               <div className="post-header__title">
+                 <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
+               </div>
+               <div className="post-header__text">
+                 <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>
+               </div>
+             </div>
+             <div className="post-header__visual">
+               <img src={Image2} alt="" className="post-header__img"/>
+             </div>
+           </div>
+           <div className="post-containerm--m">
+             <blockquote className="post-block post-quote ">
+               <p className="post-quote__text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla, malesuada ut”</p>
+               <p className="post-quote__author post-text--s">Author Name</p>
+            </blockquote>
+           </div>
+           <div className="post-container--s">
+             <p className="post-block post-text post-text--m ">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li.Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+           </div>
+           <div className="post-container--m">
+             <h2 className="post-block post-center-title post-title--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla</h2>
+           </div>
+           <div className="post-container--s">
+             <div className="post-block post-text">
+              <h3 className="post-title--s">Ma quande</h3>
+              <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+              <h4 className="post-title--xs">Ma quande</h4>
+              <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+              
+              <ul className="post-list post-list--bullet">
+                <li className="post-list__item">Consectetuer</li>
+                <li className="post-list__item">Adipiscing elit</li>
+                <li className="post-list__item">Diam</li>
+                <li className="post-list__item">Tincidunt</li>
+              </ul>              
+              <ul className="post-list post-list--custom">
+                <li className="post-list__item">Consectetuer</li>
+                <li className="post-list__item">Adipiscing elit</li>
+                <li className="post-list__item">Diam</li>
+                <li className="post-list__item">Tincidunt</li>
+              </ul>
+             </div>
+           </div>
+           <div className="post-block post-photo-grid">
              <div className="post-photo-grid__item post-photo-m">
                <div className="post-photo-m__inner">
                  <div className="photo-m__visual">
@@ -156,7 +161,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
         if(this.state.myData == undefined) return <div>Not found</div>
         return <>
             <div className="projects-post">
-                 { this.project_post_1() }
+                 { this.project_post_2() }
             </div>
         </>
     }

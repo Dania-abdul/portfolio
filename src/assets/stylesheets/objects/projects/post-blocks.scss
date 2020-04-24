@@ -21,6 +21,30 @@
     color:  var(--text-color);
 }
 
+.post__content {
+    &:nth-child(2) {
+        border-top: 1px solid red;
+        background: red;
+    }
+}
+
+.post-divider {
+	position: relative;
+	margin-bottom: 90px;
+    height: 1px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);  
+    }
+}
+
 .post-block {
     margin-bottom: 60px;
 }
@@ -224,8 +248,8 @@
     &:before {
         content: "";
         width: 200px;
-        background-color: $color-primary;
-        height: 1px;
+        background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent); 
+        height: 0.5px;
         display: block;
         margin: 0 auto;
         margin-bottom: 40px;

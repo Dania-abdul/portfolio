@@ -160,3 +160,8 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.object-fit {
+  width: 100%;
+  object-fit: cover;
+}

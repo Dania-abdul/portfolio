@@ -31,6 +31,7 @@
 .projects-content__pinned {
     min-width: 270px;
     box-shadow: none;
+    
 }
 
 .pinned__list {
@@ -39,6 +40,9 @@
 
 .card-horizontal {
     margin-bottom: 20px;
+    @media only screen and (min-width: 992px) {
+        width: 572px;
+    }
 }
 
 .card-horizontal__inner {
@@ -58,17 +62,21 @@
 .card-horizontal__visual {
     width: 100%;
     @media only screen and (min-width: 768px) {
-        width: auto;
+        width: 200px;
     }
 }
 
 .card-horizontal__image {
-    
+
+    @media only screen and (min-width: 768px) {
+        width: 200px;
+    }
+
     img {
-        width: 100%;
-        height: auto;
+        @include object-fit ;
         @media only screen and (min-width: 768px) {
-            width: 180px;
+            height: 169px;
+            width: auto;
         }
     }
 }
@@ -131,6 +139,14 @@
     &:focus {
         box-shadow: rgba(255, 127, 80, 0.13) 0px 3.2px 7.2px 0px, rgba(255, 127, 80, 0.11) 0px 0.6px 1.8px 0px;
     }
+}
+
+.card-vertical__image {
+    img {
+        height: 200px;
+        object-fit: cover;
+    }
+
 }
 
 .card-vertical__contant {

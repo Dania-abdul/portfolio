@@ -118,7 +118,7 @@ export let data : cardData[] = [
   { 
     category : "_category_1", 
     post_title : "_post_1_title", 
-    is_pinned : true, 
+    is_pinned : false, 
     post_card_description: "_post_1_card_desc",
     modal_desc:"_post_1_modal_desc",
     url : "/portfolio/projects/project_post_1",
@@ -128,7 +128,7 @@ export let data : cardData[] = [
   { 
     category : "Development", 
     post_title : "_post_2_title", 
-    is_pinned : false, 
+    is_pinned : true, 
     post_card_description: "_post_2_card_desc",
     modal_desc:"_post_2_modal_desc",
     url : "/portfolio/projects/project_post_2",
