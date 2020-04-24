@@ -126,7 +126,7 @@ export let data : cardData[] = [
     id:"project_post_1"
   },
   { 
-    category : "_category_2", 
+    category : "Development", 
     post_title : "_post_2_title", 
     is_pinned : false, 
     post_card_description: "_post_2_card_desc",

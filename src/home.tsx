@@ -56,7 +56,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                         
                         <div className="home-projects">
                             <header className="home-sec-header">
-                                <a href="/portfolio/projects">PROJECTS</a>
+                                <a href="/projects">PROJECTS</a>
                             </header>
                             <div className="home-projects__inner">
                                 {

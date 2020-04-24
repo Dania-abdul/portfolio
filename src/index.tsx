@@ -32,12 +32,12 @@ let resources: Resource = {
             "_category_2" : "category-2",
 
             "_post_1_title": "post-1-title-english",
-            "_post_1_card_desc": "post-1 short desc",
+            "_post_1_card_desc": "post_1_card_desc",
             "_post_1_modal_desc" : "post-1 modal long desc english",
 
             
-            "_post_2_title": "post-2-title-english",
-            "_post_2_card_desc": "post-2 short desc",
+            "_post_2_title": "Technologies I used to build my portfolio",
+            "_post_2_card_desc": "using different web technologies to build a full responsive website",
             "_post_2_modal_desc" : "post-2 modal long desc english",
             
         }
@@ -70,8 +70,8 @@ let resources: Resource = {
             "_post_1_card_desc": "post-2 short desc Dutch",
             "_post_1_modal_desc" : "post-2 modal long desc Dutch",
             
-            "_post_2_title": "post-2-title-dutch",
-            "_post_2_card_desc": "post-2 short desc dutch",
+            "_post_2_title": "Technologies I used to build my portfolio/NL",
+            "_post_2_card_desc": "using different web technologies to build a full responsive website/NL",
             "_post_2_modal_desc" : "post-2 modal long desc dutch",
 
         }
