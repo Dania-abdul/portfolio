@@ -66,11 +66,11 @@
         
         svg {
             transition: all 0.2s;
+            fill: var(--text-color); 
         }
         &:hover {
             svg {
                 fill: var(--link-color); 
-                ;
             }
         }
     }

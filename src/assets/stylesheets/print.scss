@@ -1,5 +1,8 @@
 @media print{
 
+    body {
+        color: $color-primary;
+    }
     a,
     .header__link{
         text-decoration: none !important;
