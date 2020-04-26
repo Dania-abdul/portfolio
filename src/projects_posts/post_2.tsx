@@ -85,7 +85,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
                  <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
                </div>
                <div className="post-header__text">
-                 <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>
+                 <p className="post-text--m">This post is coming soon.... </p>
                </div>
              </div>
              <div className="post-header__visual">

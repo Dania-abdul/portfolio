@@ -61,7 +61,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                             <div className="home-projects__inner">
                                 {
                                 data.map(card => <div className="home-projects__post">
-                                    <a href="./portfolio/projects/project_post_1">
+                                    <a href="./projects/project_post_2">
                                         <div className="home-projects__visual">
                                             <img className="home-projects__img" src={Image2} alt=""/>
                                         </div>

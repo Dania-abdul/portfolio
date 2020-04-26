@@ -70,7 +70,7 @@ let resources: Resource = {
             "_post_1_card_desc": "post-2 short desc Dutch",
             "_post_1_modal_desc" : "post-2 modal long desc Dutch",
             
-            "_post_2_title": "Technologies I used to build my portfolio/NL",
+            "_post_2_title": "Web Technologies I used to build my portfolio/NL",
             "_post_2_card_desc": "using different web technologies to build a full responsive website/NL",
             "_post_2_modal_desc" : "post-2 modal long desc dutch",
 
