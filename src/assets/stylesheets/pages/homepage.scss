@@ -160,12 +160,15 @@
     transition: all 0.3s;
     font-size: 17px;
     margin-top: 20px;
+    @include line--limit;
 }
 
 .home-projects__text {
     font-family: 'PT Mono', monospace;
     font-size: 14px;
     margin-top: 10px;
+
+    @include line--limit;
 }
 
 

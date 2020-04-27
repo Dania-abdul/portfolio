@@ -148,7 +148,6 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
           onDismiss={() => {this.setState({...this.state, overlay : {kind:"projects_home"}})}}
           containerClassName={"container modal__container"}>
           <div className={"modal__header"}>
-            <h4 className="modal__title ">{i18next.t(selected_card.post_title)}</h4>
             <IconButton
               iconProps={{ iconName: 'Cancel' }}
               ariaLabel="Close popup modal"

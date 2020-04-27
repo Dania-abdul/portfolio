@@ -9,29 +9,28 @@
         padding-right:0;
         padding-left: 0;
     }
+    .ms-Modal-scrollableContent{
+        padding: 0 50px;
+        background: var(--background-color);
+    }
 }
 
 .modal__header {
-    background-color:  var(--background-color);
-    color:  var(--text-color);
-    padding:  20px;
-    align-items: center;
+    padding-top: 25px;
     display: flex;
+    justify-content: flex-end;
 }
 
-.modal__title {
-    font-size: $title--m;
-}
 
-.ms-Button--icon{
-    color: $color-secondary ;
+.ms-Button--icon {
+    color: var(--text-color);
     transition: all 0.5s;
-    box-shadow: inset 0 0 0 $color-secondary ;
+    box-shadow: inset 0 0 0 var(--text-color) ;
 
     &:hover {
-        color: $color-primary;
-        background: $color-secondary ;
-        box-shadow: inset -10em 0 0  $color-secondary ;
+        color: var(--background-color);
+        background: var(--text-color) ;
+        box-shadow: inset -10em 0 0  var(--text-color) ;
     }
 
     &:focus {
@@ -40,13 +39,12 @@
 }
 
 .modal__content {
-    padding: 0 30px;
+    color: var(--text-color);
     margin-top: 25px;
     max-height: 200px;
     overflow-y: auto;
     transition: all 0.3s;
     @media only screen and (min-width: 768px) {
-        padding: 0 50px;
         margin: 25px 0;
         max-height: 400px;
 
@@ -55,19 +53,20 @@
 
 .modal__footer {
     margin: 30px 0;
-    padding: 0 30px;
     text-align: right;
 }
 
 .modal__btn {
     border: none;
-    color: $color-primary;
+    color: var(--text-color);
     transition: all 0.5s;
-    box-shadow: inset 0 0 0 $color-primary;
-    
+    background: var(--accent-color);
+
     &:hover {
-        color: $color-secondary ;
-        box-shadow: inset -10em 0 0  $color-primary;
+        color: var(--background-color) ;
+        background: var(--text-color);
+        box-shadow: inset -10em 0 0 var(--text-color);
+        border-radius: 2px;
     }
 
 }
