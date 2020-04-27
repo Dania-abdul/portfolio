@@ -107,6 +107,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                         <div className="comment">{'<About/>'}</div>
                                     </div>
                                     <div className="code-line">
+                                        <p className="control">export </p>
                                         <p className="method">class</p> 
                                         <span className="propname"> Dania Abdul</span> 
                                     </div>
@@ -121,7 +122,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                     <div className="code-line">
                                         <div className="dots">..</div>
                                         <div className="method">constructor</div><p className="symbol">() {'{'}</p>
-                                    </div>
+                                    </div>  
                                     <div className="code-line">
                                         <div className="dots">....</div>
                                         <div className="scope">this</div><p className="symbol">.</p><span className="prop2">name</span><span className="scope"> =</span><span className="string"> ' Dania Abdul '</span>
@@ -144,7 +145,9 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                     </div>
                                     <div className="code-line">
                                         <div className="dots">····</div>
-                                        <p className="method">return</p><p className="symbol"> [</p> <span className="string"> 'HTML5/CSS4/JS' , 'Bootstrap/Material Design' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 'Wordpress ', 'Photoshop/Illustrator', 'Sketch/Figma' , 'UX/UI', 'Email templates'</span> 
+                                        <p className="control">return</p><p className="symbol"> [</p> <span className="string"> 'HTML5/CSS4/JS' , 
+                                        'Bootstrap/Material Design/Fluent UI' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 
+                                        'Wordpress ', 'Photoshop/Illustrator', 'Sketch/Figma/Adobe XD' , 'UI/UX', 'Email templates'</span> 
                                         <p className="symbol"> ]</p>
                                         
                                     </div>

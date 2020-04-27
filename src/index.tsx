@@ -36,7 +36,7 @@ let resources: Resource = {
             "_post_1_modal_desc" : "post-1 modal long desc english",
 
             
-            "_post_2_title": "Technologies I used to build my portfolio, Technologies I used",
+            "_post_2_title": "Web Technologies I used to build my portfolio, Technologies I used",
             "_post_2_card_desc": "using different web technologies to build a full responsive website, using different web technologies to build a full responsive website",
             "_post_2_modal_desc" : "post-2 modal long desc english",
             

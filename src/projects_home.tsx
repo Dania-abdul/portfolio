@@ -73,18 +73,6 @@ const horizontalFooterCardSectionStyles: ICardSectionStyles = {
 	  }
   };
   
-  // const navStyles : INavStyles = {
-  //   root: {
-  //     color: '#000000',
-  //   }
-  // };
-  const styles = {
-    root: [
-      {
-        color: 'green',
-      }
-    ]
-  };
   const footerCardSectionTokens: ICardSectionTokens = { padding: '0px 0px 0px 12px' };
 
 //delete

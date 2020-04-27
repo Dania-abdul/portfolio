@@ -242,7 +242,7 @@
     &:before {
         content: "";
         width: 200px;
-        background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent); 
+        background-image: linear-gradient(to right, transparent,var(--text-color), transparent); 
         height: 0.5px;
         display: block;
         margin: 0 auto;

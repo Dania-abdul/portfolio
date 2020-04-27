@@ -158,13 +158,13 @@
 .home-projects__title {
     color: var(--text-color);
     transition: all 0.3s;
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 20px;
 }
 
 .home-projects__text {
     font-family: 'PT Mono', monospace;
-    font-size: 17px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -249,6 +249,10 @@
     .symbol {
         display: inline;
         color: $color-secondary ;
+    }
+    .control {
+        display: inline;
+        color: map-get($code-editor-theme,editor--control) ;
     }
 }
 
