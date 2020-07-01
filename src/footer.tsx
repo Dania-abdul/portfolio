@@ -6,7 +6,7 @@ export const Footer = () => (
             <ul className="footer__list">
                 <li className="footer__item "><a href="https://github.com/Dania-abdul">Git</a></li>
                 <li className="footer__item "><a href="https://www.linkedin.com/in/dania-abdul/">In</a></li>
-                <li className="footer__item "><a href="/portfolio">Website</a></li>
+                <li className="footer__item "><a href="/portfolio">Home</a></li>
                 <li className="footer__item "><a href="/portfolio/projects">Projects</a></li>
                 <li className="footer__item"> 
                     <p>👋</p>

@@ -10,7 +10,7 @@ let resources: Resource = {
     "en": {
         "translation": {
             "_cvTitle": "a Front-end developer with a taste of design",
-            "_cvAboutText1":" Hello... I am Dania, a front-end developer. I have a passion for designing and creating websites with a knowledge of different technologies. I am currently based in ",
+            "_cvAboutText1":" Hello... I am Dania, a Junior front-end developer. I have a passion for designing and creating websites with a knowledge of different technologies. I am currently based in ",
             "_cvAboutText2": " Rotterdam, Netherlands",
             "_cvAboutText3": " I like to create cool digital projects with creative teams. My main focus is HTML, CSS, JS, and building progressive web apps",
             "_cvAboutText4": " Before doing front-end development and after my graduation in IT-Multimedia (BSC) I worked on honing my skills in a variety of roles in the web industry starting with SEO, marketing and design",

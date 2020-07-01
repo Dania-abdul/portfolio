@@ -55,14 +55,14 @@
 
 .about__header {
     font-family: "Abril Fatface", cursive;
-    @include fluid-sizing(320px, 1440px, 32px,39px, 'font-size');
+    @include fluid-sizing(320px, 1440px, 30px,32px, 'font-size');
     margin-bottom: 10px;
 }
 
 .about__label {
     padding-top: 10px;
     font-size: 14px;
-    color: $color-gray--dark;
+    color: var(--text-color);
 }
 
 .about__img {

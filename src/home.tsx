@@ -56,7 +56,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                         
                         <div className="home-projects">
                             <header className="home-sec-header">
-                                <a href="/projects">PROJECTS</a>
+                                <a href="./projects">PROJECTS</a>
                             </header>
                             <div className="home-projects__inner">
                                 {
@@ -133,7 +133,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                     </div>
                                     <div className="code-line">
                                         <div className="dots">····</div>
-                                        <div className="scope">this</div><p className="symbol">.</p><span className="prop2">email</span><span className="scope"> =</span><span className="number"> ' dbashayreh@gmail.com '</span>
+                                        <div className="scope">this</div><p className="symbol">.</p><span className="prop2">email</span><span className="scope"> =</span><span className="number"> ' dania.abdul91@gmail.com '</span>
                                     </div>
                                     <div className="code-line">
                                         <div className="dots">..</div>
@@ -146,7 +146,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                     <div className="code-line">
                                         <div className="dots">····</div>
                                         <p className="control">return</p><p className="symbol"> [</p> <span className="string"> 'HTML5/CSS4/JS' , 
-                                        'Bootstrap/Material Design/Fluent UI' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 
+                                        'Bootstrap/Material Design/Fluent UI' ,'styled-component' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 
                                         'Wordpress ', 'Photoshop/Illustrator', 'Sketch/Figma/Adobe XD' , 'UI/UX', 'Email templates'</span> 
                                         <p className="symbol"> ]</p>
                                         

@@ -27,9 +27,13 @@
     .row {
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid $color-gray--light;
         margin-top: 24px;
         padding-bottom: 24px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-gray--light;
+
+        }
         
         @media only screen and (min-width: 768px) {
             flex-direction: row;
