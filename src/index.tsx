@@ -26,19 +26,26 @@ let resources: Resource = {
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ",
 
-            "_projects-home__text" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam",
+            "_projects-home__text" :"This is a selection of projects I have worked in the past year, As a self-employed webdeveloper I had a chance to explore some web technologies and frameworks, aside meet and work with some talented clients.",
             
             "_category_1" : "category-1",
             "_category_2" : "category-2",
 
-            "_post_1_title": "post-1-title-english",
-            "_post_1_card_desc": "post_1_card_desc",
+            "_post_1_title": "Dodici Art Project Webshop",
+            "_post_1_card_desc": "Portfolio/webshop built with wordpress CMS and WooCommerce",
             "_post_1_modal_desc" : "post-1 modal long desc english",
-
             
-            "_post_2_title": "Web Technologies I used to build my portfolio, Technologies I used",
+            "_post_2_title": "POST__2",
             "_post_2_card_desc": "using different web technologies to build a full responsive website, using different web technologies to build a full responsive website",
             "_post_2_modal_desc" : "post-2 modal long desc english",
+
+            "_post_card_tag_php" : "#PHP",
+            "_post_card_tag_html" : "#HTML",
+            "_post_card_tag_css" : "#SCSS",
+            "_post_card_tag_react" : "#REACT",
+            "_post_card_tag_js" : "#JS"
+
+
             
         }
     } as ResourceLanguage,
@@ -66,13 +73,21 @@ let resources: Resource = {
             "_category_1" : "category-1 dutch",
             "_category_2" : "category-2 dutch",
 
-            "_post_1_title": "post-2-title-dutch",
-            "_post_1_card_desc": "post-2 short desc Dutch",
-            "_post_1_modal_desc" : "post-2 modal long desc Dutch",
+            "_post_1_title": "Dodici Art Project Webshop",
+            "_post_1_card_desc": "Portfolio/webshop built with wordpress CMS and WooCommerce",
+            "_post_1_modal_desc" : "post-1 modal long desc english",
             
-            "_post_2_title": "Web Technologies I used to build my portfolio/NL",
-            "_post_2_card_desc": "using different web technologies to build a full responsive website/NL",
-            "_post_2_modal_desc" : "post-2 modal long desc dutch",
+            "_post_2_title": "POST__2",
+            "_post_2_card_desc": "using different web technologies to build a full responsive website, using different web technologies to build a full responsive website",
+            "_post_2_modal_desc" : "post-2 modal long desc english",
+
+            "_post_card_tag_php" : "#PHP",
+            "_post_card_tag_html" : "#HTML",
+            "_post_card_tag_css" : "#SCSS",
+            "_post_card_tag_react" : "#REACT",
+            "_post_card_tag_js" : "#JS"
+
+
 
         }
     }

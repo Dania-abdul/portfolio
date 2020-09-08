@@ -35,8 +35,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                             <div className="home-intro__content-inner">
                                 <p className="intro__text">
                                     I'm a Front-end developer, currently based in Rotterdam, Netherlands <br/>
-                                    I'm passionate about building websites and working on different web technologies. 
-                                </p>
+                                    I like to design and code beautifully simple things, using different web technologies, and I love what I do.                                </p>
                                 <p className="intro__text">
                                     Besides development...<br/>
                                     I care of many plants, I read, embroider, and enjoy life
@@ -61,13 +60,18 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                             <div className="home-projects__inner">
                                 {
                                 data.map(card => <div className="home-projects__post">
-                                    <a href="./projects/project_post_2">
+                                    <a href={card.url}>
                                         <div className="home-projects__visual">
-                                            <img className="home-projects__img" src={Image2} alt=""/>
+                                            <img className="home-projects__img" src={card.image_url} alt=""/>
                                         </div>
                                         <div className="home-projects__content">
                                             <h3 className="home-projects__title ">{i18next.t(card.post_title)}</h3>
                                             <p className="home-projects__text">{i18next.t(card.post_card_description)}</p>
+                                            <ul className="home-projects__list tag__list">
+                                                <li className="tag__item">{i18next.t(card.post_card_tag_1)}</li>
+                                                <li className="tag__item">{i18next.t(card.post_card_tag_2)}</li>
+                                                <li className="tag__item">{i18next.t(card.post_card_tag_3)}</li>
+                                            </ul>
                                         </div>
                                     </a>
                                 </div>)

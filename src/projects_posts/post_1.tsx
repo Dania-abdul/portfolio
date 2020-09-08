@@ -11,6 +11,9 @@ import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-r
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import Image1 from '../assets/images/img-1.png';
 import Image2 from '../assets/images/img-2.jpg';
+import Post1Img1 from  '../assets/images/post-1-image-1.jpg' ;
+import Post1Img2 from  '../assets/images/post-1-image-2.jpg' ;
+import Post1Img3 from  '../assets/images/single-product-gif.gif' ;
 import { cardData, data } from '../projects_home';
 import { useParams } from 'react-router-dom';
 
@@ -75,77 +78,63 @@ export class post1Component extends React.Component <any, DemoPostState> {
         </div>
         <div className="post">
           <div className="post__content">
-              <div className="post-block post-header">
-                <div className="post-header__content">
+                <div className="post__header">
                   <div className="post-header__top">
-                    <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
+                    <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(this.state.myData.category)}</span></div>
                     <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                   </div>
-                  <div className="post-header__title">
-                    <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
-                  </div>
-                  <div className="post-header__text">
-                    <p className="post-text--m">Epsum factorial non deposit quid pro quo hic escorol. Olypian</p>
-                  </div>
+                  <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
+                    <p className="post-text--m">{i18next.t(this.state.myData.post_card_description)}</p>
+                    <ul className="home-projects__tags tag__list">
+                        <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_1)}</li>
+                        <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_2)}</li>
+                        <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_3)}</li>
+                    </ul>
                 </div>
-                <div className="post-header__visual">
-                  <img src={Image2} alt="" className="post-header__img"/>
-                </div>
-              </div>
               <div className="post-divider div-transparent"></div>
               <div className="post-container--s">
-                <p className="post-block post-text post-text--m ">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li.Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+                <h3 className="post-title--s">ABOUT</h3>
+                <div className="post-block">
+                  <p className=" post-text--m ">Dodici is a street art project, a website focused on the lead Artist Portfolio, Art work Gallery and a webshop for selling products and services</p>
+                  <p className=" post-text--m ">Design and content creation, setting up Shop, development, CMS ... </p>
+                </div>
               </div>
-              <div className="post-container--m">
-                <h2 className="post-block post-center-title post-title--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla</h2>
+              <div className="post-container">
+                <div className="post-photo">
+                  <div className="post-photo__inner">
+                    <div className="post-photo__visual photo--l">
+                      <img  className="photo--l__img" src={Post1Img1} alt=""/>
+                    </div>
+                    <p className="post-photo__caption post-text--s"><a href="http://dodiciartproject.com">dodiciartproject.com</a> homepage</p>
+                  </div>
+                </div>
               </div>
               <div className="post-container--s">
                 <div className="post-block post-text">
-                  <h3 className="post-title--s">Ma quande</h3>
-                  <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
-                  <h4 className="post-title--xs">Ma quande</h4>
-                  <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+                  <p>Dodiciartproject only started up recently, which meant there was freedom to decide everything in terms of colour and style. Also the artist provided me a cool set of illustrations, That made it a really nice project to work on</p>
+              
+                  <div className="post-photo">
+                    <div className="post-photo__inner">
+                      <div className="post-photo__visual photo--m">
+                        <img  className="photo--m__img object-fit" src={Post1Img2} alt=""/>
+                      </div>
+                      <p className="post-photo__caption post-text--s"><a href="https://dodiciartproject.com/shop/">dodiciartproject.com</a> Shop</p>
+                    </div>
+                  </div>
+                  <h3 className="post-title--s">WHY WORDPRESS</h3>
+                  <p>WordPress was quickly identified as the ideal solution because of the ability to allow client to add/edit their own content, while also creating our own theme, in additional to easy installation of <a href="https://woocommerce.com/">WooCommerce plugin</a></p>
                   
-                  <ul className="post-list post-list--bullet">
-                    <li className="post-list__item">Consectetuer</li>
-                    <li className="post-list__item">Adipiscing elit</li>
-                    <li className="post-list__item">Diam</li>
-                    <li className="post-list__item">Tincidunt</li>
-                  </ul>              
-                  <ul className="post-list post-list--custom">
-                    <li className="post-list__item">Consectetuer</li>
-                    <li className="post-list__item">Adipiscing elit</li>
-                    <li className="post-list__item">Diam</li>
-                    <li className="post-list__item">Tincidunt</li>
-                  </ul>
+                  <div className="post-photo">
+                    <div className="post-photo__inner">
+                      <div className="post-photo__visual photo--m">
+                        <img  className="photo--m__img object-fit" src={Post1Img3} alt=""/>
+                      </div>
+                      <p className="post-photo__caption post-text--s"><a href="https://dodiciartproject.com/shop/">dodiciartproject.com</a> Shop</p>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-              <div className="post-block post-photo-grid">
-             <div className="post-photo-grid__item post-photo-m">
-               <div className="post-photo-m__inner">
-                 <div className="photo-m__visual">
-                   <img  className="photo-m__img" src={Image2} alt=""/>
-                 </div>
-                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-               </div>
-             </div>
-             <div className="post-photo-grid__item post-photo-m">
-               <div className="post-photo-m__inner">
-                 <div className="photo-m__visual">
-                   <img  className="photo-m__img" src={Image2} alt=""/>
-                 </div>
-                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-               </div>
-             </div>
-             <div className="post-photo-grid__item post-photo-m">
-               <div className="post-photo-m__inner">
-                 <div className="photo-m__visual">
-                   <img  className="photo-m__img" src={Image2} alt=""/>
-                 </div>
-                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-               </div>
-             </div>
-            </div>
            </div>
         </div>
       </div>

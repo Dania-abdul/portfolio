@@ -126,28 +126,28 @@ export class post1Component extends React.Component <any, DemoPostState> {
              </div>
            </div>
            <div className="post-block post-photo-grid">
-             <div className="post-photo-grid__item post-photo-m">
-               <div className="post-photo-m__inner">
-                 <div className="photo-m__visual">
-                   <img  className="photo-m__img" src={Image2} alt=""/>
+              <div className="post-photo-grid__item post-photo--m">
+                <div className="post-photo--m__inner">
+                  <div className="photo--m__visual">
+                    <img  className="photo--m__img" src={Image2} alt=""/>
+                  </div>
+                  <p className="photo--m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </div>
+              <div className="post-photo-grid__item post-photo--m">
+                <div className="post-photo--m__inner">
+                  <div className="photo--m__visual">
+                    <img  className="photo--m__img" src={Image2} alt=""/>
+                  </div>
+                  <p className="photo--m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+              </div>
+              <div className="post-photo-grid__item post-photo--m">
+               <div className="post-photo--m__inner">
+                 <div className="photo--m__visual">
+                   <img  className="photo--m__img" src={Image2} alt=""/>
                  </div>
-                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-               </div>
-             </div>
-             <div className="post-photo-grid__item post-photo-m">
-               <div className="post-photo-m__inner">
-                 <div className="photo-m__visual">
-                   <img  className="photo-m__img" src={Image2} alt=""/>
-                 </div>
-                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-               </div>
-             </div>
-             <div className="post-photo-grid__item post-photo-m">
-               <div className="post-photo-m__inner">
-                 <div className="photo-m__visual">
-                   <img  className="photo-m__img" src={Image2} alt=""/>
-                 </div>
-                 <p className="photo-m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                 <p className="photo--m__caption post-text--s">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                </div>
              </div>
             </div>

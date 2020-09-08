@@ -17,8 +17,8 @@ $color-gray--light: rgba( $color-gray--dark, 0.2 );
     --background-color:#f7f7f7;
     --link-color: #ff4d00;
     --accent-color: #e5dfdf;
-    --main-headline-color: rgb(233, 30, 99);
-    --accent-background-color: rgb(0, 188, 212);
+    --main-headline-color:  #DCDCAA;
+    --accent-background-color: #4EC9B0;
   }
 
 
@@ -30,8 +30,8 @@ $color-gray--light: rgba( $color-gray--dark, 0.2 );
     --background-color: #272121;
     --link-color: #ff4d00 ;
     --accent-color: #443737;
-    --main-headline-color: rgb(233, 30, 99);
-    --accent-background-color: rgb(0, 188, 212);
+    --main-headline-color: #CE9178;
+    --accent-background-color: #CE9178;
   }
 
 
@@ -66,6 +66,7 @@ $threshold--desktop: 1440px;
 // ----- Font families
 $font--abril: 'Abril Fatface', cursive;
 $font--raleway: 'Raleway', sans-serif;
+$font--ptmono: 'PT Mono', monospace ;
 
 
 // ---------- Font sizes

@@ -22,7 +22,9 @@
     color:  var(--text-color);
 }
 
-
+.post__header {
+    padding-bottom: 40px;
+}
 .post-divider {
 	position: relative;
 	margin-bottom: 60px;
@@ -43,6 +45,7 @@
 .post-block {
     margin-bottom: 60px;
 }
+
 
 .post-container--m {
     max-width: 900px;
@@ -65,6 +68,7 @@
 .post-title--l {
     font-size: 36px;
     font-family: $font--abril;
+    padding-bottom: 20px;
 }
 
 .post-title--m {
@@ -132,6 +136,10 @@
 .post-text {
     p {
          margin-bottom: 20px;
+         @media only screen and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
      }
 
     .post-link {
@@ -252,19 +260,48 @@
 
 
 //---------------------------------
-/// POST | BLOCK | Object | Photo Medium
+/// POST | BLOCK | Object | Photo SIZES
 
-.post-photo-m {
+.post-photo__caption {
+    padding: 10px 0;
+}
+////// Large /////
+.post-photo {
+    padding-bottom: 40px;
+}
+
+.post-photo__visual {
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.3s ;
+
+}
+
+.photo--l {
+    height: 250px;
+    @media only screen and (min-width: 768px) {
+        height: 500px;
+    }
+}
+
+.photo--l__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo--m {
+        max-height: 740px;
+}
+
+/////// Medium ///////////
+.post-photo--m {
     display: inline-block;
 }
 
-.post-photo-m__inner {
+.post-photo--m__inner {
     max-width: 250px;
 }
 
-.photo-m__caption {
-    margin-top: 10px;
-}
 
 
 //---------------------------------

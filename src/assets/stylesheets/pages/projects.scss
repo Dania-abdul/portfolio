@@ -35,6 +35,15 @@
                 background-color: var(--accent-color);;
             }
         }
+        .root-43 {
+            &::before {
+                display: none;
+            }
+        }
+        .content-44 {
+            background: var(--accent-color);
+            color: var(--text-color) ;
+        }
 
     }
 
@@ -58,16 +67,25 @@
     }
 
     .nav-category {
+        
+        .link-106 {
+            background-color: var(--accent-color);
+            &:after {
+                border-left: 2px solid var(--link-color);
+            }
+        }
         .ms-Nav-chevronButton {
             color: var(--text-color);
             background-color: var(--accent-color);
         }
-        .ms-Nav-link
-        {
+        .ms-Nav-link {
             color: var(--text-color);
-        }
-        .ms-Nav-compositeLink:hover .link-110 {
-            background-color: var(--accent-color);
+            &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+
+            }
+
         }
     }
 }

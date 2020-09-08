@@ -12,6 +12,8 @@ import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import {List} from "immutable";
 import Image1 from './assets/images/img-1.png';
 import Image2 from './assets/images/img-2.jpg';
+import Proj1Img from './assets/images/front-projects--dodici.jpg';
+
 
 export type cardData = {
   category : string
@@ -22,6 +24,11 @@ export type cardData = {
   url : string
   image_url : string,
   id : string
+
+  post_card_tag_1 : string
+  post_card_tag_2 : string
+  post_card_tag_3 : string
+
 }
 
 export type HomeProjectsState = {
@@ -104,13 +111,16 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 export let data : cardData[] = [
   { 
-    category : "_category_1", 
+    category : "Wordpress", 
     post_title : "_post_1_title", 
     is_pinned : false, 
     post_card_description: "_post_1_card_desc",
+    post_card_tag_1: "_post_card_tag_php",
+    post_card_tag_2: "_post_card_tag_html",
+    post_card_tag_3: "_post_card_tag_css",
     modal_desc:"_post_1_modal_desc",
     url : "/portfolio/projects/project_post_1",
-    image_url : Image1,
+    image_url : Proj1Img,
     id:"project_post_1"
   },
   { 
@@ -118,6 +128,9 @@ export let data : cardData[] = [
     post_title : "_post_2_title", 
     is_pinned : true, 
     post_card_description: "_post_2_card_desc",
+    post_card_tag_1: "_post_card_tag_html",
+    post_card_tag_2: "_post_card_tag_react",
+    post_card_tag_3: "_post_card_tag_js",
     modal_desc:"_post_2_modal_desc",
     url : "/portfolio/projects/project_post_2",
     image_url : Image1,
@@ -224,7 +237,6 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                                     e.stopPropagation()
                                   }}
                                 styles={iconStyles} />
-                              <Icon className="tools__icon icon--more"  iconName="MoreVertical" styles={iconStyles} />
                             </Card.Section>
                           </Card>
                         </div>
@@ -267,7 +279,6 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                                     e.stopPropagation()
                                   }}
                                 styles={iconStyles} />
-                          <Icon className="tools__icon icon--more" iconName="MoreVertical" styles={iconStyles} />
                         </Card.Section>
                       </div>
                     </Card>
@@ -287,7 +298,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                 this.setState({...this.state, selected_category: e == undefined || e.key == "All" ? "" : e.key as any})
               }}
               groups={[{
-                name: 'read about ', //translate
+                name: 'Filter', //translate
                 expandAriaLabel: 'Expand Extended components section',
                 collapseAriaLabel: 'Collapse Extended components section',
                 links:
