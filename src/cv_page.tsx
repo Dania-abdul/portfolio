@@ -54,9 +54,9 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     <p className="about__text ">{i18next.t("_cvAboutText8")}</p>
                     <p className="about__text ">{i18next.t("_cvAboutText9")}</p>
                     <p className="about__text ">{i18next.t("_cvAboutText10")}</p>
-                    <p className="about__text ">{i18next.t("_cvAboutText11")}</p>
-                    <p className="about__text ">{i18next.t("_cvAboutText12")}</p>
-                    <p className="about__text styled--bold">{i18next.t("_cvAboutText13")}</p>
+                    <p className="about__text text--bold">{i18next.t("_cvAboutText11")}</p>
+                    <p className="about__text text--bold about--inline">{i18next.t("_cvAboutText12")}</p>
+                    <p className="about__text text--bold about--inline">{i18next.t("_cvAboutText13")}</p>
 
                 </div>
             </section>
@@ -80,11 +80,37 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                         </table>
                     </div>
                 </div>
-                <div id="education" className="cv-section">
+                <div id="experience" className="cv-section">
                     <h3 className="cv-section__title">{i18next.t("_cvSecTitle-2")}</h3>    
                     <div className="cv-sectiom__item">
                         <table className="cv-table">
                             <tbody>
+                                <tr className="row" role="row" >
+                                    <td className="cv-table__date col-2">
+                                        <p className="end-date">NOW</p>
+                                        <p className="tot-period">1 year</p>
+                                    </td>
+
+                                    <td className="cv-table__content col-10">
+                                        <p className="cell--title">Self-employed webdeveloper</p>
+                                        <p className="cell--desc">Remote work for startups and small companies </p>
+                                        <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
+                                        <div className="collapse multi-collapse" id="jobDesc">
+                                            <div className="card card-body">
+                                                <p>Development of online applications, working on HTML5, CSS, JS.</p> 
+                                                <ul className="post-list--custom">
+                                                    <li> Developing and designing HTML/CSS </li>  
+                                                    <li> Cross-Browser Testing. </li>
+                                                    <li> Creating wordpress custom themes </li>
+                                                    <li> Creating e-commerce custom shops </li>
+                                                    <li> Side projects on Fabric UI and React </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </td>
+                                </tr>
                                 <tr className="row" role="row" >
                                     <td className="cv-table__date col-2">
                                         <p className="end-date">Sep 2019</p>

@@ -91,6 +91,7 @@ p[class*="styled"] {
     display: inline;
 }
 
+
 .styled--city {
     &:before {
         content: "";
@@ -102,7 +103,8 @@ p[class*="styled"] {
         display: inline-block;
     }
 }
- .styled--bold {
+ .styled--bold,
+ .text--bold {
     text-transform: uppercase;
      font-weight: 500;
  }
