@@ -9,7 +9,6 @@ import { Separator } from 'office-ui-fabric-react/lib/Separator';
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
-import Image1 from '../assets/images/img-1.png';
 import Image2 from '../assets/images/img-2.jpg';
 import { cardData, data } from '../projects_home';
 import { useParams } from 'react-router-dom';
@@ -32,7 +31,7 @@ initializeIcons();
 
 
 
-export class post1Component extends React.Component <any, DemoPostState> {
+export class post_template extends React.Component <any, DemoPostState> {
   constructor(props : any) {
     
     super(props);
@@ -41,7 +40,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
   }
   
   itemsWithHeading = () : IBreadcrumbItem[] => [
-    { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
+    { text: 'Projects', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
     // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
     // Generally, only the last item should ever be a heading.
     // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
@@ -63,8 +62,6 @@ export class post1Component extends React.Component <any, DemoPostState> {
     return (
       <div className="projects-post__inner">
         <div className="projects-post__breadcrumb">
-          {/* <a href="/fabric">/Home</a>
-           */}
           <Breadcrumb
             items={this.itemsWithHeading()}
             maxDisplayedItems={3}
@@ -78,36 +75,50 @@ export class post1Component extends React.Component <any, DemoPostState> {
            <div className="post-block post-header">
              <div className="post-header__content">
                <div className="post-header__top">
-                 <div className="post-header__label post-text--s"><span className="post-label">category</span></div>
+                 <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(this.state.myData.category)}</span></div>
                  <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                </div>
                <div className="post-header__title">
                  <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
                </div>
                <div className="post-header__text">
-                 <p className="post-text--m">This post is coming soon.... </p>
+                 <p className="post-text--m">{i18next.t(this.state.myData.post_short_description)} </p>
                </div>
+                  <ul className="tag__list">
+                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_1)}</li>
+                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_2)}</li>
+                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_3)}</li>
+                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_4)}</li>
+                  </ul>
              </div>
              <div className="post-header__visual">
-               <img src={Image2} alt="" className="post-header__img"/>
+               <img src={i18next.t(this.state.myData.image_url)} alt="" className="post-header__img"/>
              </div>
            </div>
            <div className="post-containerm--m">
              <blockquote className="post-block post-quote ">
-               <p className="post-quote__text"> “Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla, malesuada ut”</p>
-               <p className="post-quote__author post-text--s">Author Name</p>
+               <p className="post-quote__text">“ {i18next.t(this.state.myData.post_quote)}”</p>
+               <p className="post-quote__author post-text--s">{i18next.t(this.state.myData.author)}</p>
             </blockquote>
            </div>
            <div className="post-container--s">
-             <p className="post-block post-text post-text--m ">Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li.Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
+              <h3 className="post-title--s">{i18next.t(this.state.myData.post_text_1_title)}</h3>
+             <p className="post-block post-text post-text--m ">{i18next.t(this.state.myData.post_text_1)}</p>
            </div>
            <div className="post-container--m">
-             <h2 className="post-block post-center-title post-title--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit  maecenas lorem nulla</h2>
+             <div className="post-photo">
+                <div className="post-photo__inner">
+                  <div className="post-photo__visual photo--l">
+                    <img  className="photo--l__img object-fit" src={i18next.t(this.state.myData.post_img_1)} alt=""/>
+                  </div>
+                  <p className="post-photo__caption post-text--s"><a href={i18next.t(this.state.myData.link)}>this is a link</a> text</p>
+                </div>
+              </div>
+              <h2 className="post-block post-center-title post-title--m">{i18next.t(this.state.myData.post_text_big)}</h2>
+
            </div>
            <div className="post-container--s">
              <div className="post-block post-text">
-              <h3 className="post-title--s">Ma quande</h3>
-              <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
               <h4 className="post-title--xs">Ma quande</h4>
               <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li. <a className="post-link" href="">Ma quande lingues</a> coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. </p>
               

@@ -39,9 +39,20 @@
 
 .home-intro__visual {
     display: none;
+    margin: auto 0;
+    position: relative;
+
     @media only screen and (min-width: 768px) {
         width: calc(50% - 40px);
         display: block;
+    }
+    span {
+        position: absolute;
+        color: $color-secondary;
+        font-family: $font--ptmono;
+        bottom: 15px;
+        left: 20px;
+        font-size: 12px;
     }
 }
 
@@ -223,7 +234,8 @@
 
 
 .code-block {
-    background-color: map-get($code-editor-theme,editor--background);
+    // background-color: map-get($code-editor-theme,editor--background);
+    background-color: var(--editor--background);
     @include fluid-sizing(320px, 1440px, 12px, 16px, 'font-size') ;  
     font-family: 'Roboto Mono', monospace;
     font-size: $text-code;
@@ -236,48 +248,48 @@
     }
 
     .method {
-        color: map-get($code-editor-theme,editor--method);
+        color: var(--editor--method);
         display: inline;
     }
     
     .propname {
-        color: map-get($code-editor-theme,editor--propname);
+        color: var(--seditor--propname);
     }
     
     .dots {
-        color: map-get($code-editor-theme,editor--dots);
+        color: var(--editor--dots);
         display: inline;
         vertical-align: text-top;
     }
     
     .comment {
-        color: map-get($code-editor-theme,editor--comment);
+        color: var(--editor--comment);
         display: inline;
     }
     
     .scope {
-        color: map-get($code-editor-theme,editor--scope);
+        color: var(--editor--scope);
         display: inline;
     }
     
     .prop2 {
-        color: map-get($code-editor-theme,editor--prop2);
+        color: var(--editor--prop2);
     }
     
     .string {
-        color: map-get($code-editor-theme,editor--string);
+        color: var(--editor--string);
     }
     
     .number {
-        color: map-get($code-editor-theme,editor--number);
+        color: var(--editor--number);
     }
     .symbol {
         display: inline;
-        color: $color-secondary ;
+        color: var(--editor--symbol) ;
     }
     .control {
         display: inline;
-        color: map-get($code-editor-theme,editor--control) ;
+        color: var(--editor--control) ;
     }
 }
 

@@ -57,6 +57,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     <p className="about__text text--bold">{i18next.t("_cvAboutText11")}</p>
                     <p className="about__text text--bold about--inline">{i18next.t("_cvAboutText12")}</p>
                     <p className="about__text text--bold about--inline">{i18next.t("_cvAboutText13")}</p>
+                    <p className="about__text text--bold about--inline">{i18next.t("_cvAboutText14")}</p>
 
                 </div>
             </section>
@@ -94,16 +95,16 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                     <td className="cv-table__content col-10">
                                         <p className="cell--title">Self-employed webdeveloper</p>
                                         <p className="cell--desc">Remote work for startups and small companies </p>
-                                        <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
-                                        <div className="collapse multi-collapse" id="jobDesc">
+                                        <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc0" role="button" aria-expanded="false" aria-controls="jobDesc0">more about the job...</a>
+                                        <div className="collapse multi-collapse" id="jobDesc0">
                                             <div className="card card-body">
-                                                <p>Development of online applications, working on HTML5, CSS, JS.</p> 
+                                                <p>Development of online applications, websites, working on HTML5, CSS, JS, PHP, Wordpress and e-commerce</p> 
                                                 <ul className="post-list--custom">
                                                     <li> Developing and designing HTML/CSS </li>  
-                                                    <li> Cross-Browser Testing. </li>
                                                     <li> Creating wordpress custom themes </li>
                                                     <li> Creating e-commerce custom shops </li>
                                                     <li> Side projects on Fabric UI and React </li>
+                                                    <li> projects list <a href="https://dania-abdul.github.io/portfolio/projects">here</a></li>
                                                 </ul>
                                             </div>
                                         </div>

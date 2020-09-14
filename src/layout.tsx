@@ -6,8 +6,10 @@ import { CvComponent } from './cv_page';
 import { HomeProjectsComponent } from './projects_home';
 import { Footer } from './footer';
 import { Header } from './header'
-import { post1Component } from './projects_posts/post_1';
+import { dodici } from './projects_posts/dodici';
 import { HomeComponent } from './home';
+import { esse } from './projects_posts/esse';
+import { post_template } from './projects_posts/post_template';
 
 export type LayoutState = {
     language : string
@@ -56,7 +58,9 @@ export class LayoutComponent extends React.Component <LayoutProps, LayoutState> 
                     <Route exact path='/' component={HomeComponent}/> 
                     <Route path='/cv' component={CvComponent}/> 
                     <Route exact path='/projects' component={HomeProjectsComponent}/>
-                    <Route path='/projects/:id' component={post1Component} />
+                    <Route path='/projects/dodici' component={dodici} />
+                    <Route path='/projects/esse' component={esse} />
+                    <Route path='/projects/:id' component={post_template} />
                     <Route component={() => <h1>Not found.</h1>}/>
                 </Switch>
             </main>

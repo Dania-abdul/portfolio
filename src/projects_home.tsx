@@ -12,23 +12,39 @@ import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import {List} from "immutable";
 import Image1 from './assets/images/img-1.png';
 import Image2 from './assets/images/img-2.jpg';
+import Image3 from './assets/images/lunch_atop_askyscraper.jpg';
 import Proj1Img from './assets/images/front-projects--dodici.jpg';
+import Proj2Img from './assets/images/front-projects--esse.jpg';
 
 
 export type cardData = {
-  category : string
-  post_title : string
-  is_pinned : boolean
-  modal_desc : string
-  post_card_description : string
+  
   url : string
   image_url : string,
   id : string
 
+  category : string
+  post_title : string
+  is_pinned : boolean
+
   post_card_tag_1 : string
   post_card_tag_2 : string
   post_card_tag_3 : string
+  post_card_tag_4 : string
+  
+  post_short_description : string
+  post_long_description : string
 
+  post_quote : string
+  author : string
+
+  post_text_1_title : string
+  post_text_1 : string
+
+  post_text_big : string
+
+  post_img_1 : string
+  link: string
 }
 
 export type HomeProjectsState = {
@@ -84,7 +100,7 @@ const horizontalFooterCardSectionStyles: ICardSectionStyles = {
 
 //delete
 const itemsWithHeading: IBreadcrumbItem[] = [
-  { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
+  { text: 'Projects', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
   // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
   // Generally, only the last item should ever be a heading.
   // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
@@ -110,31 +126,118 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 
 export let data : cardData[] = [
+  
   { 
+    url : "/portfolio/projects/post_template",
+    image_url : Image3,
+    id:"post_template",
+
+    category : "_category_development", 
+    post_title : "_post_2_title", 
+    is_pinned : true, 
+
+    post_card_tag_1: "_post_card_tag_fluentui",
+    post_card_tag_2: "_post_card_tag_react",
+    post_card_tag_3: "_post_card_tag_css",
+    post_card_tag_4: "_post_card_tag_js",
+
+    post_short_description: "_post_2_short_desc",
+    post_long_description: "_post_2_long_desc",
+
+    post_quote: "_post_2_quote",
+    author:"Vincent van Gogh",
+
+    post_text_1_title: "_post_2_text_1_title",
+    post_text_1: "_post_2_text_1",
+    post_text_big: "_post_text_big",
+
+    post_img_1: Image2,
+    link : "www.google.com",
+
+  },
+  {     
+    url : "/portfolio/projects/dodici",
+    image_url : Proj1Img,
+    id:"dodici",
+
     category : "Wordpress", 
-    post_title : "_post_1_title", 
+    post_title : "_post_dodici_title", 
     is_pinned : false, 
-    post_card_description: "_post_1_card_desc",
+
     post_card_tag_1: "_post_card_tag_php",
     post_card_tag_2: "_post_card_tag_html",
     post_card_tag_3: "_post_card_tag_css",
-    modal_desc:"_post_1_modal_desc",
-    url : "/portfolio/projects/project_post_1",
-    image_url : Proj1Img,
-    id:"project_post_1"
+    post_card_tag_4: "_post_card_tag_wp",
+
+    post_short_description: "_post_dodici_short_desc",
+    post_long_description:"_post_dodici_long_desc",
+    
+    post_quote: "",
+    author:"Author Name",
+
+    post_text_1_title: "_post_2_text_1_title",
+    post_text_1: "_post_2_text_1",
+    post_text_big: "_post_text_big",
+
+    post_img_1:" ",
+    link : "",
   },
   { 
-    category : "Development", 
-    post_title : "_post_2_title", 
-    is_pinned : true, 
-    post_card_description: "_post_2_card_desc",
+    url : "/portfolio/projects/esse",
+    image_url : Proj2Img,
+    id:"esse",
+
+    category : "Wordpress", 
+    post_title : "_post_esse_title", 
+    is_pinned : false, 
+
+    post_card_tag_1: "_post_card_tag_php",
+    post_card_tag_2: "_post_card_tag_html",
+    post_card_tag_3: "_post_card_tag_css",
+    post_card_tag_4: "_post_card_tag_js",
+
+    post_long_description:"_post_dodici_long_desc",
+    post_short_description: "_post_esse_short_desc",
+    
+    post_quote: "",
+    author:"Author Name",
+
+    post_text_1_title: "_post_2_text_1_title",
+    post_text_1: "_post_2_text_1",
+    post_text_big: "_post_text_big",
+
+    post_img_1:" ",
+    link : "",
+
+
+  },
+  { 
+    url : "/portfolio/projects/post_template2",
+    image_url : Image1,
+    id:"post_template2",
+    
+    category : "_category_development", 
+    post_title : "_post_4_title", 
+    is_pinned : false, 
+
     post_card_tag_1: "_post_card_tag_html",
     post_card_tag_2: "_post_card_tag_react",
     post_card_tag_3: "_post_card_tag_js",
-    modal_desc:"_post_2_modal_desc",
-    url : "/portfolio/projects/project_post_2",
-    image_url : Image1,
-    id:"project_post_2"
+    post_card_tag_4: "_post_card_tag_wp",
+
+    post_long_description:"",
+    post_short_description: "_post_4_short_desc",
+
+    post_quote: "hi",
+    author:"Author Name",
+
+    post_text_1_title: "_post_2_text_1_title",
+    post_text_1: "_post_2_text_1",
+    post_text_big: "_post_text_big",
+
+    post_img_1: Image1,
+    link : "www.google.com",
+    
   }
 ]
 
@@ -179,7 +282,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                 </div>
                 <div className="post-header__text">
                   <p className="post-text--m">
-                    {i18next.t(selected_card.modal_desc)}
+                    {i18next.t(selected_card.post_short_description)}
                   </p>
                 </div>
               </div>
@@ -228,7 +331,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                                 <Text variant="small" className= "post-label" styles={labelTextStyles}> {i18next.t(c.category)} </Text>
                               </div>
                               <Text styles={descriptionTextStyles}> {i18next.t(c.post_title)} </Text>
-                              <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_card_description)} </Text>
+                              <Text variant="small" styles={helpfulTextStyles}> {i18next.t(c.post_short_description)} </Text>
                             </Card.Section>
                             <Card.Section className="card-horizontal__tools card__tools" styles={horizontalFooterCardSectionStyles} tokens={footerCardSectionTokens}>
                               <Icon className="tools__icon icon--view" iconName="RedEye"
@@ -246,7 +349,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                   </Stack.Item>
                 
               </Card>
-              <Separator alignContent="start">Posts</Separator>
+              <Separator alignContent="start">All projects</Separator>
               <div className="projects-content__cards">
                 <Stack.Item className="cards__list">
                   {
@@ -269,7 +372,7 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
                           </div>
                           <Text styles={descriptionTextStyles}>{i18next.t(c.post_title)}</Text>
                           <Text variant="small" styles={helpfulTextStyles}>
-                            {i18next.t(c.post_card_description)}
+                            {i18next.t(c.post_short_description)}
                           </Text>
                         </Card.Section>
                         <Card.Section className="card-vertical__tools card__tools" horizontal styles={verticalFooterCardSectionStyles} tokens={footerCardSectionTokens}>

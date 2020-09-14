@@ -19,6 +19,18 @@ $color-gray--light: rgba( $color-gray--dark, 0.2 );
     --accent-color: #e5dfdf;
     --main-headline-color:  #DCDCAA;
     --accent-background-color: #4EC9B0;
+
+    --editor--background: #eeeeee;
+    --editor--method: #6796E6;
+    --editor--propname: #23974a	;
+    --editor--dots: #a8a8a8;
+    --editor--comment: #78707e;
+    --editor--scope: #23974a	;
+    --editor--prop2:#275fe4	;
+    --editor--string:#d52753	;
+    --editor--number:#c5a332;
+    --editor--control: #ce33c0	;
+    --editor--symbol: #3b3553;
   }
 
 
@@ -32,6 +44,19 @@ $color-gray--light: rgba( $color-gray--dark, 0.2 );
     --accent-color: #443737;
     --main-headline-color: #CE9178;
     --accent-background-color: #CE9178;
+
+    --editor--background: #141c20;
+    --editor--method: #6796E6;
+    --editor--propname: #4EC9B0;
+    --editor--dots: #78707e;
+    --editor--comment: #78707e;
+    --editor--scope: #4EC9B0;
+    --editor--prop2:#9CDCFE;
+    --editor--string: #CE9178;
+    --editor--number:#DCDCAA;
+    --editor--control: #C586C0;
+    --editor--symbol: #eeeeee;
+
   }
 
 

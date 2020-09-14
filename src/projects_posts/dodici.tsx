@@ -19,13 +19,6 @@ import { useParams } from 'react-router-dom';
 
 
 
-
-
-
-export type DemoPostState = {
-  myData : cardData 
-}
-
 export type DemoPostProps = {
 }
 
@@ -35,20 +28,16 @@ initializeIcons();
 
 
 
-export class post1Component extends React.Component <any, DemoPostState> {
+export class dodici extends React.Component <any, any> {
   constructor(props : any) {
     
     super(props);
-    let { id } = props.match.params
-    this.state = { myData:data.find(d => d.id == id) as any } 
+    this.state = { } 
   }
   
   itemsWithHeading = () : IBreadcrumbItem[] => [
-    { text: 'Home', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
-    // { text: 'Folder 1', key: 'd1', onClick: _onBreadcrumbItemClicked },
-    // Generally, only the last item should ever be a heading.
-    // It would typically be h1 or h2, but we're using h4 here to better fit the structure of the page.
-    { text: i18next.t(this.state.myData.post_title) , key: 'demo_page', isCurrentItem: true, as: 'h4' }
+    { text: 'Projects', key: 'home', onClick: () => { window.location.href = "/portfolio/projects" } },
+    { text: i18next.t("_post_dodici_title") , key: 'demo_page', isCurrentItem: true, as: 'h4' }
   ];
 
   _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
@@ -62,12 +51,10 @@ export class post1Component extends React.Component <any, DemoPostState> {
     );
   }
 
-  project_post_1 = () => {
+  project_post_dodici = () => {
     return (
       <div className="projects-post__inner">
-        <div className="projects-post__breadcrumb">
-          {/* <a href="/fabric">/Home</a>
-           */}
+        <div className="projects-post__breadcrumb">           
           <Breadcrumb
             items={this.itemsWithHeading()}
             maxDisplayedItems={3}
@@ -80,30 +67,29 @@ export class post1Component extends React.Component <any, DemoPostState> {
           <div className="post__content">
                 <div className="post__header">
                   <div className="post-header__top">
-                    <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(this.state.myData.category)}</span></div>
-                    <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
+                    <div className="post-header__label post-text--s"><span className="post-label">{i18next.t("_category_wordpress")}</span></div>
+                    <div className="post-header__date post-text--s"> <span className="post-date">Aug/2020</span></div> 
                   </div>
-                  <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
-                    <p className="post-text--m">{i18next.t(this.state.myData.post_card_description)}</p>
+                  <h1 className="post-title--l">{i18next.t("_post_dodici_title")}</h1>
+                     <p className="post-text--m">{i18next.t("_post_dodici_short_desc")}</p>
                     <ul className="home-projects__tags tag__list">
-                        <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_1)}</li>
-                        <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_2)}</li>
-                        <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_3)}</li>
-                    </ul>
+                        <li className="tag__item">{i18next.t("_post_card_tag_php")}</li>
+                        <li className="tag__item">{i18next.t("_post_card_tag_html")}</li>
+                        <li className="tag__item">{i18next.t("_post_card_tag_wp")}</li>
+                    </ul> 
                 </div>
               <div className="post-divider div-transparent"></div>
               <div className="post-container--s">
-                <h3 className="post-title--s">ABOUT</h3>
+                <h3 className="post-title--s">{i18next.t("_post_dodici_text_1_title")}</h3>
                 <div className="post-block">
-                  <p className=" post-text--m ">Dodici is a street art project, a website focused on the lead Artist Portfolio, Art work Gallery and a webshop for selling products and services</p>
-                  <p className=" post-text--m ">Design and content creation, setting up Shop, development, CMS ... </p>
+                  <p className=" post-text--m ">{i18next.t("_post_dodici_text_1")}</p>
                 </div>
               </div>
               <div className="post-container">
                 <div className="post-photo">
                   <div className="post-photo__inner">
                     <div className="post-photo__visual photo--l">
-                      <img  className="photo--l__img" src={Post1Img1} alt=""/>
+                      <img  className="photo--l__img object-fit" src={Post1Img1} alt=""/>
                     </div>
                     <p className="post-photo__caption post-text--s"><a href="http://dodiciartproject.com">dodiciartproject.com</a> homepage</p>
                   </div>
@@ -111,7 +97,7 @@ export class post1Component extends React.Component <any, DemoPostState> {
               </div>
               <div className="post-container--s">
                 <div className="post-block post-text">
-                  <p>Dodiciartproject only started up recently, which meant there was freedom to decide everything in terms of colour and style. Also the artist provided me a cool set of illustrations, That made it a really nice project to work on</p>
+                  <p>{i18next.t("_post_dodici_text_2")}</p>
               
                   <div className="post-photo">
                     <div className="post-photo__inner">
@@ -121,15 +107,15 @@ export class post1Component extends React.Component <any, DemoPostState> {
                       <p className="post-photo__caption post-text--s"><a href="https://dodiciartproject.com/shop/">dodiciartproject.com</a> Shop</p>
                     </div>
                   </div>
-                  <h3 className="post-title--s">WHY WORDPRESS</h3>
-                  <p>WordPress was quickly identified as the ideal solution because of the ability to allow client to add/edit their own content, while also creating our own theme, in additional to easy installation of <a href="https://woocommerce.com/">WooCommerce plugin</a></p>
+                  <h3 className="post-title--s">{i18next.t("_post_dodici_text_3_title")}</h3>
+                  <p>{i18next.t("_post_dodici_text_3")} <a href="https://woocommerce.com/">WooCommerce plugin</a></p>
                   
                   <div className="post-photo">
                     <div className="post-photo__inner">
                       <div className="post-photo__visual photo--m">
                         <img  className="photo--m__img object-fit" src={Post1Img3} alt=""/>
                       </div>
-                      <p className="post-photo__caption post-text--s"><a href="https://dodiciartproject.com/shop/">dodiciartproject.com</a> Shop</p>
+                      <p className="post-photo__caption post-text--s"><a href="https://dodiciartproject.com/shop/">dodiciartproject.com</a> Single Product Page</p>
                     </div>
                   </div>
 
@@ -142,10 +128,9 @@ export class post1Component extends React.Component <any, DemoPostState> {
   }
 
     render(){
-        if(this.state.myData == undefined) return <div>Not found</div>
         return <>
             <div className="projects-post">
-                 { this.project_post_1() }
+                 { this.project_post_dodici() }
             </div>
         </>
     }

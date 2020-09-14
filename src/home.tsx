@@ -4,7 +4,7 @@ import i18next from 'i18next';
 
 import Image1 from './assets/images/img-1.png';
 import Image2 from './assets/images/img-2.jpg';
-import Image3 from './assets/images/intro-photo.jpeg';
+import Image3 from './assets/images/intro-photo.jpg';
 import { data } from './projects_home';
 
 
@@ -48,59 +48,11 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                             </div>
                         </div>
                         <div className="home-intro__visual">
-                            <img className="" aria-label="impressive picture of me" alt="Responsive image" src={Image3} data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
+                            <img className="home-intro__img" aria-label="impressive picture of me" alt="Responsive image" src={Image3} data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
+                            <span>Amsterdam 2018</span>
                         </div>
 
                     </div>
-                        
-                        <div className="home-projects">
-                            <header className="home-sec-header">
-                                <a href="./projects">PROJECTS</a>
-                            </header>
-                            <div className="home-projects__inner">
-                                {
-                                data.map(card => <div className="home-projects__post">
-                                    <a href={card.url}>
-                                        <div className="home-projects__visual">
-                                            <img className="home-projects__img" src={card.image_url} alt=""/>
-                                        </div>
-                                        <div className="home-projects__content">
-                                            <h3 className="home-projects__title ">{i18next.t(card.post_title)}</h3>
-                                            <p className="home-projects__text">{i18next.t(card.post_card_description)}</p>
-                                            <ul className="home-projects__list tag__list">
-                                                <li className="tag__item">{i18next.t(card.post_card_tag_1)}</li>
-                                                <li className="tag__item">{i18next.t(card.post_card_tag_2)}</li>
-                                                <li className="tag__item">{i18next.t(card.post_card_tag_3)}</li>
-                                            </ul>
-                                        </div>
-                                    </a>
-                                </div>)
-                                }
-{/*                                 
-                                <div className="home-projects__post">
-                                    <a href="">
-                                        <div className="home-projects__visual">
-                                            <img className="home-projects__img" src={Image2} alt=""/>
-                                        </div>
-                                        <div className="home-projects__content">
-                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
-                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="home-projects__post">
-                                    <a href="">
-                                        <div className="home-projects__visual">
-                                            <img className="home-projects__img" src={Image2} alt=""/>
-                                        </div>
-                                        <div className="home-projects__content">
-                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
-                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
-                                        </div>
-                                    </a>
-                                </div> */}
-                            </div>
-                        </div>
                         <div className="home-about">
                             <header className="home-sec-header">
                                 <span>ABOUT</span>
@@ -160,6 +112,55 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                         <p className="symbol"> {'}'}</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        
+                        <div className="home-projects">
+                            <header className="home-sec-header">
+                                <span>PROJECTS</span>
+                            </header>
+                            <div className="home-projects__inner">
+                                {
+                                data.map(card => <div className="home-projects__post">
+                                    <a href={card.url}>
+                                        <div className="home-projects__visual">
+                                            <img className="home-projects__img" src={card.image_url} alt=""/>
+                                        </div>
+                                        <div className="home-projects__content">
+                                            <h3 className="home-projects__title ">{i18next.t(card.post_title)}</h3>
+                                            <p className="home-projects__text">{i18next.t(card.post_short_description)}</p>
+                                            <ul className="home-projects__list tag__list">
+                                                <li className="tag__item">{i18next.t(card.post_card_tag_1)}</li>
+                                                <li className="tag__item">{i18next.t(card.post_card_tag_2)}</li>
+                                                <li className="tag__item">{i18next.t(card.post_card_tag_3)}</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>)
+                                }
+{/*                                 
+                                <div className="home-projects__post">
+                                    <a href="">
+                                        <div className="home-projects__visual">
+                                            <img className="home-projects__img" src={Image2} alt=""/>
+                                        </div>
+                                        <div className="home-projects__content">
+                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
+                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="home-projects__post">
+                                    <a href="">
+                                        <div className="home-projects__visual">
+                                            <img className="home-projects__img" src={Image2} alt=""/>
+                                        </div>
+                                        <div className="home-projects__content">
+                                            <h3 className="home-projects__title ">Mary Jhun - Artist</h3>
+                                            <p className="home-projects__text">Mary Jhun is a Philippine-born artist who has become a staple of the vibrant San Diego arts scene.</p>
+                                        </div>
+                                    </a>
+                                </div> */}
                             </div>
                         </div>
                     </div>
