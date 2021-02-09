@@ -26,83 +26,43 @@
     @return $number;
   }
 
-//-----------------------
-//Typography
-//-----------------------
 
-//---- Titles
-
-@mixin title--s {
-  font-size: 18px;
-}
-
-@mixin title--m {
-  font-size: 24px;  
-}
-
-@mixin title--l {
-  font-size: 32px;
-}
-
-
-//---- Text
-
-@mixin text--m {
-  font-size: 18px;
-}
-
-
-@mixin text--s {
-  font-size: 14px;
-  line-height: 27px;
-}
-
-//------ links
-// @mixin link--base {
-//   font-size: 14px;
-//   line-height: 27px;
-// }
-
-@mixin link--primary {
+  // line height -- Function
+  @function calculate-relative-lineheight( $fontsize, $lineheight ) {
+    $relative-lineheight: ( strip-unit( $lineheight ) / strip-unit( $fontsize ) );
   
-}
-
-@mixin link--reversed-color {
-  a {
-    color: var(--text-color);
-
-    &:hover {
-      color: var(--link-color);  
-    }  
+    @return $relative-lineheight;
   }
+  
+
+
+//-----------------------
+//line limit
+//-----------------------
+
+@mixin line--limit {    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
-
-
-
+  
 //-----------------------
 //images
 //-----------------------
 
 @mixin object-fit {
-  width: 100%;
-  object-fit: cover;
-}
-//-----------------------
-//functions
-//-----------------------
+    width: 100%;
+    object-fit: cover;
+  }
 
-//line limit
-
-@mixin line--limit {    
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-//-----------------------
-//lists
-//-----------------------
-
-
-
+// // Use: @include objectfit;
+// @mixin objectfit {
+//     object-fit: cover;
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }

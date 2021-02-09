@@ -9,12 +9,10 @@ import { Separator } from 'office-ui-fabric-react/lib/Separator';
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
-import Image2 from '../assets/images/img-2.jpg';
-import { cardData, data } from '../projects_home';
+import {cardData , data} from '../projects-data';
 import { useParams } from 'react-router-dom';
 
-
-
+import Image2 from '../assets/images/img-2.jpg';
 
 
 
@@ -26,9 +24,6 @@ export type DemoPostProps = {
 }
 
 initializeIcons();
-
-
-
 
 
 export class post_template extends React.Component <any, DemoPostState> {
@@ -72,27 +67,23 @@ export class post_template extends React.Component <any, DemoPostState> {
         </div>
         <div className="post">
           <div className="post__content">
-           <div className="post-block post-header">
-             <div className="post-header__content">
-               <div className="post-header__top">
+           <div className=" post-header--img">
+             <div className="post-header--img__content">
+                <div className="post-header__top">
                  <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(this.state.myData.category)}</span></div>
                  <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                </div>
-               <div className="post-header__title">
-                 <h1 className="post-title--l">{i18next.t(this.state.myData.post_title)}</h1>
-               </div>
-               <div className="post-header__text">
-                 <p className="post-text--m">{i18next.t(this.state.myData.post_short_description)} </p>
-               </div>
-                  <ul className="tag__list">
-                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_1)}</li>
-                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_2)}</li>
-                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_3)}</li>
-                      <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_4)}</li>
-                  </ul>
+                <h1 className="post-header__title title--l">{i18next.t(this.state.myData.post_title)}</h1>
+                <p className="post-header__text post-text--m">{i18next.t(this.state.myData.post_short_description)} </p>
+                <ul className="tag__list">
+                    <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_1)}</li>
+                    <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_2)}</li>
+                    <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_3)}</li>
+                    <li className="tag__item">{i18next.t(this.state.myData.post_card_tag_4)}</li>
+                </ul>
              </div>
-             <div className="post-header__visual">
-               <img src={i18next.t(this.state.myData.image_url)} alt="" className="post-header__img"/>
+             <div className="post-header--img__visual">
+               <img src={i18next.t(this.state.myData.image_url)} alt="" className="post-header--img__img"/>
              </div>
            </div>
            <div className="post-containerm--m">

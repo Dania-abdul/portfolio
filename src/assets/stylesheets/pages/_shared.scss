@@ -1,0 +1,15 @@
+//-------------------------------------------------
+// PAGES || Shared styling on all pages
+//-------------------------------------------------
+
+.main-layout {
+    min-height: 100%;
+    position: relative;
+    background-color:  var(--background-color);
+  }
+  
+
+  .main-content {
+    padding-bottom: 60px;
+    min-height: calc( 100vh - 270px);
+  }

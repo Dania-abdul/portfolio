@@ -11,10 +11,10 @@ import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-r
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import Image1 from '../assets/images/img-1.png';
 import Image2 from '../assets/images/img-2.jpg';
-import Post1Img1 from  '../assets/images/post-1-image-1.jpg' ;
-import Post1Img2 from  '../assets/images/post-1-image-2.jpg' ;
-import Post1Img3 from  '../assets/images/single-product-gif.gif' ;
-import { cardData, data } from '../projects_home';
+import Post1Img1 from  '../assets/images/posts-imgs/dodici/post-dodici-image-1.jpg' ;
+import Post1Img2 from  '../assets/images/posts-imgs/dodici/post-dodici-image-2.jpg' ;
+import Post1Img3 from  '../assets/images/posts-imgs/dodici/dodici-single-product-gif.gif' ;
+import {cardData , data} from '../projects-data';
 import { useParams } from 'react-router-dom';
 
 
@@ -65,7 +65,7 @@ export class dodici extends React.Component <any, any> {
         </div>
         <div className="post">
           <div className="post__content">
-                <div className="post__header">
+                <div className="post-header">
                   <div className="post-header__top">
                     <div className="post-header__label post-text--s"><span className="post-label">{i18next.t("_category_wordpress")}</span></div>
                     <div className="post-header__date post-text--s"> <span className="post-date">Aug/2020</span></div> 

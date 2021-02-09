@@ -1,7 +1,13 @@
+
+
+
+
+
 .projects-post__breadcrumb {
-    margin: 60px 0;
+    margin: 40px 0;
 
     .ms-Breadcrumb-listItem {
+        
         h4 {
             color: var(--text-color)!important ;  
         }
@@ -17,35 +23,6 @@
 }
 
 
-///------------- shared
-.post {
-    color:  var(--text-color);
-}
-
-.post__header {
-    padding-bottom: 40px;
-}
-.post-divider {
-	position: relative;
-	margin-bottom: 60px;
-    height: 1px;
-    
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 5%;
-        right: 5%;
-        width: 90%;
-        height: 1px;
-        background-image: linear-gradient(to right, transparent, var(--text-color), transparent);  
-    }
-}
-
-.post-block {
-    margin-bottom: 60px;
-}
-
 
 .post-container--m {
     max-width: 900px;
@@ -58,11 +35,6 @@
 }
 
 
-.post-label {
-    color: $color-secondary ;
-    background-color:  var(--link-color);
-    padding: 4px 8px;
-}
 
 //--- post-titles
 .post-title--l {
@@ -82,6 +54,9 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+
+
 
 .post-title--xs{
     font-size: 20px;
@@ -150,57 +125,6 @@
             color: $color-primary;
         }
     }
-}
-
-
-//---------------------------------
-/// POST | BLOCK | HEADER
-
-.post-header {
-    display: flex;
-    flex-direction: column;
-    
-    @media only screen and (min-width: 768px) {
-        flex-direction: row;
-    }
-}
-
-.post-header__content {
-    width: 100%;
-
-    @media only screen and (min-width: 768px) {
-        width: 50%;
-        padding-right: 20px;
-    }
-
-    @media only screen and (min-width: 1025px) {
-        width: 60%;
-    }
-}
-
-.post-header__visual {
-    width: 100%;
-
-    @media only screen and (min-width: 768px) {
-        width: 50%;   
-    }
-
-    @media only screen and (min-width: 1025px) {
-        width: 40%;    
-    }
-}
-.post-header__top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.post-header__title {
-    margin-bottom: 20px;
-}
-
-.post-header__text {
-    margin-bottom: 40px;
 }
 
 //---------------------------------

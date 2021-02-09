@@ -10,42 +10,9 @@ import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import {List} from "immutable";
-import Image1 from './assets/images/img-1.png';
-import Image2 from './assets/images/img-2.jpg';
-import Image3 from './assets/images/lunch_atop_askyscraper.jpg';
-import Proj1Img from './assets/images/front-projects--dodici.jpg';
-import Proj2Img from './assets/images/front-projects--esse.jpg';
 
+import {cardData , data} from './projects-data';
 
-export type cardData = {
-  
-  url : string
-  image_url : string,
-  id : string
-
-  category : string
-  post_title : string
-  is_pinned : boolean
-
-  post_card_tag_1 : string
-  post_card_tag_2 : string
-  post_card_tag_3 : string
-  post_card_tag_4 : string
-  
-  post_short_description : string
-  post_long_description : string
-
-  post_quote : string
-  author : string
-
-  post_text_1_title : string
-  post_text_1 : string
-
-  post_text_big : string
-
-  post_img_1 : string
-  link: string
-}
 
 export type HomeProjectsState = {
   overlay : {kind:"show_modal_projects_home", selected_card:cardData} | {kind:"projects_home"},
@@ -125,122 +92,6 @@ function _getCustomDivider(dividerProps: IDividerAsProps): JSX.Element {
 
 
 
-export let data : cardData[] = [
-  
-  { 
-    url : "/portfolio/projects/post_template",
-    image_url : Image3,
-    id:"post_template",
-
-    category : "_category_development", 
-    post_title : "_post_2_title", 
-    is_pinned : true, 
-
-    post_card_tag_1: "_post_card_tag_fluentui",
-    post_card_tag_2: "_post_card_tag_react",
-    post_card_tag_3: "_post_card_tag_css",
-    post_card_tag_4: "_post_card_tag_js",
-
-    post_short_description: "_post_2_short_desc",
-    post_long_description: "_post_2_long_desc",
-
-    post_quote: "_post_2_quote",
-    author:"Vincent van Gogh",
-
-    post_text_1_title: "_post_2_text_1_title",
-    post_text_1: "_post_2_text_1",
-    post_text_big: "_post_text_big",
-
-    post_img_1: Image2,
-    link : "www.google.com",
-
-  },
-  {     
-    url : "/portfolio/projects/dodici",
-    image_url : Proj1Img,
-    id:"dodici",
-
-    category : "Wordpress", 
-    post_title : "_post_dodici_title", 
-    is_pinned : false, 
-
-    post_card_tag_1: "_post_card_tag_php",
-    post_card_tag_2: "_post_card_tag_html",
-    post_card_tag_3: "_post_card_tag_css",
-    post_card_tag_4: "_post_card_tag_wp",
-
-    post_short_description: "_post_dodici_short_desc",
-    post_long_description:"_post_dodici_long_desc",
-    
-    post_quote: "",
-    author:"Author Name",
-
-    post_text_1_title: "_post_2_text_1_title",
-    post_text_1: "_post_2_text_1",
-    post_text_big: "_post_text_big",
-
-    post_img_1:" ",
-    link : "",
-  },
-  { 
-    url : "/portfolio/projects/esse",
-    image_url : Proj2Img,
-    id:"esse",
-
-    category : "Wordpress", 
-    post_title : "_post_esse_title", 
-    is_pinned : false, 
-
-    post_card_tag_1: "_post_card_tag_php",
-    post_card_tag_2: "_post_card_tag_html",
-    post_card_tag_3: "_post_card_tag_css",
-    post_card_tag_4: "_post_card_tag_js",
-
-    post_long_description:"_post_dodici_long_desc",
-    post_short_description: "_post_esse_short_desc",
-    
-    post_quote: "",
-    author:"Author Name",
-
-    post_text_1_title: "_post_2_text_1_title",
-    post_text_1: "_post_2_text_1",
-    post_text_big: "_post_text_big",
-
-    post_img_1:" ",
-    link : "",
-
-
-  },
-  { 
-    url : "/portfolio/projects/post_template2",
-    image_url : Image1,
-    id:"post_template2",
-    
-    category : "_category_development", 
-    post_title : "_post_4_title", 
-    is_pinned : false, 
-
-    post_card_tag_1: "_post_card_tag_html",
-    post_card_tag_2: "_post_card_tag_react",
-    post_card_tag_3: "_post_card_tag_js",
-    post_card_tag_4: "_post_card_tag_wp",
-
-    post_long_description:"",
-    post_short_description: "_post_4_short_desc",
-
-    post_quote: "hi",
-    author:"Author Name",
-
-    post_text_1_title: "_post_2_text_1_title",
-    post_text_1: "_post_2_text_1",
-    post_text_big: "_post_text_big",
-
-    post_img_1: Image1,
-    link : "www.google.com",
-    
-  }
-]
-
 export class HomeProjectsComponent extends React.Component <HomeProjectsProps, HomeProjectsState> {
 
   constructor(props : HomeProjectsProps) {
@@ -271,23 +122,19 @@ export class HomeProjectsComponent extends React.Component <HomeProjectsProps, H
             />
           </div>
           <div className={"modal__content"}>
-            <div className="post-header">
-              <div className="post-header__content">
+            <div className="post-header--img">
+              <div className="post-header--img__content">
                 <div className="post-header__top">
                   <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(selected_card.category)}</span></div>
                   <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
                 </div>
-                <div className="post-header__title">
-                  <h1 className="post-title--l">{i18next.t(selected_card.post_title)}</h1>
-                </div>
-                <div className="post-header__text">
-                  <p className="post-text--m">
+                <h1 className="post-header__title title--l">{i18next.t(selected_card.post_title)}</h1>
+                  <p className="post-header__text post-text--m">
                     {i18next.t(selected_card.post_short_description)}
                   </p>
-                </div>
               </div>
-              <div className="post-header__visual">
-                <img src={selected_card.image_url} alt="" className="post-header__img"/>
+              <div className="post-header--img__visual">
+                <img src={selected_card.image_url} alt="" className="post-header--img__img"/>
               </div>
             </div>
           </div>

@@ -1,29 +1,6 @@
-
-//-----------------------
-//HOME PAGE | blocks
-//-----------------------
-.home-container-l {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.home-container-m {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.home-sec-header {
-    color: var(--text-color);
-    margin-bottom: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    @media only screen and (min-width: 768px) {
-        margin-bottom: 40px;
-        margin-left: -30px;
-    }
-}
-
-//----home-intro 
+//-------------------------------------------------
+// Home || intro 
+//-------------------------------------------------
 
 .home-intro {
     display: flex;
@@ -49,10 +26,11 @@
     span {
         position: absolute;
         color: $color-secondary;
-        font-family: $font--ptmono;
+        // font-family: $font--ptmono;
+        font-family: 'Nanum Pen Script', cursive;       
         bottom: 15px;
         left: 20px;
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -91,8 +69,24 @@
     }
 }
 
+//-------------------------------------------------
+// Home || headers 
+//-------------------------------------------------
 
-//---- HOME PROJECTS
+.home-sec-header {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 40px;
+        margin-left: -30px;
+    }
+}
+
+//-------------------------------------------------
+// Home || PROJECTS 
+//-------------------------------------------------
 
 .home-projects {
     margin-bottom: 100px;
@@ -169,7 +163,6 @@
     height: 100%;
 }
 
-
 .home-projects__content {
     font-family: $font--ptmono;
     font-size: 14px;
@@ -205,43 +198,16 @@
 }
 
 
-
-/* Strikethrough */
-
-.strikethrough {
-	display: inline-block;
-	position: relative;
-	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
-}
-
-.strikethrough:after {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 1px;
-	box-shadow: 0 1px rgba(255,255,255,0.6);
-	margin-top: -0.7em;
-	background: var(--accent-color);
-	transform-origin: center left;
-	animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
-	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
-}
-
-
-
-//----code-block
-
+//-------------------------------------------------
+// Home || code-block 
+//-------------------------------------------------
 
 .code-block {
-    // background-color: map-get($code-editor-theme,editor--background);
     background-color: var(--editor--background);
     @include fluid-sizing(320px, 1440px, 12px, 16px, 'font-size') ;  
     font-family: 'Roboto Mono', monospace;
-    font-size: $text-code;
     line-height: $text-code-lineheight;
     overflow-wrap: break-word;
-
     margin-bottom: 50px; 
     @media only screen and (min-width: 768px) {
          margin-bottom: 150px;
@@ -294,24 +260,20 @@
 }
 
 .code-block__inner {
-
     padding: 30px 50px;
     counter-reset: step;
     counter-increment: step 0;
     @media only screen and (min-width: 1025px) {
         padding: 30px 0;
     }
-
-
 }
 
 .code-line {
     position: relative;
-
     &::before {
         position: absolute;
         left: -30px;
-        color: $color-secondary ;
+        color: var(--text-color);
         font-size: 16px;
         top: 0;
         position: absolute;

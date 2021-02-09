@@ -1,0 +1,68 @@
+
+// ==========================================================================
+// TOOLS | Typography
+// Helpers concerning: titles, texts
+// ==========================================================================
+
+
+//---- Titles
+
+@mixin title-base {
+  font-weight: 500;
+  margin-bottom: 20px
+}
+
+@mixin title--s {
+  @include title-base;
+  @include fluid-sizing( $threshold--mobile, $threshold--desktop, $title--s-mobile, $title--s );
+  line-height: calculate-relative-lineheight( $title--s, 32);
+}
+  
+@mixin title--m {
+  @include title-base;
+  @include fluid-sizing( $threshold--mobile, $threshold--desktop, $title--m-mobile, $title--m );
+  line-height: calculate-relative-lineheight( $title--m, 40);
+}
+
+@mixin title--l {
+  @include title-base;
+  @include fluid-sizing( $threshold--mobile, $threshold--desktop, $title--l-mobile, $title--l );
+  line-height: calculate-relative-lineheight( $title--l, 58);
+  font-family: $font--abril;
+
+}
+  
+  
+  //---- Text
+
+  @mixin text--s {
+    @include fluid-sizing( $threshold--mobile, $threshold--desktop, $text--s-mobile, $text--s );
+    line-height: calculate-relative-lineheight( $text--s, 32);  
+  }
+
+  @mixin text--m {
+    @include fluid-sizing( $threshold--mobile, $threshold--desktop, $text--m-mobile, $text--m );
+    line-height: calculate-relative-lineheight( $text--m, 32);  
+  }
+  
+  //------ links
+  // @mixin link--base {
+  //   font-size: 14px;
+  //   line-height: 27px;
+  // }
+  
+  @mixin link--primary {
+    
+  }
+  
+  @mixin link--reversed-color {
+    a {
+      color: var(--text-color);
+  
+      &:hover {
+        color: var(--link-color);  
+      }  
+    }
+  }
+  
+  

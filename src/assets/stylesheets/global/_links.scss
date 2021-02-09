@@ -1,0 +1,21 @@
+// ==========================================================================
+// GLOBAL | Links
+// ==========================================================================
+
+a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--link-color); 
+  display: inline-block;
+  transition: color $transition--normal, background-color $transition--normal, border-color $transition--normal;
+
+  &:hover,
+  &:focus { 
+    color: var(--text-color);      
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

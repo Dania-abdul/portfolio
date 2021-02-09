@@ -5,19 +5,19 @@ export const Header = (language: string,
                        update_language:(new_language:string) => void,
                        toggle_theme:() => void) => (
     
-    <div className="header container">
-        <div className="header__inner">
-            <div className="header__logo header__name">
-                <a href="/portfolio" className="header__link" >Dania Abdul.</a>
+    <div className="main-header container">
+        <div className="main-header__inner">
+            <div className="main-header__logo main-header__name">
+                <a href="/portfolio" className="main-header__link" >Dania Abdul</a>
             </div>
-            <div className="header__nav">
-                <div className="header__utilities"> 
+            <div className="main-header__nav">
+                <div className="main-headerutilities"> 
                     <label className="switch">
                         <input type="checkbox" onChange={toggle_theme} defaultChecked={!is_dark}/>
                         <span className="slider round" />
                     </label>
                 </div>
-                <ul className="header__nav-list nav">
+                <ul className="main-header__nav-list nav">
                     <li className="nav-list__item language-switch ">
                         <button className={`language-switch__button--nl${language.toLowerCase() == "nl" ? "--active" : ""}`} onClick={() => update_language('nl')}>NL</button><span>|</span>
                         <button className={`language-switch__button--en${language.toLowerCase() == "en" ? "--active" : ""}`} onClick={() => update_language('en')}>EN</button>

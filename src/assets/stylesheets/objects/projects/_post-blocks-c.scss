@@ -1,0 +1,53 @@
+// ==========================================================================
+// OBJECTS | Projects | post blocks
+// ==========================================================================
+
+///------------- shared --------///
+.post {
+    color:  var(--text-color);
+}
+
+.post-block {
+    margin-bottom: 60px;
+}
+
+.post-divider {
+	position: relative;
+	margin-bottom: 60px;
+    height: 1px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, var(--text-color), transparent);  
+    }
+}
+
+.post-photo__caption {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+//---------------------------------
+//--- post text with image ---//
+//---------------------------------
+
+.post-text--img {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.text-img__content {
+    width: 80%;
+    margin-right: 20px;
+}
+
+.text-img__visual {
+    align-self: center;
+}

@@ -1,0 +1,62 @@
+// ==========================================================================
+// OBJECTS | Projects | Post header
+// ==========================================================================
+
+/// POST HEADER no Image 
+
+.post-header {
+    padding-bottom: 40px;
+}
+
+/// POST HEADER with Image (conten-visual)
+
+.post-header--img {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.post-header--img__content {
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        width: 60%;
+    }
+}
+
+.post-header--img__visual {
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+        width: 50%;   
+    }
+
+    @media only screen and (min-width: 1025px) {
+        width: 40%;    
+    }
+}
+.post-header__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.post-header__text {
+    margin-bottom: 40px;
+}
+
+
+.post-label {
+    color: $color-secondary ;
+    background-color:  var(--link-color);
+    padding: 4px 8px;
+}
