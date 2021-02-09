@@ -1,31 +1,38 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.78d4e175.chunk.css",
-    "main.js": "/portfolio/static/js/main.bda072c9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.bda072c9.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.dce4361f.chunk.css",
+    "main.js": "/portfolio/static/js/main.75ca190a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.75ca190a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
-    "static/js/2.e650eeb8.chunk.js": "/portfolio/static/js/2.e650eeb8.chunk.js",
-    "static/js/2.e650eeb8.chunk.js.map": "/portfolio/static/js/2.e650eeb8.chunk.js.map",
+    "static/js/2.31a5c062.chunk.js": "/portfolio/static/js/2.31a5c062.chunk.js",
+    "static/js/2.31a5c062.chunk.js.map": "/portfolio/static/js/2.31a5c062.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1ef41886eb8373542031a8d02efe0e14.js": "/portfolio/precache-manifest.1ef41886eb8373542031a8d02efe0e14.js",
+    "precache-manifest.f7e93d3ff167a062c10599b8ecbb7ddc.js": "/portfolio/precache-manifest.f7e93d3ff167a062c10599b8ecbb7ddc.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.78d4e175.chunk.css.map": "/portfolio/static/css/main.78d4e175.chunk.css.map",
-    "static/js/2.e650eeb8.chunk.js.LICENSE": "/portfolio/static/js/2.e650eeb8.chunk.js.LICENSE",
+    "static/css/main.dce4361f.chunk.css.map": "/portfolio/static/css/main.dce4361f.chunk.css.map",
+    "static/js/2.31a5c062.chunk.js.LICENSE": "/portfolio/static/js/2.31a5c062.chunk.js.LICENSE",
+    "static/media/BA-activity--light.gif": "/portfolio/static/media/BA-activity--light.e403fbd8.gif",
+    "static/media/MCQ--LIGHT.gif": "/portfolio/static/media/MCQ--LIGHT.36d083ff.gif",
+    "static/media/course-intro--light.png": "/portfolio/static/media/course-intro--light.b132b0f5.png",
+    "static/media/courses-list--switch.gif": "/portfolio/static/media/courses-list--switch.feb787de.gif",
+    "static/media/dodici-single-product-gif.gif": "/portfolio/static/media/dodici-single-product-gif.77a594b8.gif",
+    "static/media/drag-drop--light.gif": "/portfolio/static/media/drag-drop--light.59409699.gif",
     "static/media/esse_img_1.jpg": "/portfolio/static/media/esse_img_1.4d07fb8f.jpg",
+    "static/media/flip-card--light.gif": "/portfolio/static/media/flip-card--light.3402ac8e.gif",
     "static/media/front-projects--dodici.jpg": "/portfolio/static/media/front-projects--dodici.e6dbb3bc.jpg",
     "static/media/front-projects--esse.jpg": "/portfolio/static/media/front-projects--esse.fceeaa86.jpg",
+    "static/media/front-projects--grandeomega.png": "/portfolio/static/media/front-projects--grandeomega.933425ed.png",
     "static/media/img-2.jpg": "/portfolio/static/media/img-2.693d5c25.jpg",
     "static/media/intro-photo.jpg": "/portfolio/static/media/intro-photo.2b9b8fbd.jpg",
     "static/media/photo-bw.png": "/portfolio/static/media/photo-bw.f6b444b5.png",
-    "static/media/post-1-image-1.jpg": "/portfolio/static/media/post-1-image-1.21914cec.jpg",
-    "static/media/post-1-image-2.jpg": "/portfolio/static/media/post-1-image-2.b1898656.jpg",
-    "static/media/single-product-gif.gif": "/portfolio/static/media/single-product-gif.77a594b8.gif"
+    "static/media/post-dodici-image-1.jpg": "/portfolio/static/media/post-dodici-image-1.21914cec.jpg",
+    "static/media/post-dodici-image-2.jpg": "/portfolio/static/media/post-dodici-image-2.b1898656.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.44087e9b.js",
-    "static/js/2.e650eeb8.chunk.js",
-    "static/css/main.78d4e175.chunk.css",
-    "static/js/main.bda072c9.chunk.js"
+    "static/js/2.31a5c062.chunk.js",
+    "static/css/main.dce4361f.chunk.css",
+    "static/js/main.75ca190a.chunk.js"
   ]
 }
