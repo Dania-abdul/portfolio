@@ -14,50 +14,61 @@
 // ==========================================================================
 // SETTINGS
 // ==========================================================================
-@import './settings.scss';
-
+@import 'settings/colors';
+@import 'settings/sizes';
+@import 'settings/typography';
+@import 'settings/misc';
 
 // ==========================================================================
 // TOOLS
 // ==========================================================================
-@import './tools.scss';
-
-
-// ==========================================================================
-// GENERIC
-// ==========================================================================
-
+@import 'tools/typography';
+@import 'tools/buttons';
+@import 'tools/mixins';
+@import 'tools/container';
 
 // ==========================================================================
 // GLOBAL
 // ==========================================================================
-@import './global.scss';
+@import 'global/buttons';
+@import 'global/core';
+@import 'global/forms';
+@import 'global/links';
+@import 'global/lists';
+@import 'global/media';
+@import 'global/tables';
+@import 'global/typography';
+
 
 // ==========================================================================
 // OBJECTS
 // ==========================================================================
-@import './objects/header.scss'; 
-@import './objects/about.scss';
-@import './objects/footer.scss';
+@import 'objects/cv-about';
+@import 'objects/cv-table';
+
+@import 'objects/footer';
+@import 'objects/header';
+@import 'objects/typograaphy';
 
 //------ OBJECTS | projects
-@import'./objects/projects/modal.scss';
-@import'./objects/projects/cards.scss';
-@import'./objects/projects/post-blocks.scss';
+@import'/objects/projects/modal';
+@import'/objects/projects/cards';
+@import'/objects/projects/post-blocks';
+@import 'objects/projects/post-headers';
+@import 'objects/projects/post-blocks-c';
 
 
 // ==========================================================================
 // PAGES
 // ==========================================================================
-@import './pages/cv.scss';
-@import './pages/projects.scss';
-@import './pages/homepage.scss';
+@import '/pages/projects';
+@import '/pages/homepage';
+
+@import '/pages/shared';
 
 
 // ==========================================================================
 // overwrites
 // ==========================================================================
-@import './overwrites.scss';
-
-
-@import './print.scss'
+@import 'overwrites/overwrites';
+@import 'overwrites/print'

@@ -1,11 +1,11 @@
  import * as React from 'react';
 import { type } from 'os';
 import i18next from 'i18next';
+import { data} from '../projects-data';
 
-import Image1 from './assets/images/img-1.png';
-import Image2 from './assets/images/img-2.jpg';
-import Image3 from './assets/images/intro-photo.jpg';
-import { data } from './projects_home';
+
+import Image1 from '../assets/images/intro-photo.jpg';
+// import Image3 from './assets/images/intro-photo.jpg' ;
 
 
 export type HomeState = {
@@ -48,7 +48,7 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                             </div>
                         </div>
                         <div className="home-intro__visual">
-                            <img className="home-intro__img" aria-label="impressive picture of me" alt="Responsive image" src={Image3} data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
+                            <img className="home-intro__img" aria-label="impressive picture of me" alt="Responsive image" src={Image1} data-lazy-type="image" data-src="//via.placeholder.com/350x150" />
                             <span>Amsterdam 2018</span>
                         </div>
 

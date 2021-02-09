@@ -9,10 +9,9 @@ import { Separator } from 'office-ui-fabric-react/lib/Separator';
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 import { Breadcrumb, IBreadcrumbItem, IDividerAsProps } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
-import PostImg1 from  '../assets/images/esse_img_1.jpg' ;
-import Post1Img2 from  '../assets/images/post-1-image-2.jpg' ;
-import Post1Img3 from  '../assets/images/single-product-gif.gif' ;
-import { cardData, data } from '../projects_home';
+import PostImg1 from  '../assets/images/posts-imgs/esse/esse_img_1.jpg' ;
+
+import {cardData , data} from '../projects-data';
 import { useParams } from 'react-router-dom';
 
 
@@ -63,7 +62,7 @@ export class esse extends React.Component <any, any> {
         </div>
         <div className="post">
           <div className="post__content">
-                <div className="post__header">
+                <div className="post-header">
                   <div className="post-header__top">
                     <div className="post-header__label post-text--s"><span className="post-label">{i18next.t("_category_development")}</span></div>
                     <div className="post-header__date post-text--s"> <span className="post-date">Sep/2020</span></div>

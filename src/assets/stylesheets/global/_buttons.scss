@@ -1,0 +1,30 @@
+// ==========================================================================
+// GLOBAL | Buttons
+// ==========================================================================
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  border: 0;
+  display: inline-block;
+  padding: 0;
+  user-select: none;
+  text-decoration: none;
+  background: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+  
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

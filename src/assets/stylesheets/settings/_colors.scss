@@ -38,7 +38,7 @@ $color-gray--light: rgba( $color-gray--dark, 0.2 );
   // DARK//
   /////////
 [data-theme="dark"] {
-    --text-color: #f7f7f7 ;
+    --text-color: #e5dfdf ;
     --background-color: #272121;
     --link-color: #ff4d00 ;
     --accent-color: #443737;
@@ -74,43 +74,3 @@ $code-editor-theme: (
     editor--control: #C586C0,
 );
 
-
-//=======================
-//Sizes
-//=======================
-
-// ----- Fluid sizing thresholds
-$threshold--mobile: 320px;
-$threshold--desktop: 1440px;
-
-
-//=======================
-//Typography
-//=======================
-
-// ----- Font families
-$font--abril: 'Abril Fatface', cursive;
-$font--raleway: 'Raleway', sans-serif;
-$font--ptmono: 'PT Mono', monospace ;
-
-
-// ---------- Font sizes
-
-$title--s: 18px;
-$title--s--mobile: 16px;
-
-$title--m: 24px;
-$title--m--mobile: 18px;
-
-$title--l: 32px;
-$title--l--mobile: 24px;
-
-$label: 14px;
-
-$text--s: 18px;
-$text--body--mobile: 14px;
-
-$text--m: 22px;
-
-$text-code: 16px;
-$text-code-lineheight: 1.6;

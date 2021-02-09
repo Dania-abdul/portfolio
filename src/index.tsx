@@ -15,9 +15,9 @@ let resources: Resource = {
             "_cvAboutText3": " I like to create cool digital projects with creative teams. My main focus is HTML, CSS, JS, and building progressive web apps",
             "_cvAboutText4": " Before doing front-end development and after my graduation in IT-Multimedia (BSC) I worked on honing my skills in a variety of roles in the web industry starting with SEO, marketing and design",
             "_cvAboutText5": " I am originally from the beautiful city ",
-            "_cvAboutText6": "  Irbed (Jordan). I lived and worked in ",
-            "_cvAboutText7": " Dubai (UAE) before moving to the Netherland",
-            "_cvAboutText8": "I moved to the Netherlands to start my development career in Hoppinger BV and specialize in front-end development. This gave me the opportunity to sharpen my technical skills to develop semantic well-structured components that can be used by the client to build webpages. I learned to work on code quality and fast prototyping though the use of styleguides.",
+            "_cvAboutText6": "I lived and worked in ",
+            "_cvAboutText7": "Dubai (UAE) before moving to the Netherland",
+            "_cvAboutText8": " to start my development career in Hoppinger BV and specialize in front-end development. This gave me the opportunity to sharpen my technical skills to develop semantic well-structured components that can be used by the client to build webpages. I learned to work on code quality and fast prototyping though the use of styleguides.",
             "_cvAboutText9": "For the last year I've been scalling up my frondend technical skills; Javascript, React, Fabric Ul, Design systems, wordpress theme development, wordpress e-commerce",
             "_cvAboutText10": "I'm quietly confident, naturally curious, and perpetually working on improving my technical skills and design knowledge one at a time.",
             "_cvAboutText11": " NOW--- ",
@@ -32,7 +32,7 @@ let resources: Resource = {
             
             "_category_development" : "Development",
             "_category_wordpress" : "Wordpress",
-
+// ----------- dodici
             "_post_dodici_title": "Dodici Art Project Webshop",
             "_post_dodici_short_desc": "Art project Portfolio/webshop built with wordpress CMS and WooCommerce",
             "_post_dodici_long_desc" : "post long desc english",
@@ -53,14 +53,21 @@ let resources: Resource = {
             "_post_2_text_1" : "Most simply the inside pages of a book.  More precisely, the block of paper formed by the cut and stacked pages of a book.  Collectively, the bound pages of a book as distinct from its covers, boards, end papers, dust jacket or other accoutrements.",
 
             "_post_text_big" : "It’s a reminder that every technology we take for granted today was once forbidding and unfamiliar.",
-
+// ----------- esse
             "_post_esse_title": "Esse Floral Studio",
             "_post_esse_short_desc": "Flower Studio Portfolio/webshop built with wordpress CMS and WooCommerce",
             "_post_esse_long_desc" : "post-2 modal long desc english",
            
-            "_post_esse_text_1_title" : "About",
+            "_post_esse_text_1_title" : "About ",
             "_post_esse_text_1" : "Flower studio website and webshop for selling flower bouquets, plants and floral services",
+// ----------- grandeomega
+            "_post_go_title": "Grande Omega Education",
+            "_post_go_short_desc": "GrandeOmega is a digital teaching assistant that improves the quality of teaching programming",
+            "_post_go_long_desc" : "GrandeOmega is a web application that runs in the browser, and which facilitates learning programming within a higher education institution such as a college or a university",
 
+            "_post_go_text_1_title" : "About Grande Omega",
+            "_post_go_text_1" : "Flower studio website and webshop for selling flower bouquets, plants and floral services",
+// ----------- dummy
             "_post_4_title" : "Dummy post",
             "_post_4_short_desc": "This post is for development testing purpose",
 
@@ -71,7 +78,7 @@ let resources: Resource = {
             "_post_card_tag_js" : "#JS",
             "_post_card_tag_fluentui" : "#FluentUI",
             "_post_card_tag_wp" : "#WORDPRESS",
-
+// -----------
             
         }
     } as ResourceLanguage,
@@ -83,14 +90,14 @@ let resources: Resource = {
             "_cvAboutText3": " I like to create cool digital projects with creative teams. My main focus is HTML, CSS, JS, and building progressive web apps",
             "_cvAboutText4": " Before doing front-end development and after my graduation in IT-Multimedia (BSC) I worked on honing my skills in a variety of roles in the web industry starting with SEO, marketing and design",
             "_cvAboutText5": " I am originally from the beautiful city ",
-            "_cvAboutText6": "  Irbed (Jordan). I lived and worked in ",
-            "_cvAboutText7": " Dubai (UAE) before moving to the Netherland",
-            "_cvAboutText8": "I moved to the Netherlands to start my development career in Hoppinger BV and specialize in front-end development. This gave me the opportunity to sharpen my technical skills to develop semantic well-structured components that can be used by the client to build webpages. I learned to work on code quality and fast prototyping though the use of styleguides.",
+            "_cvAboutText6": "I lived and worked in ",
+            "_cvAboutText7": "Dubai (UAE) before moving to the Netherland",
+            "_cvAboutText8": " to start my development career in Hoppinger BV and specialize in front-end development. This gave me the opportunity to sharpen my technical skills to develop semantic well-structured components that can be used by the client to build webpages. I learned to work on code quality and fast prototyping though the use of styleguides.",
             "_cvAboutText9": "For the last year I've been scalling up my frondend technical skills; Javascript, React, Fabric Ul, Design systems, wordpress theme development, wordpress e-commerce",
             "_cvAboutText10": "I'm quietly confident, naturally curious, and perpetually working on improving my technical skills and design knowledge one at a time.",
             "_cvAboutText11": " NOW--- ",
             "_cvAboutText12": " Self-employed webdeveloper - Freelance",
-            "_cvAboutText13": " Scaling up my technical skills (CSS, TypeScript, React)",
+            "_cvAboutText13": " Scaling up my technical skills (CSS, TypeScript, React)s",
             "_cvAboutText14": " Open for a full/part time as frontend developer",
 
             "_cvSecTitle-1": "Education",
@@ -102,6 +109,7 @@ let resources: Resource = {
             "_category_development" : "Development",
             "_category_2" : "category-2 dutch",
 
+            // ----------- dodici
             "_post_dodici_title": "Dodici Art Project Webwinkel",
             "_post_dodici_short_desc": "Portfolio / Webwinkel gebouwd met wordpress CMS en WooCommerce",
             "_post_dodici_long_desc" : "post long desc nl",
@@ -122,13 +130,22 @@ let resources: Resource = {
             "_post_2_text_1" : "Gewoonlijk de binnenpagina's van een boek. Om precies te zijn, het blok papier gevormd door de gesneden en gestapelde pagina's van een boek. Gezamenlijk de gebonden pagina's van een boek in tegenstelling tot de omslagen, planken, schutbladen, stofomslag of andere uitrusting.",
            
             "_post_text_big" : "HET IS EEN HERINNERING DAT ELKE TECHNOLOGIE DIE WE VANDAAG TOEKENNEN EENMAAL VERBODEN EN ONBEKEND WAS.",
-            
+            // ----------- esse
             "_post_esse_title": "Esse Floral Studio",
-            "_post_esse_short_desc": "Bloemenatelier portfolio en webshop, met wordpress CMS en WooCommerce",
+            "_post_esse_short_desc": "GrandeOmega is a digital teaching assistant that improves the quality of teaching programming",
 
             "_post_esse_text_1_title" : "Over",
             "_post_esse_text_1" : "Bloemenatelier website en webshop voor verkoop van bloemboeketten, planten en bloemservices",
+// ----------- grandeomega
+            "_post_go_title": "Grande Omega Education",
+            "_post_go_short_desc": "Flower Studio Portfolio/webshop built with wordpress CMS and WooCommerce",
+            "_post_go_long_desc" : "GrandeOmega is a web application that runs in the browser, and which facilitates learning programming within a higher education institution such as a college or a university",
 
+            "_post_go_text_1_title" : "About Grande Omega",
+            "_post_go_text_1" : "Flower studio website and webshop for selling flower bouquets, plants and floral services",
+
+
+// ----------- grandeomega
             "_post_4_title" : "Pop post",
             "_post_4_short_desc": "Dit bericht is bedoeld voor het testen van ontwikkeling",
             "_post_4_quote" : "Als iemand echt van de natuur houdt, vindt men overal schoonheid.",
@@ -139,9 +156,6 @@ let resources: Resource = {
             "_post_card_tag_react" : "#REACT",
             "_post_card_tag_js" : "#JS",
             "_post_card_tag_wp" : "#WORDPRESS",
-
-
-
         }
     }
 }

@@ -2,35 +2,10 @@
 //about
 //-----------------------
 
-
-.about {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    margin-bottom: 100px;
-    @media only screen and (min-width: 992px) {
-        flex-direction: row;
-    }
+.cv-about {
+    margin-bottom: 40px;
 }
-
-// .about__visual {
-//     position: relative;
-//     align-self: flex-end;
-//     flex: 50;
-//     @media only screen and (min-width: 768px) {
-//         align-self: flex-start;
-//     }
-
-// }
-
-// .about__visual--inner {
-//     @media only screen and (min-width: 992px) {
-//        width: 100%;
-//     }
-// }
-
-.about__content {
+.cv-about__content {
     flex: 50;
     padding-top: 10%;
     @media only screen and (min-width: 992px) {
@@ -38,7 +13,7 @@
     }
 }
 
-.about__content-top {
+.cv-about__content-top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
@@ -47,25 +22,25 @@
 
 }
 
-.about__content-top-inner {
+.cv-about__content-top-inner {
     margin: auto 0;
     margin-right: 10px;
 
 }
 
-.about__header {
+.cv-about__header {
     font-family: "Abril Fatface", cursive;
     @include fluid-sizing(320px, 1440px, 30px,32px, 'font-size');
     margin-bottom: 10px;
 }
 
-.about__label {
+.cv-about__label {
     padding-top: 10px;
     font-size: 14px;
     color: var(--text-color);
 }
 
-.about__img {
+.cv-about__img {
     max-width: 100px;
     height: 100px;
     object-fit: cover;
@@ -77,10 +52,7 @@
 }
 
 
-.about__text {
-    &:not(:last-child) {
-        margin-bottom: 22px;
-    }
+.cv-about__text {
     &:not(:first-child) {
         margin-top: 22px;
     }

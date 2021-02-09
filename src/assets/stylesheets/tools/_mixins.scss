@@ -1,0 +1,68 @@
+//-----------------------
+//Mixins
+//-----------------------
+
+// ----- fluid-sizing
+
+// Use: @include fluid-sizing( 320px, 1280px, 16px, 32px );
+// Use: @include fluid-sizing( 320px, 1280px, 16px, 32px, 'margin-top' );
+@mixin fluid-sizing( $min-vw, $max-vw, $min-size, $max-size, $attr: 'font-size' ) {
+    #{$attr}: $min-size;
+  
+    @media screen and ( min-width: $min-vw ) {
+      #{$attr}: calc( #{ $min-size } + #{ strip-unit( $max-size ) - strip-unit( $min-size ) } * ( ( 100vw - #{ $min-vw } ) / #{ strip-unit( $max-vw - $min-vw ) } ) );
+    }
+  
+    @media screen and ( min-width: $max-vw ) {
+      #{$attr}: $max-size;
+    }
+  }
+  
+  @function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+    }
+  
+    @return $number;
+  }
+
+
+  // line height -- Function
+  @function calculate-relative-lineheight( $fontsize, $lineheight ) {
+    $relative-lineheight: ( strip-unit( $lineheight ) / strip-unit( $fontsize ) );
+  
+    @return $relative-lineheight;
+  }
+  
+
+
+//-----------------------
+//line limit
+//-----------------------
+
+@mixin line--limit {    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+  
+//-----------------------
+//images
+//-----------------------
+
+@mixin object-fit {
+    width: 100%;
+    object-fit: cover;
+  }
+
+// // Use: @include objectfit;
+// @mixin objectfit {
+//     object-fit: cover;
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
