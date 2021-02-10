@@ -71,7 +71,7 @@ export class post_template extends React.Component <any, DemoPostState> {
              <div className="post-header--img__content">
                 <div className="post-header__top">
                  <div className="post-header__label post-text--s"><span className="post-label">{i18next.t(this.state.myData.category)}</span></div>
-                 <div className="post-header__date post-text--s"> <span className="post-date">16/2/2020</span></div>
+                 <div className="post-header__date post-text--s"> <span className="post-date">2020</span></div>
                </div>
                 <h1 className="post-header__title title--l">{i18next.t(this.state.myData.post_title)}</h1>
                 <p className="post-header__text post-text--m">{i18next.t(this.state.myData.post_short_description)} </p>

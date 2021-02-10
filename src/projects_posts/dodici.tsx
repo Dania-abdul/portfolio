@@ -68,7 +68,7 @@ export class dodici extends React.Component <any, any> {
                 <div className="post-header">
                   <div className="post-header__top">
                     <div className="post-header__label post-text--s"><span className="post-label">{i18next.t("_category_wordpress")}</span></div>
-                    <div className="post-header__date post-text--s"> <span className="post-date">Aug/2020</span></div> 
+                    <div className="post-header__date post-text--s"> <span className="post-date">2020</span></div> 
                   </div>
                   <h1 className="post-title--l">{i18next.t("_post_dodici_title")}</h1>
                      <p className="post-text--m">{i18next.t("_post_dodici_short_desc")}</p>

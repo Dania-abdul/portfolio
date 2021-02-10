@@ -73,7 +73,7 @@ export class GrandeOmega extends React.Component <any, any> {
                     <div className="post-header__content">
                       <div className="post-header__top">
                         <div className="post-header__label post-text--s"><span className="post-label">{i18next.t("_category_development")}</span></div>
-                        <div className="post-header__date post-text--s"> <span className="post-date">Feb/2021</span></div>
+                        <div className="post-header__date post-text--s"> <span className="post-date">2021</span></div>
                       </div>
                       <h1 className="post-header__title title--l">{i18next.t("_post_go_title")}</h1>
                       <p className="post-header__text post-text--m">{i18next.t("_post_go_short_desc")}</p>
@@ -81,6 +81,7 @@ export class GrandeOmega extends React.Component <any, any> {
                           <li className="tag__item">{i18next.t("_post_card_tag_css")}</li>
                           <li className="tag__item">{i18next.t("_post_card_tag_html")}</li>
                           <li className="tag__item">{i18next.t("_post_card_tag_js")}</li>
+                          <li className="tag__item">{i18next.t("_post_card_tag_React")}</li>
                       </ul>
                     </div>
                   </div>
@@ -142,7 +143,7 @@ export class GrandeOmega extends React.Component <any, any> {
                       <div className="post-photo__visual">
                         <img  className="" src={GOmcqActivity} alt=""/>
                       </div>
-                      <p className="post-photo__caption text--s">Multible Choice Question  </p>
+                      <p className="post-photo__caption text--s">Multiple Choice Question  </p>
                     </div>
                   </div>
                   <div className="post-photo">
