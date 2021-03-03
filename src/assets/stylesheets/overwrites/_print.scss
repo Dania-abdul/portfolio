@@ -17,7 +17,9 @@
     .footer{
         display: none;
     }
-
+    .cv-section__title {
+        margin-bottom: 10px;
+    }
     .cv-aboutimg {
         width: 300px;
     }
@@ -31,7 +33,10 @@
             display: inline !important;
         }
     }
+    .cv-section {
+        margin-bottom: 10px;
 
+    }
     .cv-aboutcontent {
         margin-bottom: 40px;
     }
