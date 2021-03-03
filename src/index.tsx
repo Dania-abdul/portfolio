@@ -132,13 +132,13 @@ let resources: Resource = {
             "_post_text_big" : "HET IS EEN HERINNERING DAT ELKE TECHNOLOGIE DIE WE VANDAAG TOEKENNEN EENMAAL VERBODEN EN ONBEKEND WAS.",
             // ----------- esse
             "_post_esse_title": "Esse Floral Studio",
-            "_post_esse_short_desc": "GrandeOmega is a digital teaching assistant that improves the quality of teaching programming",
+            "_post_esse_short_desc": "Flower Studio Portfolio/webshop built with wordpress CMS and WooCommerce",
 
             "_post_esse_text_1_title" : "Over",
             "_post_esse_text_1" : "Bloemenatelier website en webshop voor verkoop van bloemboeketten, planten en bloemservices",
 // ----------- grandeomega
             "_post_go_title": "Grande Omega Education",
-            "_post_go_short_desc": "Flower Studio Portfolio/webshop built with wordpress CMS and WooCommerce",
+            "_post_go_short_desc": "GrandeOmega is a digital teaching assistant that improves the quality of teaching programming",
             "_post_go_long_desc" : "GrandeOmega is a web application that runs in the browser, and which facilitates learning programming within a higher education institution such as a college or a university",
 
             "_post_go_text_1_title" : "About Grande Omega",

@@ -81,7 +81,7 @@ export class GrandeOmega extends React.Component <any, any> {
                           <li className="tag__item">{i18next.t("_post_card_tag_css")}</li>
                           <li className="tag__item">{i18next.t("_post_card_tag_html")}</li>
                           <li className="tag__item">{i18next.t("_post_card_tag_js")}</li>
-                          <li className="tag__item">{i18next.t("_post_card_tag_React")}</li>
+                          <li className="tag__item">{i18next.t("_post_card_tag_react")}</li>
                       </ul>
                     </div>
                   </div>

@@ -252,6 +252,35 @@ export class CvComponent extends React.Component <CvProps, CvState> {
 
 
             </section>
+            <div className="cv-list">
+                <h3 className="cv-section__title">Skills</h3>    
+                <ul className="post-list--custom">
+                    <li>HTML5/CSS4/JS</li>
+                    <li>Package management npm/yarn </li>
+                    <li>CMS Itegration (Wordpress/ Wordpress theme development/ e-commerce)</li>
+                    <li>Webpack/Gulp</li>
+                    <li>Web Design Tools Sketch/Figma/Adobe XD</li>
+                    <li>Photoshop/Illustrator</li>
+                    <li>Email templates</li>
+                </ul>
+            </div>
+            
+            <div className="cv-list pt-4">
+                <h3 className="cv-section__title">Speaking Languages</h3>    
+                <ul className="post-list--custom">
+                    <li>Arabic (Native)</li>
+                    <li>English (Professional working proficiency)</li>
+                    <li>Dutch (Elementary )</li>
+                </ul>
+            </div>  
+
+            <div className="cv-list pt-4">
+                <h3 className="cv-section__title">View my work</h3>    
+                <ul className="post-list--custom">
+                    <li> <a href="https://dania-abdul.github.io/portfolio/">Projects</a></li>
+                    <li><a href="https://www.behance.net/DaniaAb">Behance</a> </li>
+                </ul>
+            </div>
             </>
     }
 }
