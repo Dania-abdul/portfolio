@@ -256,6 +256,8 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                 <h3 className="cv-section__title">Skills</h3>    
                 <ul className="post-list--custom">
                     <li>HTML5/CSS4/JS</li>
+                    <li>Front-end Frameworks (Bootstrap/Material Design/Fluent UI/styled-component)</li>
+                    <li>Web Accessibility (W3C/ARIA/WCAG)</li>
                     <li>Package management npm/yarn </li>
                     <li>CMS Itegration (Wordpress/ Wordpress theme development/ e-commerce)</li>
                     <li>Webpack/Gulp</li>
