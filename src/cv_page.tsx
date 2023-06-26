@@ -41,16 +41,9 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     <p className="cv-about__text styled--city">{i18next.t("_cvAboutText2")}</p>
                     <p className="cv-about__text">{i18next.t("_cvAboutText3")}</p>
                     <p className="cv-about__text ">{i18next.t("_cvAboutText4")}</p>
-                    {/* <p className="cv-about__text styled">{i18next.t("_cvAboutText5")}</p> */}
-                    <p className="cv-about__text styled">{i18next.t("_cvAboutText6")}</p>
-                    <p className="cv-about__text styled--city">{i18next.t("_cvAboutText7")}</p>
-                    <p className="cv-about__text styled">{i18next.t("_cvAboutText8")}</p>
-                    <p className="cv-about__text ">{i18next.t("_cvAboutText9")}</p>
-                    <p className="cv-about__text ">{i18next.t("_cvAboutText10")}</p>
-                    <p className="cv-about__text text--bold">{i18next.t("_cvAboutText11")}</p>
-                    <p className="cv-about__text text--bold">{i18next.t("_cvAboutText12")}</p>
-                    <p className="cv-about__text text--bold">{i18next.t("_cvAboutText13")}</p>
-                    <p className="cv-about__text text--bold">{i18next.t("_cvAboutText14")}</p>
+                    <p className="cv-about__text styled">{i18next.t("_cvAboutText5")}</p>
+                    <p className="cv-about__text">{i18next.t("_cvAboutText6")}</p>
+
             </section>
             <section className="cv">
                 <div id="education" className="cv-section">
@@ -77,6 +70,30 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                     <div className="cv-sectiom__item">
                         <table className="cv-table">
                             <tbody>
+                                <tr className="row" role="row" >
+                                    <td className="cv-table__date col-2">
+                                        <p className="end-date">Active</p>
+                                    </td>
+
+                                    <td className="cv-table__content col-10">
+                                        <p className="cell--title">Frontend Developer</p>
+                                        <p className="cell--desc">LeQuest - Netherlands, Rotterdam </p>
+                                        <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc0" role="button" aria-expanded="false" aria-controls="jobDesc0">more about the job...</a>
+                                        <div className="collapse multi-collapse" id="jobDesc0">
+                                            <div className="card card-body">
+                                                <ul className="post-list--custom">
+                                                    <li> Developed frontend applications using JavaScript, CSS, and relevant frameworks such as React, Material-UI, and Bootstrap. </li>
+                                                    <li> Improved the main application using JavaScript and created JSON file formats for defining game data and configurations </li>
+                                                    <li> Implemented a scalable design system using Storybook, HTML custom components, Material-UI, following practices such as ITCS methodology, and BEM naming convention for consistent UI development. </li>
+                                                    <li>Contributed to planning and improving internal workflow/processes, considering inter-team dependencies, to optimize process efficiency and enhance team productivity.</li>
+                                                    <li>Gained a deep understanding of frontend implementation, created wireframes, documented the application architecture, component/module relationships, and facilitated the onboarding process for new team members.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </td>
+                                </tr>
                                 <tr className="row" role="row" >
                                     <td className="cv-table__date col-2">
                                         <p className="end-date">NOW</p>
@@ -117,11 +134,11 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                             <div className="card card-body">
                                                 <p>Development of online applications, working on HTML5, CSS, JS.</p> 
                                                 <ul className="post-list--custom">
-                                                    <li> Developing and designing HTML/CSS from scratch. </li>  
-                                                    <li> Creating projects’ styleguide. </li> 
+                                                    <li> Development of online applications, working on HTML5 and React </li>  
+                                                    <li> Developing and designing HTML/CSS building blocks </li> 
                                                     <li> Cross-Browser Testing. </li>
-                                                    <li> Cascading style sheets (CSS) consistent across all browsers and platforms. </li> 
-                                                    <li> Assisting back-end developers with coding and troubleshootin. </li>
+                                                    <li> Creating projects’ styleguide </li> 
+                                                    <li>Ensuring consistent/responsive Cascading style sheets (CSS) across all browsers and platforms </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -180,7 +197,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <p className="tot-period">2 months</p>
                                     </td>
                                     <td className="cv-table__content col-10">
-                                        <p className="cell cell--title">SEO Executive</p>
+                                        <p className="cell cell--title">SEO internship</p>
                                         <p className="cell cell--desc">Pixel Pure Hat - UAE, Dubai</p>
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc4" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc4">
@@ -204,7 +221,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                         <p className="tot-period">7 months</p>
                                     </td>
                                     <td className="cv-table__content col-10">
-                                        <p className="cell cell--title">Web Developer</p>
+                                        <p className="cell cell--title">Web Developer internship</p>
                                         <p className="cell cell--desc">ComGuard FZ LLC. - UAE, Dubai</p>
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc5" role="button" aria-expanded="false" aria-controls="jobDesc">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc5">
@@ -256,7 +273,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                 <h3 className="cv-section__title">Skills</h3>    
                 <ul className="post-list--custom">
                     <li>HTML5/CSS4/JS</li>
-                    <li>Front-end Frameworks (Bootstrap/Material Design/Fluent UI/styled-component)</li>
+                    <li>Front-end Frameworks (React/Bootstrap/Material UI/Fluent UI/styled-component)</li>
                     <li>Web Accessibility (W3C/ARIA/WCAG)</li>
                     <li>Package management npm/yarn </li>
                     <li>CMS Itegration (Wordpress/ Wordpress theme development/ e-commerce)</li>
