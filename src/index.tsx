@@ -10,7 +10,7 @@ let resources: Resource = {
     "en": {
         "translation": {
             "_cvTitle": "Front-end developer",
-            "_cvAboutText1":" Hello... I am Dania, a Junior front-end developer,",
+            "_cvAboutText1":" Hello... I am Dania, a front-end developer ",
             "_cvAboutText2": " based in Rotterdam, Netherlands",
             "_cvAboutText3": "I enjoy designing and creating web applications, utilizing my knowledge of various technologies, and thrive in collaborative teams, working on innovative digital projects.",
             "_cvAboutText4": "My main expertise lies in building progressive and responsive web apps with JavaScript, CSS, and relevant frameworks such as React, Material-UI, and Bootstrap. ",
@@ -77,7 +77,7 @@ let resources: Resource = {
     "nl": {
         "translation": {
             "_cvTitle": "Front-end developer",
-            "_cvAboutText1":" Hello... I am Dania, a Junior front-end developer,",
+            "_cvAboutText1":" Hello... I am Dania, a front-end developer,",
             "_cvAboutText2": " based in Rotterdam, Netherlands",
             "_cvAboutText3": "I enjoy designing and creating web applications, utilizing my knowledge of various technologies, and thrive in collaborative teams, working on innovative digital projects.",
             "_cvAboutText4": "My main expertise lies in building progressive and responsive web apps with JavaScript, CSS, and relevant frameworks such as React, Material-UI, and Bootstrap. ",
