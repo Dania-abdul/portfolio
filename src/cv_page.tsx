@@ -96,7 +96,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                 </tr>
                                 <tr className="row" role="row" >
                                     <td className="cv-table__date col-2">
-                                        <p className="end-date">NOW</p>
+                                        <p className="end-date">Active</p>
                                         <p className="tot-period">1 year</p>
                                     </td>
 
