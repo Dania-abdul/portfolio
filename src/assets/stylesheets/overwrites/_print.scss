@@ -12,6 +12,9 @@
         position: relative;
     }
 
+    .hide-print {
+        display: none;
+    }
     .icon--save,
     .language-switch,
     .footer{
