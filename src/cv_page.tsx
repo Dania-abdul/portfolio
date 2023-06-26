@@ -284,7 +284,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                 </ul>
             </div>
             
-            <div className="cv-list pt-4">
+            <div className="cv-list pt-3">
                 <h3 className="cv-section__title">Speaking Languages</h3>    
                 <ul className="post-list--custom">
                     <li>Arabic (Native)</li>
@@ -293,7 +293,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                 </ul>
             </div>  
 
-            <div className="cv-list pt-4">
+            <div className="cv-list pt-3">
                 <h3 className="cv-section__title">View my work</h3>    
                 <ul className="post-list--custom flex-row">
                     <li> <a href="https://dania-abdul.github.io/portfolio/">Projects</a></li>
