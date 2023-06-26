@@ -73,12 +73,12 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                                 <tr className="row" role="row" >
                                     <td className="cv-table__date col-2">
                                         <p className="end-date">Active</p>
+                                        <p className="tot-period">2 years</p>
                                     </td>
 
                                     <td className="cv-table__content col-10">
                                         <p className="cell--title">Frontend Developer</p>
                                         <p className="cell--desc">LeQuest - Netherlands, Rotterdam </p>
-                                        <p className="tot-period">2 years</p>
                                         <a className="cell--link" aria-label="more about the job" data-toggle="collapse" href="#jobDesc0" role="button" aria-expanded="false" aria-controls="jobDesc0">more about the job...</a>
                                         <div className="collapse multi-collapse" id="jobDesc0">
                                             <div className="card card-body">
