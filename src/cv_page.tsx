@@ -293,7 +293,7 @@ export class CvComponent extends React.Component <CvProps, CvState> {
                 </ul>
             </div>  
 
-            <div className="cv-list pt-3">
+            <div className="cv-list pt-3 hide-print">
                 <h3 className="cv-section__title">View my work</h3>    
                 <ul className="post-list--custom flex-row">
                     <li> <a href="https://dania-abdul.github.io/portfolio/">Projects</a></li>

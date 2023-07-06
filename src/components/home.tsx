@@ -101,8 +101,8 @@ export class HomeComponent extends React.Component <HomeProps, HomeState> {
                                     </div>
                                     <div className="code-line">
                                         <div className="dots">····</div>
-                                        <p className="control">return</p><p className="symbol"> [</p> <span className="string"> 'HTML5/CSS4/JS' , 
-                                        'Bootstrap/Material Design/Fluent UI' ,'styled-component' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 
+                                        <p className="control">return</p><p className="symbol"> [</p> <span className="string"> 'JS/React',  'ECS' , 'Design Systems', 'HTML5/CSS4/JS' , 
+                                        'Bootstrap/Material UI/Fluent UI' ,'styled-component' , 'Webpack/Gulp' , 'npm/yarn' , 'Github/gitlab' , 'W3C/ARIA/WCAG' , 
                                         'Wordpress ', 'Photoshop/Illustrator', 'Sketch/Figma/Adobe XD' , 'UI/UX', 'Email templates'</span> 
                                         <p className="symbol"> ]</p>
                                         
