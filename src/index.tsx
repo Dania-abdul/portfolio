@@ -15,7 +15,7 @@ let resources: Resource = {
             "_cvAboutText3": "I enjoy designing and creating web applications, utilizing my knowledge of various technologies, and thrive in collaborative teams, working on innovative digital projects.",
             "_cvAboutText4": "My main expertise lies in building progressive and responsive web apps with JavaScript, CSS, and relevant frameworks such as React, Material-UI, and Bootstrap. ",
             "_cvAboutText5": "Prior to my career in front-end development, and after after graduating with a BSC degree in IT-Multimedia. I honed my skills through diverse roles in the web industry, including SEO, marketing, and design.",
-            "_cvAboutText6": "Over the past year, I have been working as a frontend developer at LeQuest, where I have contributed to various projects. I have played a role in improving frontend applications using JavaScript, CSS, and frameworks like React, Material-UI, and Bootstrap. Additionally, I have actively participated in implementing a scalable design system, enhancing internal workflows and documenting application architecture.",
+            "_cvAboutText6": "Over the past two year, I have been working as a frontend developer at LeQuest, where I have contributed to various projects. I have played a role in improving frontend applications using JavaScript, CSS, and frameworks like React, Material-UI, and Bootstrap. Additionally, I have actively participated in implementing a scalable design system, enhancing internal workflows and documenting application architecture.",
 
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ",
@@ -82,7 +82,7 @@ let resources: Resource = {
             "_cvAboutText3": "I enjoy designing and creating web applications, utilizing my knowledge of various technologies, and thrive in collaborative teams, working on innovative digital projects.",
             "_cvAboutText4": "My main expertise lies in building progressive and responsive web apps with JavaScript, CSS, and relevant frameworks such as React, Material-UI, and Bootstrap. ",
             "_cvAboutText5": "Prior to my career in front-end development, and after after graduating with a BSC degree in IT-Multimedia. I honed my skills through diverse roles in the web industry, including SEO, marketing, and design.",
-            "_cvAboutText6": "Over the past year, I have been working as a frontend developer at LeQuest, where I have contributed to various projects. I have played a role in improving frontend applications using JavaScript, CSS, and frameworks like React, Material-UI, and Bootstrap. Additionally, I have actively participated in implementing a scalable design system, enhancing internal workflows and documenting application architecture.",
+            "_cvAboutText6": "Over the past two year, I have been working as a frontend developer at LeQuest, where I have contributed to various projects. I have played a role in improving frontend applications using JavaScript, CSS, and frameworks like React, Material-UI, and Bootstrap. Additionally, I have actively participated in implementing a scalable design system, enhancing internal workflows and documenting application architecture.",
 
             "_cvSecTitle-1": "Education",
             "_cvSecTitle-2": "Experience ",
