@@ -23,6 +23,10 @@ import ProjCardImgEsse from './assets/images/posts-imgs/esse/front-projects--ess
 //GrandeOmega
 import ProjCardImgGo from './assets/images/posts-imgs/grandeomega/front-projects--grandeomega.png';
 
+// test
+import ProjectTest from './assets/images/posts-imgs/grandeomega/front-projects--grandeomega.png';
+
+
 
 
 
@@ -142,35 +146,35 @@ export let data : cardData[] = [
       link : "",
   
   
-    }
-    // { 
-    //   url : "/portfolio/projects/post_template",
-    //   image_url : temp1img,
-    //   id:"post_template",
+    },
+    { 
+      url : "/portfolio/projects/post_template",
+      image_url : temp1img,
+      id:"post_template",
   
-    //   category : "_category_development", 
-    //   post_title : "_post_2_title", 
-    //   is_pinned : true, 
+      category : "_category_development", 
+      post_title : "_post_2_title", 
+      is_pinned : true, 
   
-    //   post_card_tag_1: "_post_card_tag_fluentui",
-    //   post_card_tag_2: "_post_card_tag_react",
-    //   post_card_tag_3: "_post_card_tag_css",
-    //   post_card_tag_4: "_post_card_tag_js",
+      post_card_tag_1: "_post_card_tag_fluentui",
+      post_card_tag_2: "_post_card_tag_react",
+      post_card_tag_3: "_post_card_tag_css",
+      post_card_tag_4: "_post_card_tag_js",
   
-    //   post_short_description: "_post_2_short_desc",
-    //   post_long_description: "_post_2_long_desc",
+      post_short_description: "_post_2_short_desc",
+      post_long_description: "_post_2_long_desc",
   
-    //   post_quote: "_post_2_quote",
-    //   author:"Vincent van Gogh",
+      post_quote: "_post_2_quote",
+      author:"Vincent van Gogh",
   
-    //   post_text_1_title: "_post_2_text_1_title",
-    //   post_text_1: "_post_2_text_1",
-    //   post_text_big: "_post_text_big",
+      post_text_1_title: "_post_2_text_1_title",
+      post_text_1: "_post_2_text_1",
+      post_text_big: "_post_text_big",
   
-    //   post_img_1: temp1img2,
-    //   link : "www.google.com",
+      post_img_1: temp1img2,
+      link : "www.google.com",
   
-    // },
+    },
     // { 
     //   url : "/portfolio/projects/post_template2",
     //   image_url : temp2Img,
